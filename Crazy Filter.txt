@@ -2,6 +2,16 @@
 
 #adblock
 
+! Block common anti-adblock scripts
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=example.com
+||cdn.jsdelivr.net/npm/anti-adblock-killer@latest/anti-adblock-killer.min.js$script
+||antiadblocker.com^$script
+||anti-adblocker.com^$script
+
+! Block anti-adblock overlay elements by CSS selectors
+example.com##.anti-adblock-overlay
+example.com##.adblock-message
+
 adblock.turtlecute.org##.adbox.banner_ads.adsbox
 d3ward.github.io##.textads
 
@@ -9,7 +19,89 @@ d3ward.github.io##.textads
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
 
+#tracking
 
+! Anti-Tracking Filter List
+! Last updated: 2024-06-01
+
+! Block common tracking domains
+||google-analytics.com^
+||googletagmanager.com^
+||doubleclick.net^
+||facebook.net^
+||facebook.com^
+||connect.facebook.net^
+||ads.twitter.com^
+||ads.yahoo.com^
+||adservice.google.com^
+||pixel.facebook.com^
+||tracking.example.com^
+
+! Block tracking scripts and pixels
+||*/track.js$script
+||*/tracker.js$script
+||*/pixel.gif$image
+||*/pixel.png$image
+
+! Block third-party tracking cookies
+||*^$third-party,cookie
+
+! Block known tracking subdomains
+||track.*
+||analytics.*
+||stats.*
+||metrics.*
+
+! Block social media trackers
+||platform.twitter.com^
+||platform.linkedin.com^
+||connect.facebook.net^
+
+! Block fingerprinting scripts
+||fingerprintjs.com^
+||fingerprintjs2.com^
+
+! Block common ad servers that track users
+||adserver.example.com^
+||ads.example.net^
+
+! Block tracking via URL parameters (optional)
+*$removeparam=utm_source
+*$removeparam=utm_medium
+*$removeparam=utm_campaign
+*$removeparam=fbclid
+
+#malware
+
+! Block malware distribution domains
+||malware-download.com^
+||infected-site.net^
+||badware-host.org^
+
+! Block suspicious executable downloads
+||*.exe$download
+||*.scr$download
+
+#spyware
+
+! Block spyware domains
+||spywaretracker.com^
+||tracking-scripts.net^
+||dataharvester.org^
+
+! Block common tracking scripts
+||googletagmanager.com/gtm.js$script
+||connect.facebook.net/en_US/fbevents.js$script
+
+#phishing
+! Block known phishing domains
+||phishingsite.com^
+||malicious-login.net^
+||fakebank-login.org^
+
+! Block URLs containing suspicious keywords
+||*login*verify*^
+||*account*update*^
 
 
 #analytics-blocked
