@@ -25,6 +25,8 @@
 ||googletagmanager.com/gtm.js$script
 ||connect.facebook.net/en_US/fbevents.js$script
 @@||www.roblox.com^$first-party
+@@||www.roblox.com^$third-party
+
 #adblock
 
 ! Block common anti-adblock scripts
