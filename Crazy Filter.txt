@@ -1,5 +1,6 @@
 #Crazy Filter by Crazy Anonymous
 
+
 #antimalware
 
 ! Block malware distribution domains
