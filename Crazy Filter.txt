@@ -5,7 +5,7 @@
 adblock.turtlecute.org##.adbox.banner_ads.adsbox
 d3ward.github.io##.textads
 
-#pageads
+#pagead
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
 pagead2.googleadservices.com
