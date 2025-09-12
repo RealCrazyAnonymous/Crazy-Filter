@@ -2,7 +2,10 @@
 
 #adblock
 
-
+/appmetrica.yandex.ru
+/adfstat.yandex.ru
+/pagead.js$domain=adblock.turtlecute.org
+/widget/ads.
 /adb-watch.
 /adb_script/*
 /deadblocker/*
