@@ -8,7 +8,7 @@ d3ward.github.io##.textads
 #pageads
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
-/pagead2.googleadservices.com
+pagead2.googleadservices.com
 
 #analytics-blocked
 
