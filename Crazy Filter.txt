@@ -24,7 +24,7 @@
 ! Block common tracking scripts
 ||googletagmanager.com/gtm.js$script
 ||connect.facebook.net/en_US/fbevents.js$script
-
+@@||www.roblox.com^$first-party
 #adblock
 
 ! Block common anti-adblock scripts
