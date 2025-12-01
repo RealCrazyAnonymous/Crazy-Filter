@@ -159300,6 +159300,7 @@ zzbwyfnymcnfcnz.space
 zzk52.com
 zzoobb.de
 zzpwoning.com
+<<<<<<< HEAD
 !+ PLATFORM(ios)
 [$path=/e/]waaw.to#%#//scriptlet('set-constant', 'device.tv', 'trueFunc')
 ! ad wall
@@ -159485,3 +159486,5 @@ turbopages.org##.page__result > div[class*="type_native"]
 ! END: Yandex
 !
 !
+=======
+>>>>>>> 1c3772b3cad0a9e568e9dc7e14fa2ae489b0677f
