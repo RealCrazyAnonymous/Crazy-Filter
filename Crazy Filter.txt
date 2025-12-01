@@ -37,6 +37,7 @@ an.facebook.com
 click.googleanalytics.com
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
+ads.js
 adb-watch.
 adb_script/*
 deadblocker/*
@@ -159488,3 +159489,4 @@ turbopages.org##.page__result > div[class*="type_native"]
 !
 =======
 >>>>>>> 1c3772b3cad0a9e568e9dc7e14fa2ae489b0677f
+
