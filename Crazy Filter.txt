@@ -43,3 +43,8 @@
 /deadblocker/*
 /mod_ablockdetector/*
 /npsblocker/js/ads.
+/analyticsengine.s3.amazonaws.com
+/analytics.s3.amazonaws.com
+/adfstat.yandex.ru
+/analytics.query.yahoo.com
+/api-adservices.apple.com
