@@ -40,8 +40,8 @@ ads-sg.tiktok.com
 ads-api.tiktok.com
 an.facebook.com
 click.googleanalytics.com
-pagead.js$domain=adblock.turtlecute.org
-widget/ads.
+/pagead.js$domain=adblock.turtlecute.org
+/widget/ads.
 ads.js
 adb-watch.
 adb_script/*
