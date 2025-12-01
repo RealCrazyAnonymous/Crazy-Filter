@@ -4,6 +4,11 @@
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+api-adservices.apple.com
+adfstat.yandex.ru
+analytics.query.yahoo.com
+analytics.s3.amazonaws.com
+analyticsengine.s3.amazonaws.com
 notes-analytics-events.apple.com
 weather-analytics-events.apple.com
 books-analytics-events.apple.com
