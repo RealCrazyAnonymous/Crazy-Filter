@@ -1,11 +1,15 @@
 ! Version: 5
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 10:52 AM EDT
+! Last modified: 4 December 2025 10:53 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
 
-
+account.cyngn.com
+api.cyngn.com
+shopvac.cyngn.com
+stats.cyanogenmod.org
+stats.lineageos.org
 #MIT		- https://raw.githubusercontent.com/scafroglia93/blocklists/526b3922ee0e59a99123829acbdb296386f66840/blocklists-ahnlab.txt
 #MIT		- https://raw.githubusercontent.com/scafroglia93/blocklists/526b3922ee0e59a99123829acbdb296386f66840/blocklists-akamai.txt
 #MIT		- https://raw.githubusercontent.com/scafroglia93/blocklists/526b3922ee0e59a99123829acbdb296386f66840/blocklists-alienlabs.txt
