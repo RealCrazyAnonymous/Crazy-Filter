@@ -1,9 +1,11 @@
-! Version: 25
+! Version: 26
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 13:56 PM EDT
+! Last modified: 4 December 2025 13:59 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://fast.fonts.net/t/trackingCode.js
+https://www.googletagmanager.com/gtm.js?id=GTM-MVCC8H
 https://api.github.com/_private/browser/stats
 https://collector.github.com/github/collect
 https://i.viafoura.co
