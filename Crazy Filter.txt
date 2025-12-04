@@ -4,6 +4,7 @@
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+
 /browser_fingerprint*$script
 /detect-font-loading*$script
 /evercookie/*
