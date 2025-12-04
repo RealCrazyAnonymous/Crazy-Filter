@@ -8,3 +8,9 @@ If you have any issues, please email me.
 
 
 This filter is only for VPNs and browsers.
+
+
+NextDNS filter is coming soon!
+
+<a href="https://nextdns.io">NextDNS</a>
+
