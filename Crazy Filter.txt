@@ -1,10 +1,9 @@
-! Version: 5
+! Version: 20
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 10:44 AM EDT
+! Last modified: 4 December 2025 12:03 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
-
 /browser_fingerprint*$script
 /detect-font-loading*$script
 /evercookie/*
