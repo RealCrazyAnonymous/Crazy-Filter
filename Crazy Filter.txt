@@ -1,10 +1,35 @@
 ! Version: 5
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 10:53 AM EDT
+! Last modified: 4 December 2025 10:55 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
 
+# LG
+(^|\.)ibs\.lgappstv\.com
+(^|\.)lgsmartad\.com
+(^|\.)smartshare\.lgtvsdp\.com
+(^|\.)rdx2\.lgtvsdp\.com
+^[a-rt-z][a-z]{10,14}$
+(^|\.)lgtvcommon\.com
+
+# Samsung
+(^|\.)giraffic\.com$
+(^|\.)internetat\.tv$
+(^|\.)pavv\.co\.kr$
+# (^|\.)samsungcloudcdn\.com$ # prevents updates
+# (^|\.)samsungcloudsolution\.com$ # prevents internet connection
+(^|\.)samsungcloudsolution\.net$
+(^|\.)samsungelectronics\.com$
+# (^|\.)samsungotn\.net$ # prevents updates
+(^|\.)samsungrm\.net$
+
+# Vizio
+(\.|^)tvinteractive\.tv$
+
+# Other
+# (^|\.)myhomescreen\.tv$ # can produce false positives, rather block individual domains
+^api\..*\.hismarttv\.com$
 account.cyngn.com
 api.cyngn.com
 shopvac.cyngn.com
