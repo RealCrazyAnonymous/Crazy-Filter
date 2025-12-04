@@ -1,9 +1,17 @@
-! Version: 23
+! Version: 24
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 11:37 AM EDT
+! Last modified: 4 December 2025 11:45 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+/static/ZCdxTtWu.js
+/static/jJ4r5Hbv.js
+/static/Q_mEDzP1.js
+/static/u8aanTbz.js
+/static/Df5NbOdY.js
+/static/jAP73fuY.js
+/static/ADxHRP1F.js
+/static/DL67ZAxJ.js
 1.1.176.58
 1.2.164.21
 1.14.3.240
