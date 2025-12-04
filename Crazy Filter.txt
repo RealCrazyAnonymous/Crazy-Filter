@@ -1,6 +1,6 @@
 ! Version: 5
 ! Title: Crazy Filter
-! Last modified: 1 December 2025 16:06 EDT
+! Last modified: 4 December 2025 07:31 EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
