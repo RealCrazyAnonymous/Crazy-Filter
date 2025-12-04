@@ -1,9 +1,11 @@
-! Version: 24
+! Version: 25
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 13:54 PM EDT
+! Last modified: 4 December 2025 13:56 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://api.github.com/_private/browser/stats
+https://collector.github.com/github/collect
 https://i.viafoura.co
 https://sb.scorecardresearch.com
 https://api.sail-personalize.com
