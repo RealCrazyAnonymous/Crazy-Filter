@@ -1,9 +1,49 @@
-! Version: 22
+! Version: 23
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 13:09 PM EDT
+! Last modified: 4 December 2025 13:13 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+20864368p.rfihub.com
+20875563p.rfihub.com
+3976941.fls.doubleclick.net
+ad.doubleclick.net
+ads-engagement.presage.io
+alb.reddit.com
+analytics-sm.com
+bat.bing.com
+beacon.lynx.cognitivlabs.com
+c.amazon-adsystem.com
+c.tvpixel.com
+c1.rfihub.net
+cdn.boomtrain.com
+cm.g.doubleclick.net
+connect.facebook.net
+ct.pinterest.com
+dap.digitalgov.gov
+events.api.boomtrain.com
+fast.fonts.net
+googleads.g.doubleclick.net
+i.liadm.com
+i6.liadm.com
+insight.adsrvr.org
+js.adsrvr.org
+live.rezync.com
+match.adsrvr.org
+mpc2-prod-23-is5qnl632q-ue.a.run.app
+p.tvpixel.com
+people.api.boomtrain.com
+pixel-config.reddit.com
+px.ads.linkedin.com
+resources.digital-cloud-gov.medallia.com
+s.pinimg.com
+s.yimg.com
+sc-static.net
+snap.licdn.com
+sp.analytics.yahoo.com
+tr.snapchat.com
+www.google-analytics.com
+www.googletagmanager.com
 https://ad.doubleclick.net/activity;dc_pre=CPDwlPzCpJEDFeADRAgdBoYh5A;src=3976941;type=uspsc0;cat=gener0;ord=3350594680686;npa=0;auiddc=1121977210.1764871575;uaa=;uab=;uafvl=;uamb=0;uam=;uap=;uapv=;uaw=0;frm=0;_tu=KFA;gtm=45fe5c31h2v9190898584z878733333za20gzb78733333zd72384666xea;gcs=G1--;gcd=13l3l3l3l5l1;dma=0;dc_fmt=3;tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115616986~115938466~115938468~116184927~116184929~116217636~116217638~116518833;epver=2;dc_random=1764871577_Zb7wk4SVjk_qm8S9iqBioESekQv6QhJ7yw;~oref=https%3A%2F%2Fwww.usps.com%2F?
 https://googleads.g.doubleclick.net/pagead/gcn_p3p_.xm
 /browser_fingerprint*$script
