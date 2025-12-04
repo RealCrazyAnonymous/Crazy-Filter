@@ -1,9 +1,17 @@
-! Version: 5
+! Version: 20
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 11:23 AM EDT
+! Last modified: 4 December 2025 11:28 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+! Basic URL blocking
+||example.com/ads/*
+! Element hiding
+##.ad-container
+! Network rules
+||analytics.*^$third-party
+! Exception rules
+@@||example.com^$document
 *.adnxs.com
 *.ads*.msads.net
 *.ads*.msn.com
