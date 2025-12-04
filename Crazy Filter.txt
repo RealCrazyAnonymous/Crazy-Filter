@@ -1,6 +1,6 @@
 ! Version: 5
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 07:31 EDT
+! Last modified: 4 December 2025 10:38 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -138,6 +138,32 @@ click.googleanalytics.com
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
 ads.js
+https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+https://securepubads.g.doubleclick.net/tag/js/gpt.js
+https://www.googletagservices.com/tag/js/gpt.js
+https://googleads.g.doubleclick.net/pagead/ads
+https://www.google.com/pagead/lvz
+https://www.youtube.com/get_midroll_info
+https://www.youtube.com/ptracking
+https://www.youtube.com/api/stats/ads
+https://static.doubleclick.net/instream/ad_status.js
+https://www.facebook.com/tr
+https://www.instagram.com/ads/
+https://www.facebook.com/ads/
+https://c.amazon-adsystem.com/aax2/apstag.js
+https://api.searchads.apple.com/v1
+https://static.ads-twitter.com/uwt.js
+https://analytics.twitter.com/i/adsct
+https://d.applovin.com/v1/ad
+https://init.supersonicads.com/sdk/v1
+https://sdk-api-v1.inmobicdn.net/sdk/android
+https://api.vungle.com/api/v5
+https://ads.mopub.com/m/ad
+https://graph.chartboost.com/api/v3
+https://wl.spotify.com
+https://ads.spotify.com/api/v1/ads
+https://www.googletagmanager.com/gtag/js
+https://bs.serving-sys.com/BurstingPipe/adServer.bs
 adb-watch.
 adb_script/*
 deadblocker/*
