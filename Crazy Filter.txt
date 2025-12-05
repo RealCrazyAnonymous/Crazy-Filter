@@ -1,9 +1,28 @@
-! Version: 29
+! Version: 30
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 10:21 AM EDT
+! Last modified: 4 December 2025 10:25 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+ads.tiktok.com
+static.doubleclick.net
+m.doubleclick.net
+mediavisor.doubleclick.net
+media.fastclick.net
+advice-ads.s3.amazonaws.com
+affiliationjs.s3.amazonaws.com
+advertising-api-eu.amazon.com
+ads.facebook.com
+ads-api.x.com
+advertising.x.com
+ads-dev.pinterest.com
+ads.pinterest.com
+widgets.pinterest.com
+ads.reddit.com
+d.reddit.com
+ads.youtube.com
+ad.doubleclick.net
+pagead2.googlesyndication.com
 https://static.doubleclick.net
 https://m.doubleclick.net
 https://mediavisor.doubleclick.net
