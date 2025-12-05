@@ -1,6 +1,6 @@
-! Version: 32
+! Version: 33
 ! Title: Crazy Filter
-! Last modified: 5 December 2025 13:15 PM EDT
+! Last modified: 5 December 2025 14:00 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -20,8 +20,6 @@ https://ap.lijit.com/www/delivery/fp
 https://api.searchads.apple.com/v1
 https://api.vungle.com/api/v5
 https://bat.bing.com/bat.js
-
-
 https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 https://securepubads.g.doubleclick.net/tag/js/gpt.js
 https://www.googletagservices.com/tag/js/gpt.js
