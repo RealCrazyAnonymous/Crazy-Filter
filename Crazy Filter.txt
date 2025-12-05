@@ -1,9 +1,10 @@
-! Version: 27
+! Version: 28
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 21:11 PM EDT
+! Last modified: 4 December 2025 21:14 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png
 https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=0
 https://www.clarity.ms/tag/o5eu0zu3e0
