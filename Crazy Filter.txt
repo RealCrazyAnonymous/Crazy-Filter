@@ -1,9 +1,17 @@
-! Version: 30
+! Version: 31
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 10:25 AM EDT
+! Last modified: 5 December 2025 10:32 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+https://securepubads.g.doubleclick.net/tag/js/gpt.js
+https://www.googletagservices.com/tag/js/gpt.js
+https://googleads.g.doubleclick.net/pagead/ads
+https://static.doubleclick.net/instream/ad_status.js
+https://c.amazon-adsystem.com/aax2/apstag.js
+https://static.ads-twitter.com/uwt.js
+https://www.googletagmanager.com/gtag/js
 ads.tiktok.com
 static.doubleclick.net
 m.doubleclick.net
@@ -14,7 +22,7 @@ affiliationjs.s3.amazonaws.com
 advertising-api-eu.amazon.com
 ads.facebook.com
 ads-api.x.com
-advertising.x.com
+advertising.twitter.com
 ads-dev.pinterest.com
 ads.pinterest.com
 widgets.pinterest.com
