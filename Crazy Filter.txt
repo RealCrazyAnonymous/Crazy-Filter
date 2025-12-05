@@ -1,9 +1,27 @@
-! Version: 31
+! Version: 32
 ! Title: Crazy Filter
-! Last modified: 5 December 2025 10:32 AM EDT
+! Last modified: 5 December 2025 13:15 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://aax.amazon-adsystem.com/e/dtb/bid
+https://a.adtng.com
+https://ad.propellerads.com/js
+https://adc3-launch.adcolony.com/v4/launch
+https://ads.pubmatic.com/showad
+https://ads.linkedin.com/collect
+https://ads.mopub.com/m/ad
+https://ads.rubiconproject.com/prebid/load-cookie.html
+https://ads.spotify.com/api/v1/ads
+https://adservice.google.com/adsid/integrator.js
+https://analytics.tiktok.com/i18n/pixel/events.js
+https://analytics.twitter.com/i/adsct
+https://ap.lijit.com/www/delivery/fp
+https://api.searchads.apple.com/v1
+https://api.vungle.com/api/v5
+https://bat.bing.com/bat.js
+
+
 https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 https://securepubads.g.doubleclick.net/tag/js/gpt.js
 https://www.googletagservices.com/tag/js/gpt.js
@@ -153,7 +171,6 @@ https://api-visitor-analytics.intercom.com/visitor_analytics/pageviews
 https://o2129.ingest.sentry.io/api/92548/envelope/?sentry_version=7&sentry_key=f9dd87e7487b4aa3a4731e965c1ec283&sentry_client=sentry.javascript.browser%2F10.5.0
 https://www.googletagmanager.com/gtm.js?id=GTM-WB899HL
 https://log.cookieyes.com/api/v1/log
-https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015
 https://stats.wp.com/e-202549.js
 https://discord.com/assets/oneTrust/v7/consent/04da1d72-0626-4fff-b3c6-150c719cc115/OtAutoBlock.js
 https://www.googletagmanager.com/gtm.js?id=GTM-N7BVC2W&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x
@@ -170,7 +187,6 @@ www.gstatic.com
 chimpstatic.com
 static.getclicky.com
 stats.g.doubleclick.net
-https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015
 https://radar.cloudflare.com/api/analytics
 20864368p.rfihub.com
 20875563p.rfihub.com
