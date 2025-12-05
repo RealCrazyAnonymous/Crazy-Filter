@@ -1,9 +1,32 @@
-! Version: 28
+! Version: 29
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 21:14 PM EDT
+! Last modified: 4 December 2025 10:21 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://static.doubleclick.net
+https://m.doubleclick.net
+https://mediavisor.doubleclick.net
+https://media.fastclick.net/
+https://advice-ads.s3.amazonaws.com
+https://affiliationjs.s3.amazonaws.com
+https://advertising-api-eu.amazon.com
+https://ads.facebook.com
+https://ads-api.twitter.com
+https://advertising.twitter.com
+https://ads-dev.pinterest.com
+https://ads.pinterest.com
+https://widgets.pinterest.com
+https://ads.reddit.com
+https://d.reddit.com
+https://ads.youtube.com
+https://ads.tiktok.com
+https://tracking.intl.miui.com
+https://tracking.india.miui.com
+https://securemetrics.apple.com
+https://ad.doubleclick.net/
+https://doubleclick.net/
+https://pagead2.googlesyndication.com
 https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png
 https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=0
