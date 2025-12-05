@@ -1,9 +1,15 @@
-! Version: 26
+! Version: 27
 ! Title: Crazy Filter
-! Last modified: 4 December 2025 13:59 PM EDT
+! Last modified: 4 December 2025 21:11 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=0
+https://www.clarity.ms/tag/o5eu0zu3e0
+https://www.datadoghq-browser-agent.com/datadog-rum-v3.js
+https://www.googletagmanager.com/gtag/js?id=G-H3FVDHXMHD
+https://www.paypalobjects.com/en_US/i/scr/pixel.gif
 https://fast.fonts.net/t/trackingCode.js
 https://www.googletagmanager.com/gtm.js?id=GTM-MVCC8H
 https://api.github.com/_private/browser/stats
