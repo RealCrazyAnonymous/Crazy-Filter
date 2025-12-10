@@ -1,6 +1,6 @@
-!  Version: 37
+!  Version: 38
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 14:36 PM EDT
+! Last modified: 10 December 2025 17:29 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -71,13 +71,14 @@ ad.doubleclick.net
 static.doubleclick.net
 m.doubleclick.net
 mediavisor.doubleclick.net
-
-
-
-
-
-
-
+settings-win.data.microsoft.com
+ephemeralcounters.api.roblox.com
+client-telemetry.roblox.com
+ecsv2.roblox.com
+tracing.roblox.com
+ephemeralcounters.api.roblox.com
+client-telemetry.roblox.com
+ecsv2.roblox.com
 
 
 
