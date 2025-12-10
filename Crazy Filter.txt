@@ -1,6 +1,6 @@
-!  Version: 39
+!  Version: 40
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 17:32 PM EDT
+! Last modified: 10 December 2025 17:35 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -80,8 +80,8 @@ ephemeralcounters.api.roblox.com
 client-telemetry.roblox.com
 ecsv2.roblox.com
 cdn.optimizely.com
-
-
+web.webpushs.com
+cdn.tynt.com
 
 
 
