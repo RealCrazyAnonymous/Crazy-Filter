@@ -1,6 +1,6 @@
-!  Version: 36
+!  Version: 37
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 14:15 PM EDT
+! Last modified: 10 December 2025 14:36 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -57,6 +57,37 @@ cfg-1.kwcdn.com
 img-1.kwcdn.com
 adashx4ae.ut.taobao.com
 audid-api.taobao.com
+h-adashx4ae.ut.taobao.com
+woodpecker.uc.cn
+applog.uc.cn
+adtago.s3.amazonaws.com
+analyticsengine.s3.amazonaws.com
+analytics.s3.amazonaws.com
+advice-ads.s3.amazonaws.com
+adservice.google.com
+pagead2.googleadservices.com
+afs.googlesyndication.com
+ad.doubleclick.net
+static.doubleclick.net
+m.doubleclick.net
+mediavisor.doubleclick.net
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
