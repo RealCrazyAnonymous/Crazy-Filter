@@ -1,6 +1,6 @@
-!  Version: 34
+!  Version: 35
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 00:03 AM EDT
+! Last modified: 10 December 2025 13:58 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -13,3 +13,29 @@ analytics.pinterest.com
 widgets.pinterest.com
 udc.yahoo.com
 https://ads.google.com
+firebase-settings.crashlytics.com
+incoming.telemetry.mozilla.org
+improving.duckduckgo.com
+d2wy8f7a9ursnm.cloudfront.net
+pagead2.googlesyndication.com
+ads.mozilla.org
+af.pubmine.com
+app-measurement.com
+i.paypal.com
+collector.github.com
+ssl.google-analytics.com
+af.pubmine.com
+pixel.wp.com
+app.adjust.io
+app.adjust.com
+refer.wordpress.com
+stats.wp.com
+census-app.scorecardresearch.com
+googleads.g.doubleclick.net
+firebaselogging.googleapis.com
+
+
+
+
+
+
