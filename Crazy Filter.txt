@@ -1,0 +1,15 @@
+!  Version: 34
+! Title: Crazy Filter
+! Last modified: 10 December 2025 00:03 AM EDT
+! Expires: Depends
+! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
+!
+
+adblock.turtlecute.org##.adbox.banner_ads.adsbox
+d3ward.github.io##.textads
+/pagead.js$domain=adblock.turtlecute.org
+/widget/ads.
+analytics.pinterest.com
+widgets.pinterest.com
+udc.yahoo.com
+https://ads.google.com
