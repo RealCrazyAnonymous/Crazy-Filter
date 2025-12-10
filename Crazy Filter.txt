@@ -1,6 +1,6 @@
-!  Version: 35
+!  Version: 36
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 13:58 PM EDT
+! Last modified: 10 December 2025 14:15 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -33,6 +33,34 @@ stats.wp.com
 census-app.scorecardresearch.com
 googleads.g.doubleclick.net
 firebaselogging.googleapis.com
+qbrere.launches.appsflyersdk.com
+static.cloudflareinsights.com
+events.launchdarkly.com
+api2.branch.io
+featureassets.org
+c.amazon-adsystem.com
+config.ads.vungle.com
+mads.amazon-adsystem.com
+s.amazon-adsystem.com
+uxh52u.launches.appsflyersdk.com
+notify.bugsnag.com
+flag.lab.amplitude.com
+api.lab.amplitude.com
+mobile-api.rokt.com
+9b7afadc4f9b.cdn4.forter.com
+api2.amplitude.com
+app.adjust.net.in
+app.adjust.world
+analytics.dv.socure.io
+api.sprig.com
+cfg-1.kwcdn.com
+img-1.kwcdn.com
+adashx4ae.ut.taobao.com
+audid-api.taobao.com
+
+
+
+
 
 
 
