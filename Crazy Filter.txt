@@ -1,6 +1,6 @@
-!  Version: 41
+!  Version: 42
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 19:57 PM EDT
+! Last modified: 10 December 2025 20:05 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -107,8 +107,8 @@ tracking.aws.judge.me
 nsg.symantec.com
 cdn.pushowl.com
 vyg.mobi
-
-
+sherlock-events-sampler.ebay.com
+srv.main.ebayrtm.com
 
 
 
