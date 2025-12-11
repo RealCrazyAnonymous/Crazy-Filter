@@ -1,6 +1,6 @@
-!  Version: 40
+!  Version: 41
 ! Title: Crazy Filter
-! Last modified: 10 December 2025 17:35 PM EDT
+! Last modified: 10 December 2025 19:57 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -82,6 +82,52 @@ ecsv2.roblox.com
 cdn.optimizely.com
 web.webpushs.com
 cdn.tynt.com
+identity.mparticle.com
+cs.ns1p.net
+web.webpushs.com
+tpc.googlesyndication.com
+ct.pinterest.com
+wtp.siteperformancetest.net
+cdn123.forter.com
+cdn0.forter.com
+d2o5idwacg3gyw.cloudfront.net
+db7q4jg5rkhk8.cloudfront.net
+cm.g.doubleclick.net
+tvspix.com
+statics.a8.net
+aax.amazon-adsystem.com
+imk.neweggimages.com
+tags.tiqcdn.com
+pf.newegg.com
+imk.neweggimages.com
+beacon.walmart.com
+monorail-edge.shopifysvc.com
+cdn.pushalert.co
+tracking.aws.judge.me
+nsg.symantec.com
+cdn.pushowl.com
+vyg.mobi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
