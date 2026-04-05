@@ -14,3 +14,6 @@ My NextDNS filter (Crazy Filter) is coming soon!
 
 <a href="https://nextdns.io">NextDNS</a>
 
+
+The Crazy Filter.txt has an issue, we will fix this as soon as we can.
+
