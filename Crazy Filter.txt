@@ -1,7 +1,7 @@
-!  Version: 68
+!  Version: 69
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 17:14 PM EDT
-! Expires: Depends
+! Last modified: April 28, 2026 17:15 PM EDT
+! Expires: Anytime
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
 @@||canyoublockit.com^$ghide
