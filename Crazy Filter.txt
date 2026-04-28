@@ -1,10 +1,18 @@
-!  Version: 59
+!  Version: 60
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 12:06 PM EDT
+! Last modified: April 28, 2026 14:16 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+@@||canyoublockit.com^$ghide
+||youtube-nocookie.com/api/stats/atr?ns=
+||youtube-nocookie.com/youtubei/v1/log_event?
 ##.post-ads
+/.*/$permissions=join-ad-interest-group=(),document
+/.*/$permissions=run-ad-auction=(),document
+/.*/$permissions=browsing-topics=(),document
+/.*/$permissions=private-state-token-issuance=(),document
+/.*/$permissions=private-state-token-redemption=(),document
 /.*/$permissions=join-ad-interest-group=(),document
 /.*/$permissions=run-ad-auction=(),document
 /.*/$permissions=browsing-topics=(),document
