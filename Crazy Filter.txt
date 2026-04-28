@@ -1,6 +1,6 @@
-!  Version: 64
+!  Version: 65
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 14:45 PM EDT
+! Last modified: April 28, 2026 15:04 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -199,6 +199,41 @@ $cookie=/.+/,third-party
 /.*/$permissions=private-state-token-issuance=(),document
 /.*/$permissions=private-state-token-redemption=(),document
 ##.adbox-wrapper
+||getadblock.com/js/log.js
+/.*/$permissions=join-ad-interest-group=(),document
+/.*/$permissions=run-ad-auction=(),document
+/.*/$permissions=browsing-topics=(),document
+/.*/$permissions=private-state-token-issuance=(),document
+/.*/$permissions=private-state-token-redemption=(),document
+||bing.com/fd/ls/l?IG=
+||bing.com/geolocation/write?
+||bing.com/rewardsapp/reportActivity?
+||bing.com/rewardsapp/reportActivity?
+||bing.com/fd/ls/l?IG=
+||bing.com/rewardsapp/reportActivity?
+||bing.com/fd/ls/GLinkPing.aspx?
+||bing.com^*/GLinkPingPost.aspx$ping,xmlhttprequest
+||support.microsoft.com/*/ms.analytics-web-*.min.js
+||js.monitor.azure.com/scripts/c/ms.shared.analytics.$domain=microsoft.com
+||apple.com/metrics/
+||securemetrics.apple.com^
+$cookie=s_fid
+$cookie=s_cc
+||consent.trustarc.com/analytics?
+||roblox.com^$cookie=RBXSessionTracker
+||ns1p.net^$third-party
+||roblox.com/www/e.png?
+
+
+
+
+
+
+
+
+
+
+
 
 
 
