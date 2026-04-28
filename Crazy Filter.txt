@@ -1,6 +1,6 @@
-!  Version: 62
+!  Version: 63
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 14:37 PM EDT
+! Last modified: April 28, 2026 14:40 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -175,13 +175,14 @@ $cookie=/.+/,third-party
 ||getsentry.com^$third-party,domain=~sentry.dev|~sentry.io
 ||trk.pinterest.com^$third-party
 ||data.hicloud.com^$third-party
-
-
-
-
-
-
-
+/pagead.js$domain=adblock.turtlecute.org
+/widget/ads.
+||udcm.yahoo.com^
+||appmetrica.yandex.ru^
+||metrika.yandex.ru^
+||log.fc.yahoo.com^
+||gemini.yahoo.com^
+||adtech.yahooinc.com^
 
 
 
