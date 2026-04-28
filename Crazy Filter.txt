@@ -1,9 +1,14 @@
-!  Version: 57
+!  Version: 58
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 12:04 PM EDT
+! Last modified: April 28, 2026 12:06 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+/.*/$permissions=join-ad-interest-group=(),document
+/.*/$permissions=run-ad-auction=(),document
+/.*/$permissions=browsing-topics=(),document
+/.*/$permissions=private-state-token-issuance=(),document
+/.*/$permissions=private-state-token-redemption=(),document
 /ajax/bz?_
 ||roblox.com/www/e.png?
 /.*/$permissions=private-state-token-redemption=(),document
