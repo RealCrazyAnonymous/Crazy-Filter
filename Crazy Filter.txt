@@ -1,9 +1,10 @@
-!  Version: 58
+!  Version: 59
 ! Title: Crazy Filter
 ! Last modified: April 28, 2026 12:06 PM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
+##.post-ads
 /.*/$permissions=join-ad-interest-group=(),document
 /.*/$permissions=run-ad-auction=(),document
 /.*/$permissions=browsing-topics=(),document
