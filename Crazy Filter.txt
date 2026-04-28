@@ -1,6 +1,6 @@
-!  Version: 51
+!  Version: 52
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 11:17 AM EDT
+! Last modified: April 28, 2026 11:21 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -75,7 +75,7 @@ $cookie=/^AMCVS?_.*AdobeOrg/
 /.*/$permissions=private-state-token-redemption=(),document
 /.*/$permissions=private-state-token-issuance=(),document
 /.*/$permissions=run-ad-auction=(),document
-
+.pageview-props.*js$script
 
 
 
