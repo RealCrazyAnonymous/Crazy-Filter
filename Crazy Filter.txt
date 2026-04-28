@@ -1,9 +1,37 @@
-!  Version: 49
+!  Version: 50
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 10:45 AM EDT
+! Last modified: April 28, 2026 11:05 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
-||gstatic.com^
-||fonts.googleapis.com^
-||fonts.gstatic.com^
+||/?sentry_version=
+||plausible.io^$third-party
+||googletagmanager.com/gtm.js$third-party,script,redirect=google-analytics,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com|~linodellefateresort.com
+||x.com^$cookie=guest_id_ads
+||x.com^$cookie=guest_id_marketing
+||google.com/gsi/log?
+||.pageview-props.*js$script
+||instagram.com/ajax/bz^
+||instagram.com/ajax/qm/?^
+||facebook.com/ajax/qm/^
+||gstatic.com
+||fonts.googleapis.com
+||fonts.gstatic.com
+||/?sentry_version=
+||plausible.io^$third-party
+||googletagmanager.com/gtm.js$third-party,script,redirect=google-analytics,domain=~corsair.com|~olx.*|~simon.com|~bethesda.net|~paddle.com|~linodellefateresort.com
+||.pageview-props.*js$script
+||instagram.com/ajax/qm/?
+$cookie=MUIDB
+||bing.com/fd/ls/
+||bing.com/geolocation/write?
+||bing.com/rewardsapp/reportActivity?
+||bing.com/fd/ls/
+$cookie=/.+/,third-party
+||bing.com/notifications/render?
+||c.msn.com^
+$cookie=MicrosoftApplicationsTelemetryDeviceId
+$ping,third-party
+$cookie=MicrosoftApplicationsTelemetryDeviceId
+||collector.github.com^
+||api.github.com/_private/browser/stats$important
