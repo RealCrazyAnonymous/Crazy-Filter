@@ -1,6 +1,6 @@
-!  Version: 54
+!  Version: 55
 ! Title: Crazy Filter
-! Last modified: April 28, 2026 11:29 AM EDT
+! Last modified: April 28, 2026 11:31 AM EDT
 ! Expires: Depends
 ! Homepage: https://github.com/RealCrazyAnonymous/Crazy-Filter
 !
@@ -11,9 +11,9 @@
 ||x.com^$cookie=guest_id_marketing
 ||google.com/gsi/log?
 ||.pageview-props.*js$script
-||instagram.com/ajax/bz^
-||instagram.com/ajax/qm/?^
-||facebook.com/ajax/qm/^
+||instagram.com/ajax/bz
+||instagram.com/ajax/qm/?
+||facebook.com/ajax/qm/
 ||gstatic.com
 ||fonts.googleapis.com
 ||fonts.gstatic.com
