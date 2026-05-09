@@ -17,6 +17,8 @@
 # hosts
 # Ads
 #AdBlock 3
+https://browser.sentry-cdn.com/7.120.4/bundle.tracing.replay.min.js
+https://browser.sentry-cdn.com/7.81.1/bundle.tracing.replay.min.js
 https://an.yandex.ru/system/context.js
 https://browser.sentry-cdn.com
 https://mc.yandex.ru/metrika/tag.js
