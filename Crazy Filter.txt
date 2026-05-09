@@ -17,6 +17,14 @@
 # hosts
 # Ads
 #AdBlock 3
+https://an.yandex.ru/system/context.js
+https://browser.sentry-cdn.com
+https://mc.yandex.ru/metrika/tag.js
+https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+https://sessions.bugsnag.com/
+https://static.hotjar.com/c/hotjar-1639117.js?sv=6
+https://www.googletagmanager.com/gtag/js?id=G-EPK7X69JWC
+https://ymatuhin.ru/ads/ads.js
 adblock.turtlecute.org##.adbox.banner_ads.adsbox
 adblock.turtlecute.org##.textads
 amazon-adsystem.com
