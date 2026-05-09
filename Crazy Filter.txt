@@ -17,6 +17,8 @@
 # hosts
 # Ads
 #AdBlock 3
+adblock.turtlecute.org##.adbox.banner_ads.adsbox
+adblock.turtlecute.org##.textads
 amazon-adsystem.com
 aax.amazon-adsystem.com
 aan.amazon.com
