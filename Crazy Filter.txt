@@ -4772,3 +4772,34 @@ adblock.turtlecute.org##.textads
 ||ssl.p.jwpcdn.com^
 ||prd.jwpltx.com^
 ||vid.connatix.com^
+tienichmaytinh.net##+js(aopr, adsBlocked)
+
+# Google Ads
+0.0.0.0 pagead2.googlesyndication.com
+0.0.0.0 pagead2.googleadservices.com
+
+# block google ads / analytics
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 gcdn.2mdn.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 googleads4.g.doubleclick.net
+0.0.0.0 ad.dk.doubleclick.net
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 ad.es.doubleclick.net
+0.0.0.0 adclick.g.doublecklick.net
+0.0.0.0 adclick.g.doubleclick.net
+0.0.0.0 adeventtracker.spotify.com
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 static.doubleclick.net
+0.0.0.0 m.doubleclick.net
+0.0.0.0 mediavisor.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 pagead.l.doubleclick.net
+0.0.0.0 bea4.v.fwmrm.net
+0.0.0.0 2975c.v.fwmrm.net
+0.0.0.0 vid.connatix.com
+||googleads.g.doubleclick.net/pagead/ads
+||securepubads.g.doubleclick.net/gampad/ads
+||pubads.g.doubleclick.net/gampad/ads
