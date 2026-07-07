@@ -19,48 +19,48 @@
 # Ads
 #AdBlock 3
 
-!============ Ads =============
+#============ Ads =============
 
-! --- Amazon
+# --- Amazon
 ||adtago.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
 ||analytics.s3.amazonaws.com^
 ||advice-ads.s3.amazonaws.com^
 
-! --- Google Ads
+# --- Google Ads
 ||pagead2.googlesyndication.com^
 ||adservice.google.com^
 ||pagead2.googleadservices.com^
 ||afs.googlesyndication.com^
 
-! --- Doubleclick.net
+# --- Doubleclick.net
 ||stats.g.doubleclick.net^
 ||ad.doubleclick.net^
 ||static.doubleclick.net^
 ||m.doubleclick.net^
 ||mediavisor.doubleclick.net^
 
-! --- Adcolony
+# --- Adcolony
 ||ads30.adcolony.com^
 ||adc3-launch.adcolony.com^
 ||events3alt.adcolony.com^
 ||wd.adcolony.com^
 
-! --- Media.net
+# --- Media.net
 ||static.media.net^
 ||media.net^
 ||adservetx.media.net^
 
 
-!========= Analytics ==========
+#========= Analytics ==========
 
-! --- Google Analytics
+# --- Google Analytics
 ||analytics.google.com^
 ||click.googleanalytics.com^
 ||google-analytics.com^
 ||ssl.google-analytics.com^
 
-! --- Hotjar
+# --- Hotjar
 ||adm.hotjar.com^
 ||identify.hotjar.com^
 ||insights.hotjar.com^
@@ -69,7 +69,7 @@
 ||careers.hotjar.com^
 ||events.hotjar.io^
 
-! --- MouseFlow
+# --- MouseFlow
 ||mouseflow.com^
 ||cdn.mouseflow.com^
 ||o2.mouseflow.com^
@@ -78,12 +78,12 @@
 ||tools.mouseflow.com^
 ||cdn-test.mouseflow.com^
 
-! --- FreshWorks
+# --- FreshWorks
 ||freshmarketer.com^
 ||claritybt.freshmarketer.com^
 ||fwtracks.freshmarketer.com^
 
-! --- Luckyorange
+# --- Luckyorange
 ||luckyorange.com^
 ||api.luckyorange.com^
 ||realtime.luckyorange.com^
@@ -93,50 +93,50 @@
 ||cs.luckyorange.net^
 ||settings.luckyorange.net^
 
-! --- Stats WP Plugin
+# --- Stats WP Plugin
 ||stats.wp.com^
 
 
-!======= Error Trackers =======
+#======= Error Trackers =======
 
-! --- Bugsnag
+# --- Bugsnag
 ||notify.bugsnag.com^
 ||sessions.bugsnag.com^
 ||api.bugsnag.com^
 ||app.bugsnag.com^
 
-! --- Sentry
+# --- Sentry
 ||browser.sentry-cdn.com^
 ||app.getsentry.com^
 
 
-!====== Social Trackers =======
+#====== Social Trackers =======
 
-! --- Facebook
+# --- Facebook
 ||pixel.facebook.com^
 ||an.facebook.com^
 
-! --- Twitter
+# --- Twitter
 ||static.ads-twitter.com^
 ||ads-api.twitter.com^
 
-! --- LinkedIn
+# --- LinkedIn
 ||ads.linkedin.com^
 ||analytics.pointdrive.linkedin.com^
 
-! --- Pinterest
+# --- Pinterest
 ||ads.pinterest.com^
 ||log.pinterest.com^
 ||trk.pinterest.com^
 
-! --- Reddit
+# --- Reddit
 ||events.reddit.com^
 ||events.redditmedia.com^
 
-! --- YouTube
+# --- YouTube
 ||ads.youtube.com^
 
-! --- TikTok
+# --- TikTok
 ||ads-api.tiktok.com^
 ||analytics.tiktok.com^
 ||ads-sg.tiktok.com^
@@ -146,9 +146,9 @@
 ||log.byteoversea.com^
 
 
-!============ Mix =============
+#============ Mix =============
 
-! --- Yahoo
+# --- Yahoo
 ||ads.yahoo.com^
 ||analytics.yahoo.com^
 ||geo.yahoo.com^
@@ -159,7 +159,7 @@
 ||gemini.yahoo.com^
 ||adtech.yahooinc.com^
 
-! --- Yandex
+# --- Yandex
 ||extmaps-api.yandex.net^
 ||appmetrica.yandex.ru^
 ||adfstat.yandex.ru^
@@ -167,22 +167,22 @@
 ||offerwall.yandex.net^
 ||adfox.yandex.ru^
 
-! --- Unity
+# --- Unity
 ||auction.unityads.unity3d.com^
 ||webview.unityads.unity3d.com^
 ||config.unityads.unity3d.com^
 ||adserver.unityads.unity3d.com^
 
 
-!============ OEMs ============
+#============ OEMs ============
 
-! --- Realme
+# --- Realme
 ||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
 ||bdapi-ads.realmemobile.com^
 ||bdapi-in-ads.realmemobile.com^
 
-! --- Xiaomi
+# --- Xiaomi
 ||api.ad.xiaomi.com^
 ||data.mistat.xiaomi.com^
 ||data.mistat.india.xiaomi.com^
@@ -191,13 +191,13 @@
 ||sdkconfig.ad.intl.xiaomi.com^
 ||tracking.rus.miui.com^
 
-! --- Oppo
+# --- Oppo
 ||adsfs.oppomobile.com^
 ||adx.ads.oppomobile.com^
 ||ck.ads.oppomobile.com^
 ||data.ads.oppomobile.com^
 
-! --- Huawei
+# --- Huawei
 ||metrics.data.hicloud.com^
 ||metrics2.data.hicloud.com^
 ||grs.hicloud.com^
@@ -205,18 +205,18 @@
 ||logservice1.hicloud.com^
 ||logbak.hicloud.com^
 
-! --- OnePlus
+# --- OnePlus
 ||click.oneplus.cn^
 ||open.oneplus.net^
 
-! --- Samsung
+# --- Samsung
 ||samsungads.com^
 ||smetrics.samsung.com^
 ||nmetrics.samsung.com^
 ||samsung-com.112.2o7.net^
 ||analytics-api.samsunghealthcn.com^
 
-! --- Apple
+# --- Apple
 ||iadsdk.apple.com^
 ||metrics.icloud.com^
 ||metrics.mzstatic.com^
