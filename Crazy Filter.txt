@@ -19,6 +19,40 @@
 # hosts
 # Ads
 #AdBlock 3
+##.ad-slot:not(.adsbox):not(.adsbygoogle)
+#@#.ad-300x250
+##.ad-300x250:not(.ads)
+||doubleclick.net^$xhr,redirect=noop.txt
+||media.fastclick.net/|$xhr,3p,redirect=noop.txt
+||ads.facebook.com/|$xhr,3p,redirect=noop.txt
+||advice-ads.s3.amazonaws.com/|$xhr,3p,redirect=noop.txt
+openchat-review.me##+js(aost, document.querySelectorAll, security.js)
+streamcash.to##+js(rmnt, script, /\${''}|body:JSON\.stringify/)
+streamcash.to##div[id]:has(button[onclick*="location.reload()"])
+phototrans.de,phototrans.eu,phototrans.hu,phototrans.pl##+js(rmnt, script, !adsbygoogle.loaded)
+phototrans.de,phototrans.eu,phototrans.hu,phototrans.pl##div.bus_content:first-child:has(.adsbygoogle)
+boote-magazin.de##+js(set, HTMLScriptElement.prototype.onerror, undefined)
+! https://github.com/uBlockOrigin/uAssets/issues/33449
+akirabox.com,akirabox.to,bowfile.com,buzzheavier.com,bzzhr.co,bzzhr.to,datavaults.co,fuckingfast.*,multiup.io,rootz.so,usersdrive.com,vik1ngfile.site,zpaste.net#@#+js(set, Document.prototype.createElement.call, noopFunc)
+! https://github.com/uBlockOrigin/uAssets/issues/33280
+||doubleclick.net^$xhr,redirect=noop.txt
+0.0.0.0 www.googleadservices.com
+0.0.0.0 www.googletagservices.com
+0.0.0.0 pagead2.googlesyndication.com #[Google AdWords]
+https://id.rlcdn.com/472486.gif
+https://www.googletagmanager.com/gtag/js?id=AW-788729857
+https://www.redditstatic.com/shreddit/sentry-DswLfAC_.js
+/client_204?atyp=i&biw=1366&bih=647&dpr=1&ei=1TdNapbdHOmv5NoP_ZeK4QI&opi=89978449
+/gen_204?atyp=csi&ei=1TdNapbdHOmv5NoP_ZeK4QI&s=promo&rt=hpbas.1069&zx=1783445462736&opi=89978449
+/gen_204?atyp=csi&ei=1TdNapbdHOmv5NoP_ZeK4QI&s=promo&rt=hpbas.1069,hpbarr.2&zx=1783445462738&opi=89978449
+/gen_204?atyp=csi&ei=1TdNapbdHOmv5NoP_ZeK4QI&s=webhp&t=all&folr=_1TdNapbdHOmv5NoP_ZeK4QI_9&imn=10&dtc=187&stc=58&ima=0&imad=0&imac=0&wh=647&nt=navigate&dt=&ts=68353&nhp=h3&ant=push&tbdba=566&tbdaa=0&thdba=0&thdaa=0&ime=0&imeh=0&imeha=0&imehb=0&imea=0&imeb=0&imel=0&imed=0&imeeb=0&imexb=0&scp=0&cb=68053&ucb=230518&lts=68353&adh=&mem=ujhs.15,tjhs.18,jhsl.4396,dm.16&nv=ne.1,feid.c66aa903-33d7-4b8e-b7d1-7e79e1c6db7a&net=&hp=&p=bs.true&rt=hst.587,prt.849,aft.849,xjses.859,xjsee.929,xjs.930,wsrt.463,cst.0,dnst.0,rqst.159,rspt.40,sslt.0,rqstt.344,unt.218,cstt.342,dit.1318&zx=1783445462602&opi=89978449
+/gen_204?atyp=i&ct=psnt&cad=&nt=navigate&ei=1TdNapbdHOmv5NoP_ZeK4QI&zx=1783445462992&opi=89978449
+/gen_204?atyp=i&ei=1TdNapbdHOmv5NoP_ZeK4QI&ct=slh&v=t1&m=V&pv=0.0923807341257935&me=1:1783445462515,V,0,0,1366,647:0,B,647:0,N,1,1TdNapbdHOmv5NoP_ZeK4QI:0,R,1,1,0,0,1366,647:0,R,1,8,345,186,36,36:0,R,1,18,833,192,40,24:0,R,1,20,873,192,40,24:590,x:607,e,B&zx=1783445463713&opi=89978449
+/gen_204?atyp=i&ei=1TdNapbdHOmv5NoP_ZeK4QI&dt19=2&prm23=0&zx=1783445463101&opi=89978449
+/gen_204?atyp=i&ei=1TdNapbdHOmv5NoP_ZeK4QI&vet=10ahUKEwjWm9SJjMGVAxXpF1kFHf2LIiwQuqMJCDk..s&bl=6TCe&s=webhp&lpl=CAUYAzAKOANiCAgBEOCj8bkDgAEB&zx=1783445463135&opi=89978449
+/gen_204?s=async&astyp=hpba&t=all&atyp=csi&ei=1jdNav-pGaDX5NoP0KvhKA&rt=ipf.5,ipfr.134,ttfb.134,st.134,ipfrl.136,acrt.136,aaft.136,art.138,ns.-1277&twt=2&mwt=2&imn=0&ima=0&sv=&cb=111&ucb=101&folid=_1TdNapbdHOmv5NoP_ZeK4QI_9
+/gen_204?s=webhp&t=aft&atyp=csi&ei=1TdNapbdHOmv5No
+||doubleclick.net^
 https://ad.doubleclick.net/fakepage.html
 /js/pagead.js
 /js/widget/ads.js
