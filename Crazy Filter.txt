@@ -2,7 +2,7 @@
 
 # Expires: Depends
 
-# If any issue, please email me (crazyanonymousofficial@proton.me)
+# If any issue, please email us (crazyanonymousofficial@proton.me)
 
 # date 7/7/2026
 # note: We are working on more blocking.
