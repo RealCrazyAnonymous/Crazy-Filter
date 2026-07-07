@@ -1,3 +1,24 @@
+# AdBlock by Crazy Anonymous
+
+# Expires: Depends
+
+# If any issue, please email me (crazyanonymousofficial@proton.me)
+
+# date 7/7/2026
+# note: We are working on more blocking.
+# abt
+# update-notes: We have fixed a few errors.
+
+# static
+# dynamic
+# script
+# ads
+# pagead
+# partnerads
+# hosts
+# Ads
+#AdBlock 3
+
 !============ Ads =============
 
 ! --- Amazon
