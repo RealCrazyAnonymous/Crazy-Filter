@@ -1,18 +1,20 @@
-﻿# AdBlock by Crazy Anonymous
+# AdBlock by Crazy Anonymous
 
 # Expires: Depends
 
 # If any issue, please email me (crazyanonymousofficial@proton.me)
 
-# date 5/9/2026
-# note: We are working on more blocking. 
+# date 7/7/2026
+# note: We are working on more blocking.
 # abt
+# update-notes: We have fixed 2 errors.
 
-# static 
+
+# static
 # dynamic
 # script
 # ads
-# pagead 
+# pagead
 # partnerads
 # hosts
 # Ads
@@ -237,7 +239,6 @@ metrics.brightcove.com
 s.innovid.com
 tremorhub.com
 ads.tremorhub.com
-
 
 https://a.teads.tv
 https://aan.amazon.com
@@ -822,8 +823,6 @@ pagead2.googlesyndication.com
 stats.g.doubleclick.net
 ad.doubleclick.net
 static.doubleclick.net
-||d3ward.github.io##.adbox.banner_ads.adsbox
-||d3ward.github.io##.textads
 ||/pagead.js$domain=d3ward.github.io
 ||/widget/ads.
 ||static.ads-twitter.com
@@ -837,10 +836,10 @@ static.doubleclick.net
 advertising-api-eu.amazon.com
 adtago.s3.amazonaws.com
 analyticsengine.s3.amazonaws.com
-analytics.s3.amazonaws.com 
-advice-ads.s3.amazonaws.com 
+analytics.s3.amazonaws.com
+advice-ads.s3.amazonaws.com
 # Google Ads
-pagead2.googlesyndication.com 
+pagead2.googlesyndication.com
 pagead2.googleadservices.com
 adservice.google.com
 afs.googlesyndication.com
@@ -890,7 +889,7 @@ luckyorange.com
 api.luckyorange.com
 realtime.luckyorange.com
 cdn.luckyorange.com
-w1.luckyorange.com 
+w1.luckyorange.com
 upload.luckyorange.net
 cs.luckyorange.net
 settings.luckyorange.net
@@ -914,7 +913,7 @@ an.facebook.com
 :: static.ads-twitter.com
 ads-api.twitter.com
 # LinkedIn
-ads.linkedin.com 
+ads.linkedin.com
 analytics.pointdrive.linkedin.com
 # Pinterest
 ads.pinterest.com
@@ -17528,3 +17527,4 @@ https://www.github.developerdan.com/hosts/lists/facebook-extended.txt
 https://www.github.developerdan.com/hosts/lists/hate-and-junk-extended.txt
 pagead.js
 gemini.yahoo.com
+
