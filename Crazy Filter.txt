@@ -225,6 +225,16 @@
 ||weather-analytics-events.apple.com^
 ||notes-analytics-events.apple.com^
 
+# --- Ads_Tracking
+||btcpay.priorato.org^
+||umami.priorato.org^
+/assets/adblock/icon.svg
+/assets/partners/nym-vpn-web.png
+/css/index.css
+/js/index.js
+/js/pagead.js
+/js/widget/ads.js
+
 *$3p,domain=adblock.turtlecute.org
 /pagead.js$domain=adblock.turtlecute.org
 @@*$redirect-rule,domain=adblock.turtlecute.org
