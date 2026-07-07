@@ -234,6 +234,11 @@
 /js/index.js
 /js/pagead.js
 /js/widget/ads.js
+||cmp.setupcmp.com^
+myCookieConsent
+ins.adsbygoogle[data-ad-client]
+ins.adsbygoogle[data-ad-slot]
+
 
 *$3p,domain=adblock.turtlecute.org
 /pagead.js$domain=adblock.turtlecute.org
