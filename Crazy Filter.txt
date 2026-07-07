@@ -4638,3 +4638,7 @@ longhall.consulting#%#//scriptlet('ubo-rmnt', 'script', '/document\.currentScrip
 /api/v2/session/touch_track
 /ccm/collect?rcb=17&frm=0&ae=g&auid=1898856102.1783456459&dt=Electronics%20Store%3A%20Tech%2C%20PC%20Parts%2C%20AI%20PC%20%26%20More%20%7C%20Newegg&en=page_view&dl=https%3A%2F%2Fwww.newegg.com%2F&scrsrc=imk.neweggimages.com&rnd=292025140.1783456552&navt=r&npa=0&ep.ads_data_redaction=0&gtm=45He66h0v810635197za204zd810635197xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118395334~119027224~119392696~119392704&apve=1&apvf=f&apvc=1&tft=1783456552285&tfd=343
 /g/collect?v=2&tid=G-TR46GG8HLR&gtm=45je66h0v894488550z8810635197za20kzb810635197zd810635197&_p=1783456552177&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQ&cid=185979275.1783456461&frm=0&pscdl=noapi&rcb=5&sr=1440x900&uaa=x86&uab=64&uafvl=Not%253BA%253DBrand%3B8.0.0.0%7CChromium%3B150.0.0.0%7CBrave%3B150.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0.0&uaw=0&ul=en-us&gaf=3&tag_exp=115938465%7E115938468%7E119027224%7E119392696%7E119392704%7E119534188&sid=1783456460&sct=1&seg=1&dl=https%3A%2F%2Fwww.newegg.com%2F&dt=Electronics+Store%3A+Tech%2C+PC+Parts%2C+AI+PC+%26+More+%7C+Newegg&_s=1&tfd=2063
+*$3p,domain=adblock.turtlecute.org
+/pagead.js$domain=adblock.turtlecute.org
+@@*$redirect-rule,domain=adblock.turtlecute.org
+adblock.turtlecute.org##.textads
