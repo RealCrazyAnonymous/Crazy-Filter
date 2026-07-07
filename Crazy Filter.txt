@@ -229,3 +229,5 @@
 /pagead.js$domain=adblock.turtlecute.org
 @@*$redirect-rule,domain=adblock.turtlecute.org
 adblock.turtlecute.org##.textads
+ads.js
+pagead.js
