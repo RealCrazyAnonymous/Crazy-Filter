@@ -6108,3 +6108,23 @@ https://zenaps.com
 ||ads-api.vivo.com^
 
 /partytown-sw.js^
+/ads
+/ad
+/adserver
+/adserver/ads
+/pagead
+/pagead/ads
+/gampad/ads
+/doubleclick/ad
+/vast
+/vpaid
+/prebid
+/bidder
+/hb
+/ads.js
+/ad.js
+/pagead.js
+/advertisement.js
+/adsbygoogle.js
+/analytics/collect
+/tracking/pixel
