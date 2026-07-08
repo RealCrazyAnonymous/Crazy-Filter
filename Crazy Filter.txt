@@ -31146,7 +31146,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 zulu.r867qq.net
 127.0.0.1 zytpirwai.net
 #</ad-sites>
-
+# https://connect.facebook.net/en_US/sdk.js
 # https://securehomes.esat.kuleuven.be/~gacar/persistent/index.html
 #<canvass-fingerprinting-sites>
 127.0.0.1 admicro1.vcmedia.vn
