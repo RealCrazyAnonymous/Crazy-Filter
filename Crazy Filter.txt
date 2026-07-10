@@ -432,3 +432,12 @@ pornhub.com##+js(abort-current-script, JSON.parse, /interstitial?viewkey=)
 pornhub.com##+js(set-constant, page_params.holiday_promo_prem, true)
 pornhub.com##+js(prevent-setTimeout, \x41\x64\x62\x6c\x6f\x63\x6b\x20\x66\x6f\x72\x20\x70\x6f\x72\x6e\x68\x75\x62)
 *$xhr,3p,redirect-rule=nooptext:-1,method=head,to=~adblockanalytics.com|~doubleclick.net|~pagead2.googlesyndication.com
+www.pornhub.com##.mgp_adRollEventCatcher.mgp_clickable
+
+adblock-tester.com##[src*="\/banners\/pr_advertising_ads_banner\.gif"]
+adblock-tester.com##[src*="\/banners\/pr_advertising_ads_banner\.png"]
+adblock-tester.com##embed
+adblock-tester.com##object
+adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(3) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
+adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(2) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
+adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(1) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
