@@ -246,6 +246,7 @@ myCookieConsent
 /banners/pr_advertising_ads_banner.png
 /banners/pr_advertising_ads_banner.swf
 adblock-tester.com##object[width="240"]
+||totaladblock.com^$document
 ||facebook.com/ajax/bnzai*__comet_req=
 ||adroll.com^
 ||googlesyndication.com^
