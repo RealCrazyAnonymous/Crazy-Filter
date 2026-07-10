@@ -6,7 +6,7 @@
 
 ! Title: Crazy Filter
 ! Author: Crazy Anonymous
-! Date 7/10/2026
+# date 7/10/2026
 # note: We are working on more blocking.
 # abt
 # update-notes: We added more blocking.
@@ -78987,3 +78987,19 @@ gamcore.com##li.d-md-block > a[rel]
 ! Anti-Adblock
 @@://xhamster.$script,~third-party
 @@||milfzr.com^$generichide
+canyoublockit.com##.attachment-large.size-large.wp-image-437.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-22085.entered.litespeed-loaded
+canyoublockit.com##.attachment-full.size-full.wp-image-1133.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-3462.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-30781.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-27181.entered.litespeed-loaded
+canyoublockit.com###fp-video-0
+canyoublockit.com###fluid_video_wrapper_fp-video-0
+canyoublockit.com##.attachment-large.size-large.wp-image-3464.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-142627.entered.litespeed-loaded
+canyoublockit.com##.attachment-large.size-large.wp-image-142662.entered.litespeed-loaded
+canyoublockit.com##center > button
+canyoublockit.com##.wp-caption > .entered.litespeed-loaded
+canyoublockit.com##.attachment-full.size-full.wp-image-143013
+canyoublockit.com##.attachment-large.size-large.wp-image-143021
+cznull.github.io###c1
