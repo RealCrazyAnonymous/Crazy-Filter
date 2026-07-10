@@ -237126,10 +237126,87 @@ mobi24.net#@#a[href^="https://www.mobi24.net/"]
 @@||googlesyndication.com^$script
 
 # Malware Domains List
-0.0.0.0 malwaredomain1.com
-0.0.0.0 malicious-site.net
-0.0.0.0 bad-url.com
+172.0.0.1 malwaredomain1.com
+172.0.0.1 malicious-site.net
+172.0.0.1 bad-url.com
 
 # PhishTank
-0.0.0.0 phishtanklistedsite.com
-0.0.0.0 suspiciousphishing.com
+172.0.0.1 phishtanklistedsite.com
+172.0.0.1 suspiciousphishing.com
+
+##script:has(src*="fingerprint")
+##script:has(src*="fingerprintjs")
+##script:has(src*="fingerprint2")
+##script:has(src*="amplifypixel")
+##script:has(src*="fingerprint")
+||fingerprintjs.com^
+||amplifypixel.com^
+||trackingserver.com^
+! EasyList - General Ad and Tracker Blocking
+||adservice.google.com^
+||googlesyndication.com^
+||google-analytics.com^
+||doubleclick.net^
+||adnxs.com^
+||scorecardresearch.com^
+||adroll.com^
+||taboola.com^
+||outbrain.com^
+
+! Malware and Phishing Domains
+172.0.0.1 malwaredomain1.com
+172.0.0.1 malicious-site.net
+172.0.0.1 bad-url.com
+172.0.0.1 phishtanklistedsite.com
+172.0.0.1 suspiciousphishing.com
+
+! Block Known Anti-Fingerprinting Scripts and Domains
+##script:has(src*="fingerprint")
+##script:has(src*="fingerprintjs")
+##script:has(src*="fingerprint2")
+##script:has(src*="amplifypixel")
+||fingerprintjs.com^
+||amplifypixel.com^
+
+! Block Fingerprinting Domains
+||fingerprintjs.com^
+||amplifypixel.com^
+
+! Block Anti-Fingerprint Behaviors (optional, depends on support)
+##body:style(font-family:"" "Arial" "Helvetica")
+
+||abcnews.com.co^
+||worldnewsdailyreport.com^
+||naturalnews.com^
+||beforeitsnews.com^
+||yournewswire.com^
+||infowars.com^
+||thegatewaypundit.com^
+||conservativeinstitute.org^
+||theepochtimes.com^
+||rt.com^
+||abcnews.com.co^
+||worldnewsdailyreport.com^
+||naturalnews.com^
+||beforeitsnews.com^
+||yournewswire.com^
+||infowars.com^
+||thegatewaypundit.com^
+||conservativeinstitute.org^
+||theepochtimes.com^
+||rt.com^
+||activistpost.com^
+||washingtonsblog.com^
+||truthfeed.com^
+||worldtruth.tv^
+||nowtheendbegins.com^
+||endtime.com^
+||beforeitsnews.com^
+||thegatewaypundit.com^
+||climatescience.com^
+||climatedepot.com^
+||naturalnews.com^
+||theamericanthinker.com^
+||zerohedge.com^
+||zerohedge.com^
+||thegatewaypundit.com^
