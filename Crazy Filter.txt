@@ -1,6 +1,6 @@
 # AdBlock & Tracking Blocker by Crazy Anonymous
 
-! Expires: Never
+! Expires: 1 Day
 ! Updates: Always
 
 # Expire-Note - Does not expire - Note: This will be constant updates every day and night.
