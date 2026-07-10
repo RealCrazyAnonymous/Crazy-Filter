@@ -86328,3 +86328,7 @@ gaara-fr.com###ga-skin-top
 ||btcpay.priorato.org^
 ||umami.priorato.org^
 ||googletagmanager.com^
+||ep1.adtrafficquality.google^
+||googleads.g.doubleclick.net^
+||static.doubleclick.net^
+||googleadservices.com^
