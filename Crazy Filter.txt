@@ -4,11 +4,12 @@
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
-#Title: Crazy Filter
+# Title: Crazy Filter
+# Author: Crazy Anonymous
 # date 7/9/2026
 # note: We are working on more blocking.
 # abt
-# update-notes: We have fixed a few errors.
+# update-notes: We added more blocking.
 
 # static
 # dynamic
@@ -237,9 +238,14 @@
 /js/widget/ads.js
 ||cmp.setupcmp.com^
 myCookieConsent
-ins.adsbygoogle[data-ad-client]
-ins.adsbygoogle[data-ad-slot]
-
+##ins.adsbygoogle[data-ad-client]
+##ins.adsbygoogle[data-ad-slot]
+##embed[width="240"][height="400"]
+##[href^="https://url.totaladblock.com/"]
+/banners/pr_advertising_ads_banner.gif
+/banners/pr_advertising_ads_banner.png
+/banners/pr_advertising_ads_banner.swf
+adblock-tester.com##object[width="240"]
 ||facebook.com/ajax/bnzai*__comet_req=
 ||adroll.com^
 ||googlesyndication.com^
@@ -441,3 +447,13 @@ adblock-tester.com##object
 adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(3) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
 adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(2) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
 adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(1) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
+https://an.yandex.ru/system/context.js
+https://browser.sentry-cdn.com/7.81.1/bundle.tracing.replay.min.js
+https://d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js
+https://js.sentry-cdn.com/98eefed2636036c3bdb8377b11ff28fe.min.js
+https://mc.yandex.ru/metrika/tag.js
+https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496
+https://static.hotjar.com/c/hotjar-1639117.js?sv=6
+https://www.googletagmanager.com/gtag/js?id=G-EPK7X69JWC
+https://ymatuhin.ru/ads/ads.js
