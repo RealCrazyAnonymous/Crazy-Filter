@@ -86327,3 +86327,4 @@ gaara-fr.com###ga-skin-top
 ||collector.github.com^
 ||btcpay.priorato.org^
 ||umami.priorato.org^
+||googletagmanager.com^
