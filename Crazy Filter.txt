@@ -1,7 +1,6 @@
 # AdBlock & Tracking Blocker by Crazy Anonymous
 
 ! Expires: Never
-# Note about Expiring: We constantly update, but you can update it on your browser at any time.
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
@@ -237061,3 +237060,76 @@ rescuetime.com#@#.web-notification
 ! Mobile notifications
 mobi24.net#@#a[href^="http://www.mobi24.net/"]
 mobi24.net#@#a[href^="https://www.mobi24.net/"]
+||sentry.io^$script
+||d2wy8f7a9ursnm.cloudfront.net^$script
+||widget.bugsnag.com^$script
+||cdn.sentry.io^$script
+||js.sentry-cdn.com^$script
+##a[href*="ad"]
+##img[src*="ad"]
+##div[id*="ad"]
+##div[class*="ad"]
+||doubleclick.net^
+||adservice.google.com^
+||googlesyndication.com^
+||ads.yahoo.com^
+||adnxs.com^
+##object[type="application/x-shockwave-flash"]
+##embed[type="application/x-shockwave-flash"]
+||adobe.com^
+||macromedia.com^
+||*.gif^
+||mc.yandex.ru^$script
+||yandex.ru^$script
+##script:has(src*="mc.yandex.ru")
+##script:has(src*="yandex.ru")
+||static.hotjar.com^$script
+||script.hotjar.com^$script
+##script:has(src*="static.hotjar.com")
+##script:has(src*="script.hotjar.com")
+||www.googletagmanager.com^$script
+||www.google-analytics.com^$script
+##script:has(src*="googletagmanager.com")
+##script:has(src*="google-analytics.com")
+||maliciousdomain1.com^
+||badscript.com^
+||malwaredomain.net^
+##a[href*="ad"]
+##img[src*="ad"]
+##iframe[src*="ad"]
+##script[src*="ad"]
+||doubleclick.net^
+||adservice.google.com^
+||googlesyndication.com^
+||adnxs.com^
+||scorecardresearch.com^
+||adroll.com^
+||taboola.com^
+||outbrain.com^
+||maliciousdomain1.com^
+||badscript.com^
+||malwaredomain.net^
+||porndomain1.com^
+||malwaredomain1.com^
+||phishingsite1.com^
+||maliciousdomain2.net^
+||phishingdomain2.org^
+||malware-traffic.com^
+||malicious-site.net^
+||phishing-site.org^
+||bad-url.com^
+||fakewebsite.net^
+##a[href*="malware"]
+##a[href*="phishing"]
+# EasyList
+@@||adservice.google.com^$script
+@@||googlesyndication.com^$script
+
+# Malware Domains List
+0.0.0.0 malwaredomain1.com
+0.0.0.0 malicious-site.net
+0.0.0.0 bad-url.com
+
+# PhishTank
+0.0.0.0 phishtanklistedsite.com
+0.0.0.0 suspiciousphishing.com
