@@ -237507,3 +237507,13 @@ mobi24.net#@#a[href^="https://www.mobi24.net/"]
 ||tr.facebook.com^
 ||api.impact.com^
 ||api.viglink.com^
+||redirector.googlevideo.com^
+||decide.mixpanel.com^
+||crypto-loot.org^
+||pixel.facebook.com^
+||graph.instagram.com^
+||events.reddit.com^
+||pixel.quora.com^
+||click.linksynergy.com^
+||impact.com^
+||js.driftt.com^
