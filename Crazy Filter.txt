@@ -86365,3 +86365,5 @@ www.youtube.com##+js(trusted-click-element, ytd-button-renderer.ytd-consent-bump
 www.youtube.com##+js(trusted-click-element, .ytd-consent-bump-v2-lightbox > yt-button-shape > button[aria-label="Accept the use of cookies and other data for the purposes described"], '', 1000)
 ##+js(set-constant, google_ad_status, 1)
 ||ogads-pa.clients6.google.com^
+cznull.github.io###c1
+||pftka-us.temu.com^
