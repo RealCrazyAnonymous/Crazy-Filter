@@ -86366,4 +86366,7 @@ www.youtube.com##+js(trusted-click-element, .ytd-consent-bump-v2-lightbox > yt-b
 ##+js(set-constant, google_ad_status, 1)
 ||ogads-pa.clients6.google.com^
 cznull.github.io###c1
-||pftka-us.temu.com^
+||pftka-us.temu.com
+www.facebook.com##+js(json-prune, require.0.3.0.__bbox.require.[].3.1.__bbox.result.data.viewer.sideFeedUnit.nodes.[].new_adverts.nodes.[-].sponsored_data)
+www.facebook.com##div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] a[href*="fbclid"][href*="utm_medium"][href*="utm_source"][href*="utm_id"][href*="utm_content"][href*="utm_term"][href*="utm_campaign"]
+facebook.com##+js(remove-class, prevent-scrolling, body, stay)
