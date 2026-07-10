@@ -21380,7 +21380,6 @@ revolut.com#?#div[role="dialog"]:has-text(/Cookies|cookies/)
 minhaconexao.com.br##section[id][class]:has(:scope > div[class] > button[class][onclick^="onClickCookiesBannerWeb"])
 ! Scripts
 eduface.ru,edumsko.ru#@#.cookies_popup
-podleze-piekielko.pl#$#abort-on-property-read cookieman
 ! ABP Specific Exemptions
 epolisbari.com#@##COOKIEmodal
 garten-reiter.de#@##CookieMessage
@@ -82461,7 +82460,14 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ! ---------- Anti-Adblock ----------
 ! 
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
-_×
-Auto-Skip Ads
-OPTIONS
-Smuuvr v1.19.0
+||cdn.bannersnack.com^
+||cdn.iubenda.com^
+||deploy.mopinion.com^
+||pagead2.googlesyndication.com^
+||static.cloudflareinsights.com^
+||steadfastsystem.com^
+||www.googletagmanager.com^
+##ins.adsbygoogle[data-ad-slot]
+##center > p:contains(Advertisement)
+canyoublockit.com##.elementor-widget-container > center > p
+##interads
