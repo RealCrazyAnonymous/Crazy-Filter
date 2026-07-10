@@ -1,6 +1,7 @@
 # AdBlock & Tracking Blocker by Crazy Anonymous
 
-! Expires: Every Day
+! Expires: Never
+# Note about Expiring: We constantly update, but you can update it on your browser at any time.
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
