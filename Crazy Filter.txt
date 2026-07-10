@@ -1,6 +1,9 @@
 # AdBlock & Tracking Blocker by Crazy Anonymous
 
 ! Expires: Never
+! Updates: Always
+
+# Expire-Note - Does not expire - Note: This will be constant updates every day and night.
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
@@ -237398,3 +237401,109 @@ mobi24.net#@#a[href^="https://www.mobi24.net/"]
 ||spotify.com^
 ||adclick.g.doubleclick.net^
 ||adservice.google.com^
+! === Block all third-party requests and cookies ===
+||*^$third-party
+||google-analytics.com^
+||googlesyndication.com^
+||doubleclick.net^
+||adnxs.com^
+||scorecardresearch.com^
+||adroll.com^
+||taboola.com^
+||outbrain.com^
+||facebook.net^
+||facebook.com^
+||twitter.com^
+||platform.twitter.com^
+||ads.twitter.com^
+||analytics.twitter.com^
+||quantserve.com^
+||scorecardresearch.com^
+
+! === Block known malware, phishing, and spyware domains ===
+0.0.0.0 malwaredomain1.com
+0.0.0.0 malicious-site.net
+0.0.0.0 bad-url.com
+0.0.0.0 phishtanklistedsite.com
+0.0.0.0 suspiciousphishing.com
+||abcnews.com.co^
+||worldnewsdailyreport.com^
+||naturalnews.com^
+||beforeitsnews.com^
+||yournewswire.com^
+||infowars.com^
+||thegatewaypundit.com^
+||conservativeinstitute.org^
+||theepochtimes.com^
+||rt.com^
+||activistpost.com^
+||washingtonsblog.com^
+||truthfeed.com^
+||worldtruth.tv^
+||nowtheendbegins.com^
+||endtime.com^
+||climatescience.com^
+||climatedepot.com^
+
+! === Block anti-fingerprinting scripts and domains ===
+##script:has(src*="fingerprint")
+##script:has(src*="fingerprintjs")
+##script:has(src*="fingerprint2")
+##script:has(src*="amplifypixel")
+||fingerprintjs.com^
+||amplifypixel.com^
+
+! === Block common trackers and ad domains ===
+||adservice.google.com^
+||googlesyndication.com^
+||google-analytics.com^
+||doubleclick.net^
+||adnxs.com^
+||scorecardresearch.com^
+||adroll.com^
+||taboola.com^
+||outbrain.com^
+||facebook.net^
+||facebook.com^
+||twitter.com^
+||platform.twitter.com^
+||ads.twitter.com^
+||analytics.twitter.com^
+||quantserve.com^
+||scorecardresearch.com^
+
+! === Block additional known trackers, ads, malware, spyware, and suspicious domains ===
+||adform.net^
+||adtech.de^
+||adbutler.com^
+||adnxs.com^
+||criteo.com^
+||rubiconproject.com^
+||media.net^
+||serving-sys.com^
+||adsafeprotected.com^
+||zopim.com^
+||mixpanel.com^
+||hotjar.com^
+||connect.facebook.net^
+||cdn.mxpnl.com^
+||securepubads.g.doubleclick.net^
+||cdn.jsdelivr.net^
+||analytics.mxpnl.com^
+||spywaredomain.com^
+||malwaredomain.com^
+||trackingdomain.xyz^
+||adblocker.com^
+||clickme.com^
+||popads.net^
+||hulu.com^
+||spotify.com^
+||adclick.g.doubleclick.net^
+||adservice.google.com^
+
+! === Additional specific domains to block ===
+||quantserve.com^
+||an.facebook.com^
+||tr.facebook.com^
+||api.impact.com^
+||api.viglink.com^
