@@ -82469,8 +82469,6 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 ||www.googletagmanager.com^
 ##ins.adsbygoogle[data-ad-slot]
 ##center > p:contains(Advertisement)
-canyoublockit.com##.elementor-widget-container > center > p
-##interads
 canyoublockit.com##.attachment-large.size-large.wp-image-437.entered.litespeed-loaded
 canyoublockit.com##.attachment-large.size-large.wp-image-22085.entered.litespeed-loaded
 canyoublockit.com##.attachment-full.size-full.wp-image-1133.entered.litespeed-loaded
@@ -82484,6 +82482,9 @@ canyoublockit.com##.attachment-large.size-large.wp-image-142627.entered.litespee
 canyoublockit.com##.attachment-large.size-large.wp-image-142662.entered.litespeed-loaded
 canyoublockit.com##center > button
 canyoublockit.com##.wp-caption > .entered.litespeed-loaded
+canyoublockit.com##.attachment-full.size-full.wp-image-143013
+canyoublockit.com##.attachment-large.size-large.wp-image-143021
+##interads
 ! if (!awm) { window.location = 'http://adworkmedia.com/help/removeAB.php'; }
 ! if (!awm) { window.location = 'http://loxtk.com/help/removeAB.php'; }
 ! if (!awm) { window.location = 'http://contentlockingnetworks.com/help/removeAB.php'; }
