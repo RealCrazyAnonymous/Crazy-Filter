@@ -406190,6 +406190,10 @@ adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content
 adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(2) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
 adblock-tester.com##div.block.svelte-dpupje.section:nth-of-type(1) > div.content.svelte-dpupje:nth-of-type(2) > div.block.svelte-dpupje.service:nth-of-type(1) > .content.svelte-dpupje > .check-list.svelte-ln6iwr > li.svelte-1h1i54z:nth-of-type(2) > .includeWrapper.svelte-1h1i54z
 www.pornhub.com##.udrwiayaa.clearfix.noBottom > iframe
-
+adblock.turtlecute.org##.adbox.banner_ads.adsbox
+adblock.turtlecute.org##.textads
+/pagead.js$domain=adblock.turtlecute.org
+/widget/ads.
+/ads.js
 
 
