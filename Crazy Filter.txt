@@ -406339,3 +406339,8 @@ adblock.turtlecute.org##.textads
 /v1/games/report-event?name=WebChatRenderedWeb
 /v1/thumbnails/metadata
 ||o293668.ingest.us.sentry.io^
+roblox.com##+js(json-prune, sorts.[].recommendationList.[-].contentMetadata.EncryptedAdTrackingData)
+roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][href*="url=http"], ?url)
+roblox.com##+js(trusted-set-cookie, RBXcb, RBXViralAcquisition=false&RBXSource=false&GoogleAnalytics=false)
+
+
