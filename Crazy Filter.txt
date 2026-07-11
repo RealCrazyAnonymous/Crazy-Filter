@@ -406336,11 +406336,12 @@ adblock.turtlecute.org##.textads
 /www/e.png?state=false&evt=authPageload&ctx=accountSwitcherStatus&url=https%3A%2F%2Fwww.roblox.com%2Fcommunities%2F579580588%2FPIGEON-FLIGHT-INC%23!%2Fabout&lt=2026-07-11T03%3A29%3A15.672Z&gid=-1750307447
 /www/e.png?uid=63555639&btid=0&project=1&version=6&ts=1783740557813&lt=2026-07-11T03%3A29%3A17.813Z&target=experimentation&layer=UserCommunities.Groups.Polls&experiment=UserCommunities.Groups.Polls-2&isAudienceSpecified=false&isAudienceMember=true&userAgent=Mozilla%2F5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML%2C+like+Gecko)+Chrome%2F150.0.0.0+Safari%2F537.36&platformType=PC&ptid=5&segment=9009&experiment_variant=6070e59&hashUnit=userid&hashValue=63555639&allocKey=userid&allocValue=63555639&holdout=&evt=expExposed&ctx=experimentation&url=https%3A%2F%2Fwww.roblox.com%2Fcommunities%2F579580588%2FPIGEON-FLIGHT-INC%23!%2Fabout&gid=-1750307447
 ||metrics.roblox.com^
+/v1/games/report-event?name=HomePageOmniRecommendationEndpointSuccess
 /v1/games/report-event?name=WebChatRenderedWeb
 /v1/thumbnails/metadata
 ||o293668.ingest.us.sentry.io^
 roblox.com##+js(json-prune, sorts.[].recommendationList.[-].contentMetadata.EncryptedAdTrackingData)
 roblox.com##+js(href-sanitizer, a[href^="https://cts.businesswire.com/ct/CT?"][href*="url=http"], ?url)
 roblox.com##+js(trusted-set-cookie, RBXcb, RBXViralAcquisition=false&RBXSource=false&GoogleAnalytics=false)
-
-
+||cs.ns1p.ne^
+||lms.roblox.com^
