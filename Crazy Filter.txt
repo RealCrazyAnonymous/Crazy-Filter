@@ -406194,5 +406194,12 @@ adblock.turtlecute.org##.adbox.banner_ads.adsbox
 adblock.turtlecute.org##.textads
 /pagead.js$domain=adblock.turtlecute.org
 /widget/ads.
-
-
+||sdk.birdeatsbug.com^
+||cdn.confiant-integrations.net^
+||s3.us-east-2.amazonaws.com^
+/v2/core.js
+/v2/style.css
+||static.cloudflareinsights.com^
+||googletagmanager.com^
+/v1/query/view/options?include=options&operation=convert&output_format=mov&lang=en&input_format=mp4&slug=home
+/v1/query/view/options?include=options&operation=convert&
