@@ -1,4 +1,4 @@
-# AdBlock & Tracking & Other High-Risk Blocker by Crazy Anonymous
+# AdBlock & Tracking Blocker by Crazy Anonymous
 
 ! Expires: 1 Day
 ! Updates: Always
@@ -18,6 +18,132 @@
 # Categories: Ads | Malware | Phishing | Spyware | Telemetry
 # Format: 0.0.0.0 (Works with hosts, Pi-hole, uBlock, AdGuard)
 # ============================================================
+
+!============ Ads =============
+! --- Amazon
+||adtago.s3.amazonaws.com^
+||analyticsengine.s3.amazonaws.com^
+||analytics.s3.amazonaws.com^
+||advice-ads.s3.amazonaws.com^
+
+! --- Google Ads
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||pagead2.googleadservices.com^
+||afs.googlesyndication.com^
+
+! --- Doubleclick.net
+||stats.g.doubleclick.net^
+||ad.doubleclick.net^
+||static.doubleclick.net^
+||m.doubleclick.net^
+||mediavisor.doubleclick.net^
+
+! --- Adcolony
+||ads30.adcolony.com^
+||adc3-launch.adcolony.com^
+||events3alt.adcolony.com^
+||wd.adcolony.com^
+
+! --- Media.net
+||static.media.net^
+||media.net^
+||adservetx.media.net^
+
+!========= Analytics ==========
+! --- Google Analytics
+||analytics.google.com^
+||click.googleanalytics.com^
+||google-analytics.com^
+||ssl.google-analytics.com^
+
+! --- Hotjar
+||adm.hotjar.com^
+||identify.hotjar.com^
+||insights.hotjar.com^
+||script.hotjar.com^
+||surveys.hotjar.com^
+||careers.hotjar.com^
+||events.hotjar.io^
+
+! --- MouseFlow
+||mouseflow.com^
+||cdn.mouseflow.com^
+||o2.mouseflow.com^
+||gtm.mouseflow.com^
+||api.mouseflow.com^
+||tools.mouseflow.com^
+||cdn-test.mouseflow.com^
+
+! --- FreshWorks
+||freshmarketer.com^
+||claritybt.freshmarketer.com^
+||fwtracks.freshmarketer.com^
+
+! --- Luckyorange
+||luckyorange.com^
+||api.luckyorange.com^
+||realtime.luckyorange.com^
+||cdn.luckyorange.com^
+||w1.luckyorange.com^
+||upload.luckyorange.net^
+||cs.luckyorange.net^
+||settings.luckyorange.net^
+
+! --- Stats WP Plugin
+||stats.wp.com^
+
+!======= Error Trackers =======
+! --- Bugsnag
+||notify.bugsnag.com^
+||sessions.bugsnag.com^
+||api.bugsnag.com^
+||app.bugsnag.com^
+
+! --- Sentry
+||browser.sentry-cdn.com^
+||app.getsentry.com^
+
+!====== Social Trackers =======
+! --- Facebook
+||pixel.facebook.com^
+||an.facebook.com^
+
+! --- Twitter
+||static.ads-twitter.com^
+||ads-api.twitter.com^
+
+! --- LinkedIn
+||ads.linkedin.com^
+||analytics.pointdrive.linkedin.com^
+
+! --- Pinterest
+||ads.pinterest.com^
+||log.pinterest.com^
+||trk.pinterest.com^
+
+! --- Reddit
+||events.reddit.com^
+||events.redditmedia.com^
+
+! --- YouTube
+||ads.youtube.com^
+
+! --- TikTok
+||ads-api.tiktok.com^
+||analytics.tiktok.com^
+||ads-sg.tiktok.com^
+||analytics-sg.tiktok.com^
+||business-api.tiktok.com^
+||ads.tiktok.com^
+||log.byteoversea.com^
+
+!============ Mix =============
+! --- Yahoo
+||ads.yahoo.com^
+||analytics.yahoo.com^
+||geo.yahoo.com^
+||udcm.yahoo.com^
 
 # ---------- AD SERVERS & TRACKING NETWORKS ----------
 0.0.0.0 doubleclick.net
