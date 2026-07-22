@@ -7,7 +7,7 @@
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
-! Title: Crazy Filter
+! Title: Blocklist - Domains
 ! Author: Crazy Anonymous
 # Updated: 7/21/2026
 # note: We are working on more blocking.
