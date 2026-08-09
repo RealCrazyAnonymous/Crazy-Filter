@@ -1,4 +1,4 @@
-# Blocklist-Domains by Crazy Anonymous
+# AdBlock Blocklist by Crazy Anonymous
 
 ! Expires: 1 Day
 ! Updates: Always
@@ -7,7 +7,7 @@
 
 # If any issue, please email us (crazyanonymousofficial@proton.me)
 
-! Title: Blocklist - Domains
+! Title: AdBlock Blocklist
 ! Author: Crazy Anonymous
 # Updated: 8/9/2026
 # note: We are working on more blocking.
