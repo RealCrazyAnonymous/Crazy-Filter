@@ -14,6 +14,9 @@
 ! abt
 ! update-notes: We added more blocking.
 ! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
+! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
+! Version: 1.5
+! Copyright (C) 2026 Crazy Anonymous
 
 
 ||crazyegg.com^$3p
