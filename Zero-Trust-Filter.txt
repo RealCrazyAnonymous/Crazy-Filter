@@ -33,7 +33,7 @@
 ! note: We are working on more blocking.
 ! abt
 ! update-notes: We added more blocking.
-! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
 ! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
 ! Version: 1.0
 ! Copyright (C) 2026 Crazy Anonymous
