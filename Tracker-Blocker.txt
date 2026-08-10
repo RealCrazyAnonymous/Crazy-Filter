@@ -15,6 +15,7 @@
 ! update-notes: We added more blocking.
 
 
+||crazyegg.com^$3p
 
 !
 ! This section contains rules targeting tracking pixels from specific domains and email services.
