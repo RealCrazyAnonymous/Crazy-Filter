@@ -13,6 +13,7 @@
 ! note: We are working on more blocking.
 ! abt
 ! update-notes: We added more blocking.
+! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
 
 
 ||crazyegg.com^$3p
