@@ -16,4 +16,4 @@ My version is only suitable for (4.0.
 
 If you have any issues, please email me.
 
-<a href="mailto:crazyanonymous@tuta.io">E-Mail</a>
+<a href="mailto:crazyanonymousofficial@proton.me">E-Mail</a>
