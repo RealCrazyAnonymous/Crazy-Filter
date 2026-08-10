@@ -1,0 +1,231 @@
+! Zero Trust Filter is for DNS Providers Only by Crazy Anonymous
+
+! Expires: 1 Day
+! Updates: Always
+
+! Expire-Note - Does not expire - Note: This will be constant updates every day and night.
+
+! If any issue, please email us (crazyanonymousofficial@proton.me)
+
+! Title: Zero Trust Filter
+! Description: A DNS-level blocklist that blocks ads, trackers, phishing, malware, and scams by filtering domain name resolutions. Compatible with Pi-hole, AdGuard Home, Blocky, and other DNS sinkholes. Operates purely at the DNS layer—it does NOT modify routing tables, interfere with Wi-Fi connectivity, alter firewall rules, block IP addresses, or affect network hardware. It simply returns null results for blocked domains. Safe for home, enterprise, and VPN environments.
+
+! Compatibility Below
+
+! This filter is compatible with:
+
+! Pi-hole
+
+! AdGuard Home
+
+! Blocky
+
+! Technitium DNS Server
+
+! pfBlockerNG
+
+! NextDNS / Control D
+
+! Any DNS sinkhole that supports standard domain lists
+
+! Author: Crazy Anonymous
+! Last modified: %timestamp%
+! note: We are working on more blocking.
+! abt
+! update-notes: We added more blocking.
+! License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
+! Version: 1.0
+! Copyright (C) 2026 Crazy Anonymous
+
+ads.js
+pagead.js
+advertisement.js
+analytics.js
+.adsbox .ad-banner #ad-container
+.adsbygoogle .google-ad
+pagead2.googlesyndication.com
+googleads.g.doubleclick.net
+securepubads.g.doubleclick.net
+ad.doubleclick.net
+stats.g.doubleclick.net
+tpc.googlesyndication.com
+partner.googleadservices.com
+pagead2.googleadservices.com
+adservice.google.com
+adservice.google.de
+afs.googlesyndication.com
+safeframe.googlesyndication.com
+video-ad-stats.googlesyndication.com
+aax.amazon-adsystem.com
+c.amazon-adsystem.com
+s.amazon-adsystem.com
+mads.amazon-adsystem.com
+fls-na.amazon-adsystem.com
+adtago.s3.amazonaws.com
+analyticsengine.s3.amazonaws.com
+analytics.s3.amazonaws.com
+advice-ads.s3.amazonaws.com
+bat.bing.com
+ads.microsoft.com
+analytics.microsoft.com
+c.bing.com
+cdn.ads.microsoft.com
+bingads.microsoft.com
+adsdk.microsoft.com
+analytics.tracker.com
+adserver.example.com
+phishing-site.net
+tracking.malware-domain.com
+msadsscale.microsoft.com
+adsdk.microsoft.com
+ads.yahoo.com
+analytics.yahoo.com
+udc.yahoo.com
+udcm.yahoo.com
+analytics.query.yahoo.com
+partnerads.ysm.yahoo.com
+gemini.yahoo.com
+adserver.yahoo.com
+log.fc.yahoo.com
+beap-bc.yahoo.com
+adserver-us.adtech.advertising.com
+app.ssp.yahoo.com
+adtech.yahooinc.com
+static.criteo.net
+gum.criteo.com
+bidder.criteo.com
+sslwidget.criteo.com
+cas.criteo.com
+dis.criteo.com
+trc.taboola.com
+cdn.taboola.com
+images.taboola.com
+api.taboola.com
+vidstat.taboola.com
+widgets.outbrain.com
+odb.outbrain.com
+amplifypixel.outbrain.com
+traffic.outbrain.com
+log.outbrain.com
+static.media.net
+contextual.media.net
+adservetx.media.net
+media.net
+ads.pubmatic.com
+hbopenbid.pubmatic.com
+image2.pubmatic.com
+gads.pubmatic.com
+ow.pubmatic.com
+fastlane.rubiconproject.com
+pixel.rubiconproject.com
+ads.rubiconproject.com
+eus.rubiconproject.com
+s.update.rubiconproject.com
+prebid-server.rubiconproject.com
+micro.rubiconproject.com
+smarttag.rubiconproject.com
+us-u.openx.net
+u.openx.net
+rtb.openx.net
+delivery-us.openx.net
+jp-u.openx.net
+ib.adnxs.com
+secure.adnxs.com
+acdn.adnxs.com
+sin3-ib.adnxs.com
+nym1-ib.adnxs.com
+adnxs.com
+match.adsrvr.org
+insight.adsrvr.org
+js.adsrvr.org
+bid.adsrvr.org
+js-sec.indexww.com
+as-sec.casalemedia.com
+ssum-sec.casalemedia.com
+htlb.casalemedia.com
+r.casalemedia.com
+ap.lijit.com
+ce.lijit.com
+vap.lijit.com
+gslbeacon.lijit.com
+ads.sovrn.com
+track.adform.net
+adx.adform.net
+s1.adform.net
+server.adform.net
+x.bidswitch.net
+simage2.pubmatic.com
+native.sharethrough.com
+match.sharethrough.com
+www.google-analytics.com
+ssl.google-analytics.com
+google-analytics.com
+analytics.google.com
+region1.google-analytics.com
+www.googletagmanager.com
+googletagmanager.com
+www.clarity.ms
+c.clarity.ms
+scripts.clarity.ms
+a.clarity.ms
+assets.adobedtm.com
+dpm.demdex.net
+fast.demdex.net
+cm.everesttech.net
+adobedc.demdex.net
+sstats.adobe.com
+script.hotjar.com
+static.hotjar.com
+identify.hotjar.com
+events.hotjar.io
+insights.hotjar.com
+adm.hotjar.com
+surveys.hotjar.com
+cdn.segment.com
+api.segment.io
+events.segmentapis.com
+cdn.mxpnl.com
+api-js.mixpanel.com
+api.mixpanel.com
+decide.mixpanel.com
+cdn.amplitude.com
+api2.amplitude.com
+regionconfig.amplitude.com
+api.eu.amplitude.com
+sr-client-cfg.amplitude.com
+sr-client-cfg.eu.amplitude.com
+fullstory.com
+edge.fullstory.com
+rs.fullstory.com
+o-collector.fullstory.com
+mouseflow.com
+cdn.mouseflow.com
+o2.mouseflow.com
+gtm.mouseflow.com
+api.mouseflow.com
+tools.mouseflow.com
+luckyorange.com
+api.luckyorange.com
+realtime.luckyorange.com
+cdn.luckyorange.com
+w1.luckyorange.com
+upload.luckyorange.net
+cs.luckyorange.net
+settings.luckyorange.net
+script.crazyegg.com
+tracking.crazyegg.com
+cdn.heapanalytics.com
+heapanalytics.com
+c.heapanalytics.com
+plausible.io
+cdn.matomo.cloud
+matomo.cloud
+stats.wp.com
+connect.facebook.net
+pixel.facebook.com
+an.facebook.com
+graph.facebook.com
+www.facebook.com
+analytics.facebook.com
+analytics.tiktok.com
