@@ -1,21 +1,3581 @@
-# Cookie-List-Block by Crazy Anonymous
+! Cookie-List-Block by Crazy Anonymous
 
 ! Expires: 1 Day
 ! Updates: Always
 
-# Expire-Note - Does not expire - Note: This will be constant updates every day and night.
+! Expire-Note - Does not expire - Note: This will be constant updates every day and night.
 
-# If any issue, please email us (crazyanonymousofficial@proton.me)
+! If any issue, please email us (crazyanonymousofficial@proton.me)
 
 ! Title: Cookie List Blocker
 ! Author: Crazy Anonymous
-# Updated: 8/9/2026
-# note: We are working on more blocking.
-# abt
-# update-notes: We added more blocking.
+! Last modified: %timestamp%
+! note: We are working on more blocking.
+! abt
+! update-notes: We added more blocking.
 
-#Block Cookies --Below
+! Block Cookies --Below
 
+
+
+!
+! This section contains the list of the rules that block analytics and spyware in mobile apps.
+!
+! Good: ||adeventtracker.spotify.com^
+! Bad:  ||adeventtracker.spotify.com^ (if this is everywhere, should be in tracking_servers.txt)
+!
+! Blocking Facebook mobile tracking
+! Don't use, if an app uses Facebook Login
+||graph.facebook.com^$app=cl.android|com.shorts.wave.drama|com.drama.happy.look|com.enjoy.fancynovel.better|com.novel.eromance.ugs|com.novel.estory.free.reader.dreame.gp.us|com.fatix.fatixpro|com.coupang.mobile.eats|com.warmweather.forecast.reporter|com.booking|com.mysticsense.androidapp
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/249
+||adeventtracker.spotify.com^
+||do-not-tracker.org^
+||eviltracker.net^
+||trackersimulator.org^
+!
+! https://github.com/AdguardTeam/AdguardForAndroid/issues/908
+/.*/$network,app=com.adups.fota.sysoper|com.adups.fota
+!
+! NOTE: Specific apps
+!
+||web.facebook.com^$app=com.teslacoilsw.launcher
+||tracking.ibotta-classic.ipn-ops.net^$app=com.ibotta.android
+||firebaselogging-pa.googleapis.com^$app=com.sampleapp
+||ads-api.x.com^
+||ads-api.twitter.com^
+||tags.tiqcdn.com^$app=uk.co.thetimes|com.hulu.plus|com.booking
+||ljc.coupang.com^$app=com.coupang.mobile
+||api-track.linke.ai^$app=com.aigc.ushow.ichat
+||assets.adobedtm.com^$app=com.aa.android|uk.co.thetimes|de.spiegel.android.app.spon|com.hilton.android.hhonors
+$app=com.miui.systemAdSolution
+$app=com.fiberhome.wifiserver
+$app=com.miui.analytics
+||bilanx.dcard.tw^$app=com.sparkslab.dcardreader
+||bilanx.dtto.com^$app=com.dtto.app
+||cdn.branch.io^$app=app.extra.android|com.spotify.music
+||graph.facebook.com/*/activities?access_token=&event=
+||graph.facebook.com/*?fields=supports_implicit_sdk_logging
+! Apps of Naver Corp https://github.com/AdguardTeam/AdguardFilters/pull/100824
+||ntracker-collector.naver.com^
+||ace.naver.com^
+! xiaomi
+||authbe.sec.intl.miui.com^
+||flash.sec.intl.miui.com^
+||api.setting.intl.miui.com^
+||data.sec.intl.miui.com^
+||log.avlyun.sec.intl.miui.com^
+||tracking.*.miui.com^
+||metok.sys.miui.com^
+||mazu.sec.miui.com^
+||auth.be.sec.miui.com^
+||adv.sec.miui.com^
+||api.sec.miui.com^
+||data.sec.miui.com^
+||logupdate.avlyun.sec.miui.com^
+||r.browser.miui.com^
+||tracking.miui.com^
+||data.mistat.intl.xiaomi.com^
+||storeconfig.mistat.intl.xiaomi.com^
+||api.ad.intl.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||api.miui.security.xiaomi.com^
+||globalapi.ad.xiaomi.com^
+||api.ad.xiaomi.com^
+||abtest.mistat.xiaomi.com^
+||o2o.api.xiaomi.com^
+||thm.market.xiaomi.com/thm/stats
+||data.mistat.india.xiaomi.com^
+||data.mistat.rus.xiaomi.com^
+||data.mistat.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
+! xiaomi mi band app
+||datacollector-*.dt.hicloud.com^
+||app-analytics-ru.huami.com^
+! spb tv android app
+||metrics.spbtv.com^
+! acestream android app
+||android-stat.acestream.net^
+! whatsapp android app
+||privatestats.whatsapp.net^
+! influxdb
+||usage.influxdata.com^
+! grafana
+||stats.grafana.org^
+! smotrim.ru
+||rumstat.cdnvideo.ru^
+!
+! Swiftkey(Microsoft) Keyboard
+||telemetry.api.swiftkey.com^
+!
+! QuQa.ch for Android
+||analytics.qoqa.ninja^
+||analytics-sprint.qoqa.com^
+||analytics.qoqa.ch^
+||analytics.qoqa.com^
+!
+! Appsflyer
+||tfpodf.ars.appsflyersdk.com^
+||inapps.appsflyersdk.com^
+||skadsdk.appsflyersdk.com^
+||attr.appsflyersdk.com^
+dynamic-report-api.appsflyersdk.com^
+||privacy-sandbox.appsflyersdk.com^
+-pia.appsflyersdk.com^
+-skadsdkless.appsflyersdk.com^
+-adrevenue.appsflyersdk.com^
+-attr.appsflyersdk.com^
+gcdsdk.appsflyersdk.com^
+dlsdk.appsflyersdk.com^
+||*cdn-settings.appsflyersdk.com^
+||*launches.appsflyersdk.com^
+||*conversions.appsflyersdk.com^
+||*register.appsflyersdk.com^
+||lklfwu-inapps.appsflyersdk.com^
+||adrevenue.appsflyer.com^
+||api.appsflyer.com^
+||api2.appsflyer.com^
+||app.appsflyer.com^
+||appsflyer-report.honkaiimpact3.com^
+||attr.appsflyer.com^
+||banner.appsflyer.com^
+||cdnappicons.appsflyer.com^
+||dls2s.appsflyer.com^
+dlsdk.appsflyer.com^
+||events.appsflyer.com^
+||fvalid.appsflyer.com^
+||gcd-s2s.appsflyer.com^
+||gcdsdk.appsflyer.com^
+||hq1.appsflyer.com^
+||impression.appsflyer.com^
+||inapps.appsflyer.com^
+||launches.appsflyer.com^
+||onelink.appsflyer.com^
+||register.appsflyer.com^
+||sdk-services.appsflyer.com^
+||sdk.appsflyer.com^
+||stats.appsflyer.com^
+||t.appsflyer.com^
+||track.appsflyer.com^
+||validate.appsflyer.com^
+||wa.appsflyer.com^
+||websdk.appsflyer.com^
+! QQ
+||mtrace.qq.com^
+||sngmta.qq.com^
+! QQ Music
+||adstats.tencentmusic.com^
+||monitor.music.qq.com^
+||stat.y.qq.com^
+! Relap - avoid breaking their website on desktop
+! but make sure it's blocked in apps
+!+ PLATFORM(ios, android)
+||relap.io^
+!+ NOT_PLATFORM(ios, ext_safari, ext_android_cb)
+||adj.st^
+! Kochava
+||co.akisinn.info^
+||co.dewrain.life^
+||co.vaicore.site^
+||co.vaicore.xyz^
+||int.akisinn.info^
+||int.akisinn.me^
+||int.akisinn.site^
+||int.dewrain.life^
+||int.dewrain.site^
+||int.dewrain.world^
+||int.vaicore.site^
+||int.vaicore.store^
+||int.vaicore.xyz^
+||int.vlancaa.site^
+||int.vlancaa.fun^
+||tok.vaicore.xyz^
+!
+! NOTE: Regular rules
+!
+||logs.profi.ru^
+||w.inmobi.com^
+||pbs.inmobi.com^
+||stats-sdk.tange365.com^
+||dc.oppomobile.com^
+||aki-gb-sdklog.kurogames.net^
+||log1.pwsdk.com^
+||log2.pwsdk.com^
+||cxlog.shinhansec.com^
+||sensors.dito.ph^
+||mon11-misc-lq.fqnovel.com^
+||tnc3-alisc1.bytedance.com^
+||upc.zztfly.com^
+||tracker.tianmu.mobi^
+||id6.me^
+||mobileconfig.sascdn.com^
+||cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com^
+||analytics.pocketfm.com^
+||otel-collector.reliability.smartnews.net^
+||report-edge.rtesvc.com^
+||rakam-api.aptoide.com^
+||diagnostics.rakam.io^
+||tracker.a11.vega.aurion11.io^
+||aptoide-rtb.aptoide.com^
+||qbk1.com^
+||log*.boomplaymusic.com^
+||collector.gamechanger.io^
+||log.documentreaderapp.com^
+||datasink.sensorsjourney.com^
+||apm-native.redbascket.com^
+||apm-fe.rnote.com^
+||lng.xiaohongshu.com^
+||t2.xiaohongshu.com^
+||log.qrscanner.live^
+||stats.sdk.banuba.net^
+||report.duetapp.net^
+||logretrieve.duetapp.net^
+||metrics.taimi.com^
+||detaillog-global-dual.coolccloud.com^
+||analytics.prod.tophat.withbuddies.com^
+||beacon.ztgame.com^
+||api-log-upload.wenext.technology^
+||events-noneu.truecaller.com^
+||log-*.isnssdk.com^
+||profiler-collector.dalyfeds.com^
+||reporttk.com^
+||log-*.isnssdk.com^
+||track.hily.com^
+||ping*.bidease.com^
+||ntus.bidease.com^
+||global-receiver-ta.thinkingdata.cn^
+||mixpanel-proxy-ivbdkvonca-uc.a.run.app^
+||tc.zxcvbnml.com^
+||fpconfig.net^
+||ingest.databuckets.com^
+||report.tantanapp.com^
+||pco-sm-log.tantanapp.com^
+||app-log-lab.immomo.com^
+||aqueduct-collector-prod.alar.my^
+||mp-gb-sdklog.kurogames.net^
+-datareceiver.aki-game.net^
+||telemetry.split.io^
+||events.split.io^
+||prod-ue1-metrics.hingeprod.net^
+||api.event.appstack.tech^
+||detailroi.com^
+||detaillog-global-dual.coolgcloud.com^
+||logapi.bodyevey.com^
+||ingest.skarb.work^
+||sensor.photogrid.app^
+||sensor.aqhg.online^
+||log-nontt.bytegsdk.com^
+||gpm-mon-va.bytegsdk.com^
+||gplog-sg.byteoversea.com^
+||gsdk-quic-gcp-va.bytegsdk.com^
+||gsdk19-va.bytegsdk.com^
+||gsdk-va.bytegsdk.com^
+||global-report.ml.youngjoygame.com^
+||bdtelemetry.amazon^
+||rum.us-east-1.amazonaws.com^
+||log.sweepycleanplus.com^
+||log.photorecoverypicturerecovery.com^
+||log.scanqrcodedesign.live^
+||log.cleanerwish.live^
+||trace-*.free-reels.com^
+||tracking.twelveapp.sh^
+||trkcliq.com^
+||stats.norton.com^
+||log1.cmpassport.com^
+||bi-report.maxnapps.com^
+||events.production.us1.pgw-pci.klarna.net^
+||event-gateway.data.karrotmarket.com^
+||h-adashx4id.ut.taobao.com^
+||ip.xindong.com^
+||openlog.tapapis.com^
+||logc-sg.tsd.xindong.com^
+||e.tapdb.ap-sg.tapapis.com^
+||track.onef.pro^
+||log.weathertrip.net^
+||log.clearcleanerpro.live^
+||client-telemetry-preauth.hingeprod.net^
+||event-log-api-data-platform-data-lake-prod.gryphline.com^
+||event-log-api-ipv6.gryphline.com^
+||eventlog.gryphline.com^
+||native-log-collect.gryphline.com^
+||fp-sa-it.fengkongcloud.com^
+||api-fp-retry-sa.fengkongcloud.com^
+||ir-sdk.guardease.com^
+||verifysession.uxcam.com^
+||analytics.wachanga.app^
+||usage.digitalconcerthall.com^
+||report.starshort.online^
+||clarity.ms^|
+||engagelab.cc^
+||global-sis.engagelab.com^
+||app.siteperformancetest.net^
+||events-stream-svc.cordial.io^
+||events.gonative.io^
+||matomo.podslink.net^
+||report.*.gbqofs.io^
+||gbxreport-*.wf.com^
+||mab-mob2.websearchapp.com^
+||news-events.apple.com^
+||news-app-events.apple.com^
+||news-sports-events.apple.com^
+||track.applicaster.com^
+||hb-mob2.optiword.com^
+||tracking.geo.*.amazonaws.com^
+||telemetry.doxo.com^
+||sensorsdata-datasink.stardust-tv.com^
+||event-api-cs.stardust-tv.com^
+||logreport-global-dual.cool*cloud.com^
+||wslog-global-dual.cool*cloud.com^
+||weblogger-wss.cool*cloud.com^
+||mebed.dm-event.net^
+||clck.yandex.ru^$app=com.edadeal.android
+||bstream.kzhi.tech^
+||mob2.welltastic-app.com^
+||amplitude.thepure.app^
+||amplilab.thepure.app^
+||logger.radiatetheworld.com^
+||client-events.gurushots.com^
+||stats-api.skylum.com^
+||aet.spotify.com^
+||tc.weszxdrf.com^
+||log.hotweathers.live^
+||log.eufylife.com^
+||dts-log.anker.com^
+||perf.bblmw.com^
+||event.bblmw.com^
+||vsn-analytics.aparentmedia.com^
+||track-*.hungrypanda.co^
+||trace-*.hungrypanda.co^
+||ihmonitor.luckincoffee.us^
+||use-trk.monetune.com^
+||telemetry.sdk.inmobi.com^
+||collector-*.perimeterx.net^
+||unisdk.proxima.nie.easebar.com^
+||ingest.m2catalyst.com^
+||tnc-v2-boot.capcutapi.com^
+||onegg.site^
+||log.smartclearpro.com^
+||analytics.artworkout.net^
+||event.mwm-bs.com^
+||events.backtrace.io^
+||kbox-analytics-prod.s*.amazonaws.com^
+||logs.classdojo.com^
+||api.arity.com^
+||mob2.bpt.apprevork.com^
+||cpatrk.net^
+||live.ravelin.click^
+||perseus-productanalytics.deliveryhero.net^
+||iguazu.doordash.com^
+||otel-mobile.doordash.com^
+||stat.apfgexfusion.com^
+||event.bigkeyboardeasyphone.com^
+||events-api.lyrebirdstudio.net^
+||log.pdfbookeditor.live^
+||mob2.cactus-bp.com^
+||log.cleansweepplu.com^
+||tc.vbnmhjlp.com^
+||logrcv.adseyeservice.com^
+||stats.cn.ronghub.com^
+||statistic.live.126.net^
+||report.1-1.io^
+||sensor.emolm.com^
+||detaillog-global-dual.coolbcloud.com^
+||wslog-global-dual.coolccloud.com^
+||logreport-global-dual.coolbcloud.com^
+||dualstack-collection.rong-edge.com^
+||logdata.hatspotlight.asia^
+||datarangers-event.myrightone.com^
+||stats.*.ronghub.com^
+||stats.rong-edge.com^
+||config.toto.zipoapps.com^
+||tracking.ksztone.com^
+||log.stickflow.xyz^
+||stats.us-light-edge.com^
+||log2.ihubgo.info^
+||logreport-global-dual.coolhcloud.com^
+||detaillog-global-dual.coolhcloud.com^
+||tencentcs.com/structuredlog?
+||stat.dp.vocalbeats.com^
+||tycollectproxy.tiyalive.com^
+||logz.tekiusa.com^
+||log.lnk.events^
+||app-log-oversea.immomo.com^
+||app-monitor.spacecape.com^
+||hlog.hiido.com^
+||logcollection.ronghub.com^
+||stats.*.rongnav.com^
+||log.wigoliv.work^
+||tracking.affattr.com^
+||log.suddenclean.com^
+||infinario.com^
+||log.phonefreshfix.live^
+||log-mediation.easemobi.net^
+||trkapi.impact.com^
+||lw-c-log.lastwarapp.com^
+||bi-tracker-global.rivergame.net^
+||federatedcompute-pa.googleapis.com^
+||fcm-collect-api.alyac.com^
+||service-api.flarelane.com^
+||mossturbo.com^
+||collect.wehearfm.com^
+||itracking.ikameglobal.com^
+||client-events-ingress.bookbub.com^
+||sdk.fra-*.braze.eu^
+||sdk.out.usbla.net^
+||xz.fbcdn.net^
+||xy.fbcdn.net^
+||data.eu.pendo.io^
+||client-log.box.com^
+||pendo-data-prod.box.com^
+||blink.fra-01.braze.eu^
+||api.monedata.io^
+||tnc16-normal-us-ttp.capcutapi.us^
+||mcs16-normal-us-ttp.capcutapi.us^
+||appcpi.net^
+||event.aimailhome.io^
+||mon.capcutapi.us^
+||mssdk.capcutapi.us
+||mon16-normal-us-ttp.capcutapi.us^
+||log16-normal-us-ttp.capcutapi.us^
+||jdlog.uu.cc^
+||gid.tapapis.cn^
+||dlog-config.uu.cc^
+||ms-report.uu.cc^
+||t.usermaven.com/lib.js$script,redirect=noopjs,domain=revisemsra.com
+||log.hiapkdownload.com^
+||experiment.pixverse.ai^
+||capture.pixverse.ai^
+||report.pixverse.ai^
+||dxp.baidu.com^
+||nsclickvideo.xiaodutv.com^
+||api-access.pangolin-sdk-toutiao1.com^
+||xda.xiaodutv.com^
+||analytics-ccu.qpyou.cn^
+||analytics-log.withhive.com^
+||prebid-server-canary.ifunny.co^
+||track.taimi.com^
+||gem-log.sloegem.com^
+||log.oceanzz.xyz^
+||stats.sg-light-edge.com^
+||apptics.zoho.in^
+||analytics.oliveapp.net^
+||rplogs.itpub.cc^
+||mcs.tiktokv.us^
+||trace.free-reels.com^
+||event-portal.dailyinnovation.biz^
+||api.learnings.ai^
+||dtcollect.newsbang.com^
+||census-app.scorecardresearch.com^
+||mob2.musicgostudio.com^
+||tc.mnbvcxzq.com^
+||dc.di.atlas.samsung.com^
+||dc.dqa.samsung.com^
+||dev-apigw.samsungdmroute.com^
+||diagmon-serviceapi.samsungdm.com^
+||dls-ddc.dqa.samsung.com^
+||moai-dev-samsung.com^
+||qmds-dev-samsung.com^
+||regi.di.atlas.samsung.com^
+||stg-apigw.samsungdmroute.com^
+||log-pub-hk.aoshitang.com^
+||plausible.io^$app=jp.gocro.smartnews.android
+||logs.dradis.netflix.com^
+||analytics-stg.samsungknox.com^
+||event.flareflow.tv^
+||api.deeplink.dev^
+||attr-logs.*.amazonaws.com^
+||event.*.karrotmarket.com^
+||beacons.ads.fubo.tv^
+||s3-ca-liveops.easybrain.com^
+||trackers.fubo.tv^
+||beacons-prod.fubo.tv^
+||events.fubo.tv^
+||adash-emas.cn-hangzhou.aliyuncs.com^
+||dfe.mic.mob.com^
+||dutils.com^
+||openlog.tapapis.cn^
+||log.aliyuncs.com^
+||analytics.nianticspatial.com^
+||statistical-report.djiservice.org^
+||qcloud-sg-datareceiver.kurogame.xyz^
+||statistic-overseas.yunxinfw.com^
+||perfsight.wetest.net^
+||pangolin-sdk-toutiao.com^
+||stat.tpns.sgp.tencent.com^
+||guid.tpns.sgp.tencent.com^
+||xgdata.xoyo.games^
+||tr6.snapchat.com^
+||usstat.icocofun.com^
+||usdiagnosis.icocofun.com^
+||eats-ads-event-capture.coupang.com^
+||trackchecker.ru/stat/
+||googletagmanager.com^$app=app.shinagawa.listentonovels.androidApp|com.edadeal.android|com.mysticsense.androidapp|com.walla.wallasports
+||mon*-misc.fqnovel.com^
+||clientlog.perfectworldgames.com^
+||log1.perfectworldgames.com^
+||log2.perfectworldgames.com^
+||dlog.perfectworldgames.com^
+||ads-img-al.xhscdn.com^
+||ads-img-bak.xhscdn.com^
+||apm-native.xiaohongshu.com^
+||apm-fe.xiaohongshu.com^
+||apm-track.xiaohongshu.com^
+||edith-seb.xiaohongshu.com^
+||rtc-logger.bytevcloud.com^
+||gpm-mon-va.byteoversea.com^
+||logs-sg.rebxgame.com^
+||talog-eu.rebxgame.com^
+||logs-*.rebxgame.com^
+-client-report.honkaiimpact3.com^
+||*-datareceiver.aki-game.net^
+||data-detect.nie.easebar.com^
+||applog*.matrix.easebar.com^
+||tapi.axcadsf.cfd^$app=com.apkpure.aegon
+||tr.acobt.tech^$app=com.apkpure.aegon
+||api.onegg.site^$app=com.apkpure.aegon
+||gdl.youngle.tech^$app=com.apkpure.aegon
+||tc.weszxdrf.com^$app=com.apkpure.aegon
+||ip.chinaz.com^$app=com.apkpure.aegon
+||hz-telemetry.adobe.io^
+||smartcard.apps.coloros.com^
+||log-boot.capcutapi.com^$app=com.xt.retouchoversea
+||fp-it.fengkongcloud.com^
+||api-fp-retry-bj.fengkongcloud.com^
+||tnc16-*.hypic.com^
+||app-tracking.hlogo.de^
+||px.wpk.quark.cn^
+||applog.lc.quark.cn^
+||track.lc.quark.cn^
+||log.m.sm.cn^
+||track.adflow-prod.minionplatform.com^
+||t-odx.op-mobile.opera.com^
+||stat-analytics.mediavitrina.ru^
+||discovery-ios-*.ertelecom.ru^
+||phlic.top/log/
+||mob2.mymusic2025.com^
+||mosspf.net^
+||event-us.ssp.taxssp.com^
+||event.meloshort.com^
+||hb-af-us-central1.outfit7.com^
+||at-af.outfit7.com^
+||bidder.dsp.outfit7.com^
+||hb-failover-stpceyl2ua-uw.a.run.app^
+||adashx4id.ut.taobao.com^
+||analytics.us.tiktok.com^
+||bbiquge.cc/tongji/
+||ads-privacy-api.prd.mz.internal.unity3d.com^
+||eventsv2balanced.malpagames.com^
+||pls.prd.mz.internal.unity3d.com^
+||apishowstats.babybus.com^
+||tjinit-event.babybus.com^
+||tjinit-global-register.babybus.com^
+||metrics-us.cometchat.io^
+||clog.weverse.io^
+||data.joongna.com/log/ga
+||touchpoint.airbridge.io/deferred-deeplink/*/apps/joonggonara
+||report-edge.agora.io^
+||pangolin-sdk-toutiao-b.com^
+||ulog-sdk.gifshow.com^
+||ulog*.gifshow.com^
+||logapi-and.zhipin.com^
+||hilton.data.adobedc.net^
+||asanalytics.booking.com^
+||counters.booking.com^
+||nr.bidderstack.com^
+||stbid.ru^
+||stat.nsc-lab.io^
+d4?appid*type*
+/d?id=*type*
+/d?dn=*&id&type=*
+||cnlogs.umengcloud.com^
+||logservice.dbankcloud.cn
+||103.41.167.237/v2/resolv?host=
+||logs.nebulahoroscope.com^
+||gateway.bingviz.microsoftapp.net^$app=com.microsoft.bing
+||app.adjust.com^$app=com.microsoft.bing|jp.gocro.smartnews.android|com.daily.health.tracker.monitor|com.glovo|com.edadeal.android|com.dailymotion.dailymotion|com.novoda.dch|com.jotform.v2|com.location.track.proxy.gps|com.magical.smart.alban|com.lenovo.anyshare.gps|com.fileclean.manager.easy|com.avito.android
+||sapphire.api.microsoftapp.net^$app=com.microsoft.bing
+||browser.events.data.microsoft.com^$app=com.microsoft.bing
+||mobile.events.data.microsoft.com^$app=com.microsoft.bing
+||braveglobal.tv^
+||mssdk-boot.cpacutapi.com^
+||collect.ureca-lab.com^
+||api.abcsinsights.com^
+||tracking.carbonatixaudio.com^
+||issuepcdn.freeterabox.com/issue/terabox/TeraBox_cdn_resource\pic\video_accelerate_guide_new.gif
+||issuepcdn.freeterabox.com/issue/terabox/TeraBox_cdn_resource\pic\bg_video_quality_privilege.gif
+||data.terabox.com/issue/terabox/TeraBox_cdn_resource\pic\video_accelerate_guide_new.gif
+||data.terabox.com/issue/terabox/TeraBox_cdn_resource\pic\bg_video_quality_privilege.gif
+||adashx.ut.alibaba.com^
+||h-adashx.ut.alibaba.com^
+||stats.calldorado.com^
+||traffic.calldorado.com^
+||track.aieic.com^
+||tracker.str-nrg.com^
+||ced-ns.sascdn.com^
+||use-trk*.bluevoox.com^
+||pixel.magentamarketing.com^
+||bisrtb.vidazoo.com^
+||t*.playdigo.live^
+||tnc*.tiktokv.us^
+||tnc*.tiktokv.com^
+||log*-normal-*.tiktokv.com
+||aws.userlogsanalytics.com^
+||atb-stats-api.imolive.tv^
+||i.mxplayer.j2inter.com^
+||allapp.link/*/event
+||stat.weamvideo.com^
+||log.ultimatecleaner.pro^
+||impression.link^
+||rm.aarki.net^
+||use-cr.svr-algorix.com^
+||gnsnpaw.com^
+||log.jackpotmasterslots.com^
+||jpush.io^
+||datacollector-drru.dt.dbankcloud.ru^
+||ulog*.kwai-pro.com^
+||spider-tracker.xiaohongshu.com^
+||tp2p.kg.qq.com^
+||twns.p2ptun.qq.com^
+||data.kuiniuca.com^
+||clientlogsf.music.163.com^
+||ye.dun.163yun.com^
+||netapm.music.163.com^
+||clientlogdep.music.163.com^
+||clientlog3.music.163.com^
+||collect.4gtv.tv^
+||uaid.vtwenty.com^
+||telemetry.codefusion.technology^
+||events.watchtower.imdbtv.amazon.dev^
+||mobile-production.content-square.net^
+||sf16-static.i18n-pglstatp.com^
+||log.pullcenter.live^
+||log.documentmanagerpdfdocxlssale.live^
+||stats.samsungpass.com^
+||analytics.google.com^$domain=analytics.google.com
+||log.pdfviewerscannerstore.live^
+||mon-v*-boot.capcutapi.com^
+||log-sg.capcutapi.com^
+||mon-sg.capcutapi.com^
+||tnc-sg.capcutapi.com^
+||tnc-boot.capcutapi.com^
+||tnc-va*.capcutapi.com^
+||mon-va*.capcutapi.com^
+||log-va*.capcutapi.com^
+||metrics-prod.suno.com^
+-ulogl*.kwai-pro.com^
+||ulog*.kwaipros.com^
+||snowplow-collector.
+||logs-ingress.svc.vinted.com^
+||analytics.baliusuperapp.xyz^
+||analytics.hardlightgames.com^
+||plankton-gtm.a.autoscout24.com^
+||pangle-b.io^
+||repo.adbc.io:8081/repository/QTracker/
+||receiver.habby.mobi^
+||track.*.roku.com^
+||traces.sr.roku.com^
+||analytics.kidoz.net^
+||track.tenjin.com^
+||tracker.mtrtb.com^
+||tracking.ws.eurosport.com^
+||analysis.polarisoffice.com
+||fraudmetrix.cn^
+||analysys.cn^
+||logs.supersonic.com^
+||mssdk-va.byteoversea.com^
+||log*-normal-useast1a.lemon8-app.com^
+||events.bsky.app^
+||caerulus.io^
+||log.heartratepros.com^
+||hw-sh-pcdn-*.biliapi.net^
+||ali-bj-pcdn-*.biliapi.net^
+||tatrack.thinkyeah.com^
+-rtb.gravite.net^
+||mon*-misc-lf.fqnovel.com^
+||vcs.zijieapi.com^
+||monsetting.toutiao.com^
+-applog*.fqnovel.com^
+||atsod.launch.liveramp.com^
+||ads-image.production-public.tubi.io^
+||user-signals.production-public.tubi.io^
+||sonar*.xy.fbcdn.net^
+||mob2.healthtrackergroup.com^
+||insights-categorizer-noneu.truecaller.com^
+||event-dot-learning-piano.appspot.com^
+||log.cleanertoolboxonline.live^
+||amplitude.life360.com^
+||events.swiftlycontent.net^
+||log.cleandesigner.live^
+||mob2.healthapplines.com^
+||client-telemetry.hingeprod.net^
+||events-api.towneers.prod.data.krmt.io^
+||event.karrotmarket.com^
+||iot-in-logser.realme.com^
+||push-api.topaz-analytics.com^
+||analytics.wildlifestudios.com^
+||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
+||rabbit.meitustat.com^
+||mediation.mwmadnetworks.com^
+||meitustat.com^
+||analysis.vesync.com^
+||insights.zennioptical.com^
+||proxy.telemetry.us-ashburn-1.oci.oraclecloud.com^
+||admob-app-id-*.firebaseio.com^
+||stats.rustore.ru^
+||vk-analytics.ru^
+||tracking.iwhop.cn^
+||push-api.topaz-analytics.com^
+||analytics.wildlifestudios.com^
+||opentelemetry-collector.shared-services.us-east-1.general.prod.wildlife.io^
+||log-verify.mob.com^
+||app-analytics-services.com^
+||sg.log.ulivetv.net^
+||events.funnelish.com^
+||analytics.app.funnelish.com^
+||analytics.starmakerstudios.com^
+||track.starmakerstudios.com^
+||volceapplog.com^
+||toblog.tobsnssdk.com^
+||tobapplog.tobsnssdk.com^
+||log.talkie-ai.com^
+||log.goodreels.com^
+||log.dramaboxdb.com^
+||log.51changdu.com^
+||autotrack.studyquicks.com^
+||stats.studyquicks.com^
+||fm-analytics-api.pocketfm.com^
+||reportwest-midas.codmwest.com^
+||events.character.ai^
+||sb.scorecard.research.com^
+||zml-apm-prd.dbv4.noncd.db.de^
+||api.bytebrew.io^
+||lg-release-tracking-8080.gcld-line.com^
+||iemiq.com^
+||yun-hl.3g.qq.com^
+||up-hl.3g.qq.com^
+||analytics-*-nfl.yinzcam.com^
+||prod.report.nacustomerexperience.citi.com^
+||mon.byteoversea.com^
+||fraud.adjoe.zone^
+||sdk-monitoring.ogury.co^
+||tracker.srta.spectrum.com^
+||event-collector.moviesanywhere.com^
+||us-east-1.paa-reporting-advertising.amazon^
+||analytics.nianticlabs.com^
+||tracker.ulivetv.net^
+||trackernew.ulivetv.net^
+||gamestats.easybrain.com^
+||am.yahoo.co.jp^
+||b99.yahoo.co.jp^
+||logs13.xiti.com^
+||tracing-collector.strava.com^
+||m5.amap.com/ws/shield/location/collection/autodata/stat^
+||cgicol.amap.com^
+||dualstack-cgicol.amap.com^
+||ad-api-log.colopl.jp^
+||metrics.macys.com^
+||track.ktplay.com^
+||preview-collector.scopely.io^
+||collector.scopely.io^
+||events.swishapps.ai^
+||telemetry.canva.com^
+||analytics.picsart.com^
+||payload.adadapted.com^
+||ec.adadapted.com^
+||tracking.viewlift.com^
+||events.prd.api.discomax.com^
+||events.betterhelp.com^
+||analytics-gateway.delta.dp.lightricks.com^
+||log.bloodsugars.live^
+||logservice1.dbankcloud.cn^
+||open.oneplus.net^
+||analytics-api.samsunghealthcn.com^
+||log.espn.com^
+||sia.internet.apps.samsung.com^
+||r.apkpure.net^
+||analytics.zg-api.com^
+||track-resource.bidease.com^
+||track-us.bidease.com^
+||mintegral.net^
+||innovads-server.poster.appsinnova.com^
+||adtrack.xiaojukeji.com^
+||rtag.farmers.com^
+||s.pixsrvcs.com^
+||cws-hulu.conviva.com^
+||vik-analytics.moonactive.net^
+||report.apkpure.net^
+||report.*.gbqofs.io^
+||grs.hicloud.com^
+||logbak.hicloud.com^
+||iot-eu-logser.realme.com^
+||iot-logser.realme.com^
+||tracking.purchasely.io^
+||ts.line-apps.com^
+||log-music-data.line-apps.com^
+||events-api.soundcloud.com^
+||profiler-collector.wshareit.com^
+||receiver-metis.infeng.site^
+||dt.beyla.site^
+||collect.analytics.unity3d.com^
+||accscdn.m.taobao.com^
+||apsrgeo.amap.com^
+||confe.dc.oppomobile.com^
+||conff.dc.oppomobile.com^
+||dragate.dc.oppomobile.com^
+||esa-reg-eup.myoppo.com^
+||obus-in.dc.heytapmobile.com^
+||adx-in.ads.heytapmobile.com^
+||dragate-in-dc.heytapmobile.com^
+||omes-sec.heytapmobile.com^
+||moa-upload-online.coloros.com^
+||stat-in.dc.oppomobile.com^
+||prod-analytics.royal.drmgms.com^
+||trckr.contextualadv.com^
+||logservice1.hicloud.com^
+||logservice.hicloud.com^
+||logger.growstarry.com^
+||beacon-api.aliyuncs.com^
+||adash.man.aliyuncs.com^
+||adashx4ae.ut.taobao.com^
+||h-adashx4ae.ut.taobao.com^
+||audid-api.taobao.com^
+||analytics.ff.avast.com^
+||node.aibeacon.jp^
+||wsmetrics.batch.com^
+||log.isnssdk.com^
+||log-tb.isnssdk.com^
+||rtlog.isnssdk.com^
+||mon.isnssdk.com^
+||event.togothermany.com^
+||oldevent.togothermany.com^
+||logs.ironsrc.mobi^
+||events.mz.unity3d.com^
+||r-log.dable.io^
+||logservice-*.platform.dbankcloud.cn^
+||ubacollect-*.cloud.dbankcloud.cn^
+||datacollector-*.dt.dbankcloud.cn^
+||mobile-events.eservice.emarsys.net^
+||stat.gspaceteam.com^
+||alexa-mobile-analytics-configuration-prod.s3.amazonaws.com^
+||ets.easybrain.com^
+||tracking-widget.fillr.com^
+||api.data-analytics.pokemon.com^
+||arcspire.io^
+||t.adx.opera.com^
+||sensors.snaptube.app^
+||analytics.kongregate.io^
+-spiky.clevertap-prod.com^
+||logs.gshopper.com^
+||airlytics.airlock.twcmobile.weather.com^
+||track.midway.run^
+||d.reddit.com^
+||splendapps.com/aid.php
+||clog.mirrativ.com^
+||teleport.soom.la^
+||logs1407.xiti.com^
+||log1.apkomega.com^
+||log.pngindir.com^
+||log.happyapkdown.com^
+||log-v4-insight.kaizenplatform.net^
+||tracker.neodatagroup.com^
+||stats.sxp.smartclip.net^
+||static.fengkongcloud.com^
+||fp-*it*.fengkongcloud.com^
+||cloudconf.fengkongcloud.com^
+||tracker.fengkongcloud.com^
+||dm.pstatp.com^
+||log.game.qcplay.com^
+||report-stats.ad.jiguang.cn^
+||config.jpush.cn^
+||ab.servogram.io^
+||webmetrics.mayoclinic.org^
+||tagdelivery.mayoclinic.org^
+||tagdelivery.mayoclinic.org.pc-mc.greylabeldelivery.com^
+||maas-*.phunware.com^
+||events-stream-svc.cordial.com^
+||events-stream-svc.usw2.cordial.com^
+||message-hub-svc.usw2.cordial.com^
+||stats.fifthstarlabs.io^
+||events.iap.unity3d.com^
+||mobilelog.ws.pho.to^
+||etl.tindersparks.com^
+||overseauspider.yuanshen.com:8888/log^
+||tags.creditkarma.com^
+||track.extra.app^
+||vgs-collect-keeper.apps.verygood.systems^
+||g.analytics.versa-ai.com^
+||analytics.rayjump.com^
+||events.ifunny.co^
+||imp-*.jampp.com^
+||telemetry.navigatorapp.net^
+||pathfinder.analytics.komoot.net^
+||evt.mxplay.com^
+||log.geetest.com^
+||prod-clientlog.fastly.newssuite.sinfony.ne.jp^
+||track.hk01.com^
+||analytics.kaltura.com^
+||eventgw.twilio.com^
+||log.estand.jp^
+||event-search.jorte.com^
+||sdk-log-upload-os.hoyoverse.com^
+||ad-log-upload-os.hoyoverse.com^
+||apm-log-upload-os.hoyoverse.com^
+||devlog-upload-os.hoyoverse.com^
+||hkrpg-log-upload-os.hoyoverse.com^
+||log-upload-os.hoyoverse.com^
+||overseauspider.yuanshen.com^
+||sentry.eks.hoyoverse.com^
+||sg-public-data-api.hoyoverse.com^
+||ys-log-upload-os.hoyoverse.com^
+||analytics.studiodesignapp.com^
+||misc.api.snaptube.app^
+||trusted-collector-bk.tmocce.com^
+||collect.babybus.com^
+||log.apkomega.com^
+||log.yougameover.com^
+||log.make50.com^
+||log.easy39.com^
+||log.appbundledownload.com^
+||log.down61.com^
+||trackersdk.bdash-cloud.com^
+||hit.gemius.pl^
+||click.oneplus.com^
+||click.oneplus.cn^
+||mapi-log.qoo*.jp^
+||events.api.red.wemesh.ca^
+||piano_log.kingsoft.jp^
+||t.ndemiccreations.com/*/*?tv=*&uid=
+||logend.cookpad.com^
+||viva.api.xiaoying.co^
+||ub-xjp.vvbrd.com^
+||nelo2-col.linecorp.com^
+||msga.cupid.iqiyi.com^
+||ndct-data.video.iqiyi.com^
+||ibd-as-api.iq.com^
+||statclick.nate.com^
+||aff-report.lbesecapi.com^
+||aff-policy.lbesecapi.com^
+||psi.lbesecapi.com^
+||report-ps.meettech.net^
+||f-log-*.grammarly.io^
+||log*-misc-lf.amemv.com^
+||msg.umengcloud.com^
+||ulogs.umengcloud.com^
+||analytics.liveact-vault.com^
+||dex50.deteql.net^
+||analytics.300624.com^
+||toblog.ctobsnssdk.com^
+||tobapplog.ctobsnssdk.com^
+||t.castle.io^
+||bs.nakanohito.jp^
+||log.pvpgang.com^
+||crs-event.line.me^
+||crs-hometab-event.line.me^
+||munchkin.marketo.net^
+||tr.gunosy.com^
+||tr.line.me^
+||gd-stats.jpush.cn^
+||analytics.enjoymobiserver.com^
+||api.reproio.com^
+||log5.interactive-circle.jp^
+||b94.yahoo.co.jp^
+||api.simeji.me/*/sessionLog
+||hibiki-track.logica.bz^
+||log.mmstat.com^
+||msg-intl.qy.net^
+||log.mgtv.com^
+||dflow.log.hunantv.com^
+||ali-stats.jpush.cn^
+||msg.simeji.me^
+||msg.simeji.baidu.jp^
+||beacons*.gvt3.com^
+||post-log.pushwoosh.com^
+||appanalysis*.banggood.com^
+||line1-log.biligame.net^
+||log-upload-eur.mihoyo.com^
+||log-upload.mihoyo.com^
+||log-upload-os.mihoyo.com^
+||s3-analytics-events.easybrain.com^
+||mgs123.com^
+||metrics.sp0n.io^
+||liveme-sensors-collect2-*.amazonaws.com^
+||adtracker.jpchd.veraxen.com^
+||adtracker.oilpainting.colorbynumber.veraxen.com^
+||adtracker.mkjigsaw.com^
+||stats.oilpainting.colorbynumber.veraxen.com^
+||qa-events-schema.viacom.tech^
+||dns-clientinfo.cbsivideo.com^
+||trace.qq.com^
+||report.*.qq.com^
+||events.tvtime.com^
+||smetrics.discover.com^
+||geico.com.ssl.sc.omtrdc.net^
+||sadobeanalytics.geico.com^
+||dit.whatsapp.net^
+||analytics.redbubble.com^
+||stats-sg.ganymede.eu^
+||eventcollectorv2-1131000179.us-east-1.elb.amazonaws.com^
+||stats-proto.pandora.com^
+||collector.vhx.tv^
+||analytics-server.gimbal.com^
+||log-tb.sgsnssdk.com^
+||rtlog.byteoversea.com^
+||tnc16-*.byteoversea.com^
+||xlog.byteoversea.com^
+||ug-sg.byteoversea.com^
+||log*.byteoversea.com^
+||tracking.aldi-international.com^
+||direct-collect.dy-api.com^
+||direct-collect.dy-api.eu^
+||pinkoi.com/_log/
+||api.telemetry.watchabc.go.com^
+||analytics.rover.io^
+||events-collector-api.viacom.tech^
+||log.snow.me^
+||events.textme-app.com^
+||stocks-analytics-events.apple.com^
+||stocks-analytics-events.news.apple-dns.net^
+||books-analytics-events.apple.com^
+||books-analytics-events.news.apple-dns.net^
+||us04logfiles.zoom.us^
+||costco-adbutler.com^
+||adbutler.costco.com^
+||wompanalytics.azurewebsites.net^
+||analytics.seekxr.com^
+||analytics.robinhood.com^
+||tracking-config-service.glority.com^
+||tracking-service.glority.com^
+||analytics-ingestion.production-public.tubi.io^
+||pingtas.qq.com^
+||tenant-content.apm.appfolio-analytics.com^
+||log.avlyun.com^
+||api-analytics.prod.birdapp.com^
+||umengjmacs.m.taobao.com^
+||umengacs.m.taobao.com^
+||sdk-api-v1.singular.net^
+||analytics-api.liveapp.com^
+||log-collector.shopee.
+||seller-log-collector.shopee.
+||telemetry.voxeet.com^
+||usertrack.appcpi.net^
+||api*.amplitude.com^
+||conversions.appsflyer.com^
+||collect.serious.li^
+||analytics.jodelapis.com^
+||analytics.mobilegamestats.com^
+||p.statp.com^
+||events.claspws.tv^
+||tracking-receiver.prod-general.stocard-backend.com^
+||metrics.happycolor.app^
+||ad-creative.projectcarmen.com^
+||analytics.projectcarmen.com^
+||monitoring-sdk.experimentation.intuit.com^
+||logging.api.intuit.com^
+||analytics.prod.mybuddy.ai^
+||dualstack-logs.amap.com^
+||logs.amap.com^
+||edmanalytics.pandahall.com^
+||applogs.pixelfederation.com^
+||applogs-v2.pixelfederation.com^
+||analytics.dns-shop.ru^
+||trk2.pinterest.com^
+||mobiletelemetry.ebay.com^
+||us-tracking.nextdoor.com^
+||us-events.api.iheart.com^
+||notes-analytics-events.apple.com^
+||notes-analytics-events.news.apple-dns.net^
+||weather-analytics-events.apple.com^
+||weather-analytics-events.news.apple-dns.net^
+||v-collector.dp.aws.charter.com^
+||smetrics.cnn.com^
+||metrics.claspws.tv^
+||sdk-log-inter.youdao.com^
+||sensors.snappea.com^
+||analytics.snaptube.app^
+||adtima-static.zadn.vn^
+||ztevents.zaloapp.com^
+||log.adtimaserver.vn^
+||tunion-api.m.taobao.com^
+||nbsdk-baichuan.taobao.com^
+||amdc.m.taobao.com^
+||amdcopen.m.taobao.com^
+||batchlogging*-eu.truecaller.com^
+||batchlogging*-noneu.truecaller.com^
+||logsink.zedge.net^
+||consent-manager-events.ogury.io^
+||api.share.mob.com^
+||bi.manhuaren.com^
+||analytics.datasavannah.com^
+||sq.requestads.com^
+||stat.meitudata.com^
+||collect.media.jio.com^
+||log.apk.v-mate.mobi^
+||track.mobshark.net^
+||dsp-adcreative.mobshark.net^
+||dsptrack.mobshark.net^
+||analytics.metrix.ir^
+||hwstats.unity3d.com^
+||installtracker.unityads.unity3d.com^
+||mediation-tracking.prd.mz.internal.unity3d.com^
+||tracking.prd.mz.internal.unity3d.com^
+||publisher-event.ads.prd.ie.internal.unity3d.com^
+||publisher-event.unityads.unity3d.com^
+||userreporting.cloud.unity3d.com^
+||analytics.cloud.unity3d.com^
+||cdn-adn.rayjump.com^
+||sg01.rayjump.com^
+||cafe-log.myshoplus.com^
+||de01.rayjump.com^
+||c.sayhi.360.cn^
+||log.tpns.tencent.com^
+||stat.m.360.cn^
+||stats-a.maxthon.com^
+||pgapi.ksmobile.com^
+||gcm.ksmobile.net^
+||adsaccount.appcpi.net^
+||adtrack.appcpi.net^
+||remain.appcpi.net^
+||appmetr.com^
+||track.tenjin.io^
+||stats.abbi.io^
+||api.goodbarber.net/statsapi/
+||tr.snapchat.com^
+||tracking.aatkit.com^
+||reporting.aatkit.com^
+||geo.go2s.co^
+||batsavcdn.ksmobile.net^
+||cfg.cml.ksmobile.com^
+||tealand.cmcm.com^
+||geoinfo.i2w.io^
+||tracking.i2w.io^
+||detect.rayjump.com^
+||a.appbaqend.com^
+||ue.flipboard.com^
+||helpshift.com/api/lib/2/events/
+||mobileapptracking.com^
+||mobile.bigfishgames.com/telemetry/
+||ilyonanalytics.herokuapp.com^
+||gcm.ksmobile.com^
+||ninja.onap.io^
+||sdk.stats-locations.com^
+||config.safedk.com^
+||elephantdata.net^
+||sdks.stats-locations.com^
+||imp.startappservice.com^
+||ploy.batmobi.net^
+||an.batmobi.net^
+||analytics.any.do^
+||m.vpadn.com^
+||parse-ppom-prod.herokuapp.com/parse/events^
+||sts.batmobi.net^
+||api.facebook.com/method/logging.clientevent
+||pps-log.op-mobile.opera.com^
+||tktracker.aotter.net^
+||tkrecorder.aotter.net^
+||android.bugly.qq.com^
+||astat.bugly.qq.com^
+||ios.bugly.qq.com^
+||tracking-*.trnox.com^
+||tracking.trnox.com^
+||rts.mobula.sdk.duapps.com^
+||aftonbladetnya.sc.omtrdc.net^
+||omni-ads.omni.news^
+||wzrkt.com^
+||analytics-events.inshorts.com^
+||e-ssl.apsalar.com^
+||track.adform.net^
+||sync.adotmob.com^
+||logger.cloudmobi.net^
+||tracker.adotmob.com^
+||dmx.sync.yume.com/tracker/
+||global.cmcs.service.amazonsilk.com/metrics
+||analytics-tracker.thescore.com^
+||rosenberg.appmetrica.webvisor.com^
+||report*.appmetrica.webvisor.com^
+||d.applvn.com^
+||rt.applvn.com^
+||api*.moengage.com^
+||sdk-*.moengage.com^
+||rt.applovin.com^
+||patriot.cs.pp.cn^
+||sdk-orion.appboy.com^
+||api.elysium.opera.com/api/elysium/log_session_events
+||api.elysium.opera.com/api/elysium/log_session_info
+||loadus.exelator.com^
+||api.mixpanel.com^
+||decide.mixpanel.com^
+||api.segment.io^
+||bitmango.com/log
+||tracking.directservices.it^
+||metrics.timewarnercable.com^
+||flurry.agentportal-*.yahoodns.net^
+||amptrack-dailymail-co-uk.cdn.ampproject.org^
+||metrics-cbslocal-com.cdn.ampproject.org^
+||startappservice.com/tracking/
+||tracking-server-prod-1.zenmxapps.com^
+||config.uca.cloud.unity3d.com^
+||api.uca.cloud.unity3d.com^
+||resolver.gslb.mi-idc.com^
+||geoip.ifunny.co^
+||alogs.umengcloud.com^
+||device-metrics-*.amazon.com^
+||flurry.agentportal.*.yahoodns.net^
+||4seeresults.com^
+||abcd.mdc.akamaized.net/materials/index/?country=
+||adash.m.taobao.com^
+||adfuture.cn^
+||adserver.snapads.com^
+||adsunflower.com^
+||advmob.cn^
+||alog.umengcloud.com^
+||amp-error-reporting.appspot.com^
+||analytics.ad.daum.net^
+||analytics.liftoff.io^
+||analytics.mobile.yandex.net^
+||analytics.query.yahoo.com^
+||andmlb.kshwtj.com^
+||api.amplitude.com^
+||api.analytics.omgpop.com^
+||api.apptentive.com^
+||api.branch.io^
+||api2.branch.io^
+||api3.branch.io^
+||api.gameanalytics.com^
+||api.gimbal.com^
+||appmetrica.yandex.net^
+||appmetrica.yandex.com^
+||beacon.carfax.com^
+||beacon.qq.com^
+||beacon.shazam.com^
+||beha.ksmobile.com^
+||bidder.mdspinc.com^
+||brahe.apptimize.com^
+||c.bigmir.net^
+||carfax.sc.omtrdc.net^
+||cedexis-radar.net^
+||clientmetrics-augmentum.kik.com^
+||clientmetrics.kik.com^
+||collector.brandify.com^
+||config2.mparticle.com^
+||crasheye.cn^
+||crittercism.com/api/
+||dsg.sc.omtrdc.net^
+||etl.xlmc.sandai.net^
+||events.lbesecapi.com^
+||facebook.com/rtb_impression/?tr=
+||geoip.fotoable.net^
+||googleadapis.l.google.com^
+||iam-agof-app.irquest.com^
+||inst.platform.bing.com/api/log
+||installtracker.com^
+||invenio_tracking_*.sgnapps.com^
+||lepodownload.mediatek.com^
+||log.umsns.com^
+||m.vk.com/counters.php
+||m.xiangce.baidu.com/mobileapp/motu-*?guid=
+||metrics.adflake.com^
+||metrics.sdkbox.com^
+||mlb.did.ijinshan.com^
+||mobile-collector.newrelic.com^
+||mobile-global.baidu.com/mbrowser/stat/
+||mobileanalytics.*.amazonaws.com^
+||mobilelog.upqzfile.com^
+||ms.cmcm.com^
+||nativesdks.mparticle.com^
+||nrc.tapas.net^
+||online-metrix.net^
+||pingma.qq.com^
+||play.googleapis.com/log|
+||play.googleapis.com/play/log^
+||prugskh.com^
+||prugskh.net^
+||rc.dxsvr.com^
+||rlog-api.under9.co^
+||rlog.9gag.com^
+||sc-analytics.appspot.com^
+||sdk-api.yozio.com/?os
+||sdk.appbrain.com/api/
+||ssl-google-analytics.l.google.com^
+||sstats.economist.com/b/ss/econdarwinproduction/
+||stat.duokanbox.com^
+||stats.popcap.com^
+||taurus.iad.appboy.com^
+||tknet.rayjump.com^
+||tns.simba.taobao.com^
+||track.pingstart.com^
+||tracker-api.my.com^
+||tracking.lenzmx.com^
+||trk.pinterest.com^
+||tumblr.com/services/cslog
+||tunein.adswizz.com^
+||ups.ksmobile.net^
+||ws.ksmobile.net^
+||www-google-analytics.l.google.com^
+||ymtracking.com^
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/217881
+/^https:\/\/anon1.gt\d{6}.com/
+! For DNS filtering
+/^anon1.gt\d{6}.com$/
+!
+! https://github.com/hagezi/dns-blocklists/issues/6060
+-logsdk.kwai-pro.com^
+-ulog-*.kwai-pro.com^
+-ulog-*.kwaipros.com^
+-ulog.*.kwai-pro.com^
+-ulog.*.kwaipros.com^
+-ulog.ksapisrv.com^
+-ulog.kwai-pro.com^
+-ulog.kwaipros.com^
+-ulog.region.kwai-pro.com^
+-ulogl2.kwai-pro.com^
+-ulogl2.kwaipros.com^
+||csplog.kwai-pro.com^
+||log-sdk.ksapisrv.com^
+||logsdk.kwai-pro.com^
+||ulog-*.ksapisrv.com^
+||ulog.*.ksapisrv.com^
+||ulog.*.kwai-pro.com^
+||ulog.ksapisrv.com^
+||ulog.kwai-pro.com^
+||ulog.kwaipros.com^
+||ulog1-us.kwai-pro.com^
+||ulog2-us.kwaipros.com^
+||ulogjs.ksapisrv.com^
+||ulogs1.ksapisrv.com^
+||ulogs2.ksapisrv.com^
+||wlog.ksapisrv.com^
+!
+! TikTok
+||log-va.tiktokv.com^
+||mcs.*.tiktok.com^
+||mcs.tiktokw.us^
+||mcs.*.tiktokv.com^
+||log*-normal-*.tiktokv.us^
+||sf16-telemetry-proxy-oci.tiktokcdn-us.com^
+||mon*-*.tiktokv.com^
+||log*-*.tiktokv.com^
+||rtlog*.tiktokv.us^
+||rtlog*.tiktokv.com^
+||log.tiktokv.com^
+||rtc-logger-va.tiktokv.com^
+||rtlog.tiktokv.com^
+||mon*-*.tiktokv.us^
+||mon.us.tiktokv.com^
+||mon-*.tiktokv.com^
+||mon.tiktokv.com^
+||xlog.tiktokv.com^
+||xlog-va.tiktokv.com^
+||xlog*-*.tiktokv.com^
+||mcs-va.tiktokv.com^
+||mcs-va-*.tiktokv.com^
+||analytics.tiktok.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/193267
+!||log-boot.tiktokv.com^
+!
+! UC Browser
+||woodpecker.uc.cn^
+||track.uc.cn^
+||applog.uc.cn^
+||dispatcher.upmc.uc.cn^
+||gjapplog.uc.cn^
+||track.uc.cn^
+||uc9.ucweb.com^
+||ucus.ucweb.com^
+||logssug.ucweb.com^
+||gjtrack.ucweb.com^
+||px.ucweb.com^
+||insight.ucweb.com^
+||gjapplog.ucweb.com^
+||uc.ucweb.com^
+||puds.ucweb.com^
+||bts-la.ucweb.com^
+||intlsucus.ucweb.com^
+||adtrack-intl.ucweb.com^
+||mum.alibabachengdun.com^
+||upoll.umengcloud.com^
+||utop.umengcloud.com^
+! KingRoot
+||analy.qq.com^
+||appsupport.qq.com/cgi-bin/appstage/mstats_batch_report
+||monitor.uu.qq.com/analytics/
+! Google News
+||play.google.com/newsstand/api/*/people/me/analytics^
+
+!
+! This section contains the list of generic blocking rules.
+!
+! Good: .org/ads/
+! Bad: .org/ads/$domain=example.org (for instance, should be in speficic.txt)
+!
+!
+! server-side GTM pattern B ex. https://load.ss.esade.edu/ykpgwaiz.js?st=5V4W3ZR
+!+ NOT_PLATFORM(ios, ext_safari)
+/\/\/([0-9a-z]+\.){1,}[0-9a-z]+\.[a-z]{2,}\/[a-z]{8}\.js\?st=[0-9A-Z]{6,8}$/$script,~third-party,match-case
+!+ PLATFORM(ios, ext_safari)
+/\/\/([0-9a-z]+\.)?([0-9a-z]+\.)?[0-9a-z]+\.[0-9a-z]+\.[a-z][a-z]+\/[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]\.js\?st=[0-9A-Z][0-9A-Z][0-9A-Z][0-9A-Z][0-9A-Z][0-9A-Z][0-9A-Z]?[0-9A-Z]?$/$~third-party,match-case
+! https://github.com/uBlockOrigin/uAssets/issues/9932
+! ex. https://bitdomain.biz/n06eaqkwkq2d/T6wYzHxHWWzfs/6OWki/4i2D4u/ZIQb2nQkaXSF/cVkUc+zmqKYvfudx/SGqzLxv38jdl/yltwxPN+erfWRFS/LQUKf1hC7dE/t3YI on bitdomain.biz
+/\/[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$/$match-case,script,~third-party
+! ex. https://7mvmjg.www.emanualonline.com/Rl6JuaNr5UmUp7WSOVdguUreol4tlNJ93Broxxy8qBTEtjqX6t7ejC72XctX4mCezSwJrSPCvPRn5YUDawPAaex8j7jlNC6OKJBdAilg on www.emanualonline.com
+/^https?:\/\/(?!assets|script|static)(?:[0-9a-z]{10,13}|[0-9a-z]{6})\.[0-9A-Za-z.\-_]+\/(?=[0-9a-z+\/\-]*[A-Z])[0-9A-Za-z+\/\-]{80,106}$/$match-case,script,~third-party
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/143862
+/^https:\/\/cs\d{3}\.\w+\.com\/cscript\/\d{3}\/[\w\d]+\.js$/$script,third-party,match-case
+! Blocking conversion tracking URLs that are used by WebKit
+! More info: https://webkit.org/blog/11529/introducing-private-click-measurement-pcm/
+! Content blockers can prevent this: https://bugs.webkit.org/show_bug.cgi?id=197183
+!+ NOT_OPTIMIZED
+/.well-known/private-click-measurement
+!
+/api-integration/ad-rotator/track/*
+/api-integration/ad-rotator/stats^
+&tag_exp=*&e=gtm.
+/0.gif?
+/internal-stats-lite/p.php?
+/internal-stats/pixel/*
+/libtrc/tr5?type=*pixel*
+/code/e.js|$~third-party
+/posthog-recorder.js
+.js?tg=$~third-party
+/advanced-ads-tracking/assets/dist/ga-tracking.js
+/hit-track.php
+/wp-content/plugins/jetpack/jetpack_vendor/automattic/woocommerce-analytics/*
+/phenomtrack.min.js$script
+/dead-clicks-autocapture.js
+/api/ads-bff-client/*
+/nelio-ab-testing/assets/dist/js/visitor-type.js
+/elastic-apm-rum.umd.min.js
+/digibox.gif?c=$image
+/wp-content/plugins/burst-statistics/*
+/wp-content/plugins/wp-analytify-pro/*
+/crm/tag/call.tracker.js
+/statistics/md.gif?
+/sp-2.0.0-dm-0.1.min.js
+/i?e=pv&page=
+/js/exponea.min.js
+/js/pixel.js|
+/apps/ssw/events-collector-lambda/events/*
+/sfp/universal_analytics.min.
+/ajax/whereami$ping
+/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-
+/web-vitals-tracker.js
+/.rum/@adobe/helix-
+://sp.*/sp/h|$xmlhttprequest
+/srpc.js?ssss
+/posthog/ingest/*
+/mai-publisher-analytics.js
+/genesis/lib/js/skip-links.min.js
+/app/Eclog/js/cid.generate.js
+/home/new/v*/api/get-ip.php
+/home/new/v*/api/applogger.php
+/rum/events
+/gs/ccm/collect?
+/piano/engagement
+/statsig/rgstr?k=client-
+/v1/rgstr?k=client-
+/ezais/analytics
+/detroitchicago/reno.js
+/detroitchicago/overlandpark.js
+/script.tagged-events.js
+/script.tagged-events.outbound-links.js
+/_vercel/insights/script.js
+/_vercel/speed-insights/script.js
+/p/tm.js?
+://analytics.*/hardal
+://signal.*/hardal
+://signals.*/hardal
+://rum.collector.*/beacon.gif
+/~partytown/proxytown
+/fingerprint/iife.min.js
+/dtr/count.php
+/js/generateStats-min.js
+/scripts/sdk/everflow.js
+/qlog/add?userId=
+/providers/atLabel/load|
+/init?*&fallbackUserId=
+/tag?name=PageView$xmlhttprequest
+=aWQ9R1RNL*apiKey=$script,~third-party
+=aWQ9R1RNL*page=$script,~third-party
+.com/hit$ping
+/click.php?lp=data_upd&
+/.netlify/scripts/rum
+/stattag.js
+/ingest/*ip=*&ver=
+/a/elevar/static/*
+/exec/front/eclog/*
+/wp-content/plugins/thirstyaffiliates-pro/js/app/tap-gct.js
+/tongji/baidutongji.js
+/sayac|$subdocument
+/gtag/js?id=
+&cx=c&gtm=
+&ep.analytics_storage=
+/*JmVu.js?sp=
+/plugins/tagging/*
+/tag/proxy?id=G-
+/user-data-minified.$script
+://tagging.*.js?aw=
+&event_name=page_view&
+/uniclick.js?attribution=
+&&sub19=undefined&sub20=undefined
+://sgtm.*.js?
+/api/pageview/*$ping
+/metrika.js?=
+/tmpixel.min.js|
+://matomo.$domain=~matomo.org
+://ss.*.js?st=
+/ns.html?id=GTM-
+://plausible.*/api/event|
+://plausible.*/js/script.
+.pageview-props.*js$script
+/public/assets/js/track-internal-links.js
+/perfmatters/gtagv4.js
+/plugins/wp-rocket/assets/js/wpr-beacon.
+/performance_tracking.min.js
+/attpro/a?
+/master-amg-plugin/assets/js/page-view-ga.js
+/plugins/wp-rocket/assets/js/lcp-beacon.
+/modules/kixelltag/views/js/kst-$script
+/modules/opartstat/*
+/wpm/strict/app/web-pixel
+/openrtb2/auction
+/gciaf/prod/*-GCIAF-STANDARD
+/analytics/clientlibs/sitecatalyst/tracking.
+/track.gif?t=
+/track/impressions?
+/dfm/fp.min.js
+/smi/fp.min.js
+/wp-content/plugins/google-analytics-for-wordpress/*
+/px.gif?
+/com.snowplowanalytics.$domain=~snowplowanalytics.com
+.com.br/tracking.set^|
+.com.br/cliente/trackRemote^|
+! Umami
+||umami.
+! Geo Targetly
+.co/gr?id=
+! Rybbit
+/api/site/tracking-config/*
+/api/track|$third-party,xmlhttprequest
+! VOE - popup ads tracking
+/sftouch?branchId=
+! HubSpot performance monitoring
+/_hcms/perf
+! hyros.com
+||t.*/v1/lst/universal-script?ph=$script
+! Salesforce Pardot's Engagement Tracker
+/analytics?ver=*&visitor_id=
+! Tracking on parked domains
+/_static/deliver.js?nonce=$script,~third-party
+/sxp/i/*$script,third-party
+/tc_imp.gif?
+/munin/a/tr/browserjs?domain=
+/munin/a/ls?t=$xmlhttprequest
+/javascripts/browserfp.min.js?templateId=
+/sk-park.php?pid=
+! zfgloadedpopup tracking
+/solid.gif?z=
+! Shopify
+/web-pixel-*/pixel.modern.js
+/web-pixel-*/worker.modern.js
+/web-pixels@*/web-pixel-*/sandbox/modern/*
+/wpm@*/web-pixel-
+/shopifycloud/perf-kit/shopify-perf-kit-*.min.js
+/shopifycloud/media-analytics/v*/analytics.js
+/shopifycloud/shopify/assets/shop_events_listener-*.js
+/shopifycloud/storefront/assets/shop_events_listener-*.js
+/shopify_stats.js
+/cdn/shopifycloud/consent-tracking-api/*
+/cdn/s/trekkie.storefront.*.min.js
+/shopify-datalayer-minified.js
+/.well-known/shopify/monorail
+! AdvCake
+||hitcrypt.
+||hit.*.ru/*?sid=*&t_tid=
+! G2Analytics
+/prod/dfm/t8y9347t.min.js
+/prod/dfm/g2i.min.js
+! BlueConic
+/DG/DEFAULT/rest/rpc/*
+||blue.*.com/script.js|$~third-party
+! jentis.com tracker
+/get/*/live/_/jts.js
+! GfUBServer
+/__ub.gif?
+! webtrekk
+/wt?p=
+! transsion.com
+/athena-etm.js
+! newrelic.com
+/js/nr-analytics.js
+! Clickunder tracking
+.com/?rb=$xmlhttprequest
+! Popular on Japanese sites
+/bcwc.analytic.js?
+/fpc/cookie_js.php
+/outLoging.js
+/outLoging2.js
+/acc/acctag.js
+/js/wherego_tracker.js?
+.jp/log.php?
+.jp/static/js/track.js
+/oo/cl-$~third-party
+/oo/cl.js|$~third-party
+/oo/cl*.js?rd=$~third-party
+/oo/*/lsync.$~third-party
+/oo/*/l.js|$~third-party
+! Sample URL: http://ct2.kimodameshi.com/sc/1555377
+://ct1.*.com/sc/
+://ct1.*.jp/sc/
+://ct2.*.com/sc/
+://ct2.*.jp/sc/
+/cocoon-master/lib/analytics/access.php?
+/apricot.php?
+/logset.cgi?
+/thk-analytics/*$script
+/lunalys/analyzer/*
+/clicklog4pc.js
+! ex. https://l.tenkomori.tv/script.php?i=5071tenmaya&site=blog.tenkomori.tv
+://l.*/counter.php?id=$script,~third-party
+://l.*/script.php?i=$script,~third-party
+!
+! Facebook
+/js/fb_tracking.js
+/fbpix-events-
+/fbevents.js
+/fbevents.min.js
+/facebook_pixel_
+!
+! Cloudflare
+/\/(public|resources|static|assets)\/([a-f0-9]){28,31}$/$script,xmlhttprequest,~third-party
+/cdn-cgi/bm/cv/*$script
+/cgi-bin/bm/cv/*$script
+!
+! dynaTrace Monitor
+/ruxitagentjs_
+!
+! countly.com
+/countly.js
+/countly.min.js
+!
+! Eulerian
+/eulerian.js
+/simpleEulerian.
+! https://github.com/easylist/easylist/issues/5297
+/submission/pageview
+/collect-*/pageview|
+! RD Station
+/lead-tracking/*
+/lead-tracking.
+/traffic-source-cookie/*
+/traffic-source-cookie.
+/rdstation-popup.min.js
+/rd-js-integration.min.js
+! Plausible
+/plausible.js
+||plausible.io/js/p.js
+||plausible.io/api/event
+! Umami
+/umami.js
+! ZhugeIO
+/zhugeio.js
+! stape.io
+&l=dataLayer&cx=c
+! Cloudflare permormance monitoring
+/cdn-cgi/rum?
+!
+/api/datafast/*
+/tr/lp/intg.js
+/op/analytics.js?domain=
+/send_ga4_params?
+&sst.sw_exp=
+://tagging.*/settings.js
+&ga_blocked=$image
+://sst.*.js?id=GTM-
+||cdn.amplitude.com/libs/plugin-session-replay-browser-$third-party
+/wp-content/plugins/pixelyoursite/*
+/xhr/api/v2/collector
+/eclytics/*
+/app.php/ads/*
+/loader-wp/static/loader.min.js?
+?v=2&tid=G-$~third-party
+/v2/pv-data?
+/gtm.js?id=GTM-
+://tagging.*.js?id=GTM-
+://gtm.*.js?id=GTM-
+/glimr-sdk.
+/assets/userevents/application.js
+/webAnalytics/*$xmlhttprequest,script
+/plow.lite.js
+/clickcount/clickcount.js
+/storeAdvImpression.jsp
+/shared-content/art/stats/common/tracker.js
+/assets/common/js/ga.js
+/common/js/gtm.js
+/wp-statistics/assets/js/tracker.js
+/wp-content/plugins/s2f-referral-tracking/*
+/swlapi/stats|
+.com/api/stats?t=$xmlhttprequest,ping
+.net/api/stats?t=$xmlhttprequest,ping
+/wp-content/plugins/flying-analytics/*
+/sayacff.html
+/share/js/gAnalytics.js
+/wp-content/plugins/pageviews-counter/*
+/webtrack.js
+/nnamdnas.js
+/antnest/NTM-$script
+/antanalysis.min.js
+/js/profitwell.js
+/collect/pv?
+/log/pv?id=
+/webtracking.min.js
+://gtrack.*.com/dye?
+/lasso-ga.
+/dist/owa.tracker.js
+/common_access/usercheck.php?muid=$xmlhttprequest
+/api/bfb_write_log
+/swell-ct-pv$xmlhttprequest
+/swell-ct-ad-data$xmlhttprequest
+/heatmap/js/clickheat.js
+/wp-content/plugins/yyi-rinker/js/event-tracking.js
+/fingerprint.js^
+/wp-content/plugins/woocommerce-google-adwords-conversion-tracking-tag/js/*
+.live/o.js
+/senddata?site=inpage
+://ply.*/?v=$image,third-party
+/_/api/v2/analytics/?
+/sensorsdata.min.js
+/analytics-reporter/*/event
+/p.php?action_name=
+/api/v1/firehose?_
+/trk.*/impression/*
+://vip.*/?pge=$image,third-party
+/google-analyticator/*$script
+/oa-tracking?
+/jquery.iframetracker.min.js
+/snowplow.*.js$domain=~snowplow.io|~tv2.no
+/bpsma.js
+/pv?fe=*&elg=
+/shared/js/ga.js|
+/s/s/js/m/om.js?v=
+/plugins/discourse-fingerprint-
+/fp2.compressed.js
+/wp-content/plugins/confection/bridge.php
+/utx?tid=
+/census/RecordHit
+/dwanalytics-
+/cdn-cgi/zaraz/*
+/beacon/error?
+/i?e=pv&url=
+/partner_tracking_min.js
+/get/*/inventory|
+/metrika/*.png?x=
+/in/track?data=
+/xstat/?id=$script,~third-party
+/perfmatters/js/analytics-minimal.js
+/omniture_tracking.
+/facebook_fbevents.
+/utm-tracker.min.js
+/?local_ga_js=
+/wp-content/plugins/affiliate-wp/assets/js/tracking.min.js
+/wp-power-stats.js
+/akam/13/*
+/clientele/reports/*
+/awstats.js
+/awstats_misc_tracker.js
+/ticimax/analytics.js
+://wa.*/s?$image
+/pmc-google-universal-analytics/*
+/clicktrue_invocation.js?
+/cdn-cgi/challenge-platform/h/*/beacon/*$xmlhttprequest,~third-party
+/?p=%2F*&h=https%3A%2F%2F*&r=&sid=*&qs=*&cid=$image,~third-party
+/video.counters.2.js?
+/w.gif?
+/com_jrealtimeanalytics/*
+/koko-analytics/*/script.js
+/top-10-tracker.min.js
+/bsp-analytics.
+/acclog.cgi?
+/acclog.js
+/pixel_tracking?
+/?imp_id=
+/counter/?domain=$image,~third-party
+/t.gif?
+://analytics.*/collect
+/access.php?referrer=
+/get_site_data?requestUUID=
+/pv.gif?
+/acecounter/acecounter_$script
+.svc/?tracking_id=
+/fp/tags.js
+/imp.gif?
+/ahoy/visits
+&action=js_stats
+/perimeterx/*$domain=~github.com|~github.io
+/cdn-cgi/apps/head/*$script,~third-party
+/analyticstracking.js
+/hawklinks.js
+/aff_i?offer_id=
+/s/js/ta-2.3.js?
+/get_tracking_url.
+/cfga/jquery.js?$image
+/npm/sks@0.*/lazyload.js$script,third-party
+/_ajax/tebilisim.php?
+/track.php?
+/wxhawkeye.js
+/impression/track?
+/?dm=*&blogid=$script
+/check.php?t=*&rand=$image,~third-party
+/akamai/*/mediaanalytics/Mediaanalytics.min.js
+/wp-content/plugins/pb-ga-google-analytics/*$domain=~wordpress.org
+/wp-statistics/v2/hit
+/DG/DEFAULT/cs?
+/wp-content/plugins/stat-analytics/*
+/wp-content/plugins/stat-dfp/*
+/imgcount.php?
+/activecampaign-subscription-forms/site_tracking.js
+/caos-analytics/*.js
+/dooanalytics/*$script
+/sranalytics.
+/sa.gif?
+/bypassma.js
+/fprnt.min.js
+/collect.gif?
+/healthanalytics.js
+/snowplow/*$script
+/w_js.php|$script,~third-party
+/plugins/aurora-heatmap$stylesheet,script
+/logExecutionStats?
+/busting/*/gtm-
+/pum/*/analytics/*
+/gaaddons.js
+/wp-content/plugins/google-analytics-premium/*
+/js/ad_insight/*
+.com/s.gif?
+/facebookPixel.
+/ajax/fdlogger/send
+/PhoenixGoogleAnalytics.min.js
+/.bootscripts/analytics.min.js
+/exactag_clientside.js
+/stats.php?*event=$image
+/google_tag/*$script
+/hawkeye.js
+-track-inview.
+/onetag/*
+/astrack.js
+/gv-analytics/*
+/gapro.js
+/duracelltomi-google-tag-manager/*$script
+/img.gif?
+/mtracking.
+/sr.gif?
+/pv.php?id=
+/set_tracking.js
+/Analytics/Tracking.js
+/autotrack.custom.js
+/admiral.js
+/comscore-min.js
+/pv?u=$image
+directtrack.*.js
+/trackjs.js
+/diffuser.js
+/qlitics.js
+/api/increment-pv$xmlhttprequest
+/matomo.php$ping
+/matomo.php?idsite=
+/watch.*.js?key=*&kw=*&refer=
+/pv_count.
+_analytics.js?
+/tracking/call.$script
+/static/js/analytics-helper.js
+/cls_report?
+/akam/11/*
+/bpix.bmp?b=
+/chicken.gif?z=
+/analytics-event-adapter.
+/alog.min.js
+/alog.mobile.min.js
+.cn/b.gif?
+.com/b.gif?
+.jp/b.gif?
+/v.gif?t=
+.com/v.gif?
+/__Analytics-Start?url=
+/akam/*/pixel_
+/?mailoptin-ajax=track_optin_impression
+/collector.php?$~subdocument
+/matomo.php?action_name=
+/matomo.js$domain=~github.com
+/newrelic-gpt.
+/omniture/visitorapi.
+/wp-content/plugins/wp-google-analytics-events/*
+/wp-content/cache/busting/google-tracking/*
+/insights-emitter.
+/insights-emitter/*
+/log-nt/*
+/rainbow/track
+-unbxdAnalytics.
+/owa.tracker-combined-min.js
+/Web_JS_Stats.
+/mip-stats-cnzz/*
+/rtoaster.js
+/flying-analytics/js/analytics.js
+/js/sync?visitor_id=
+/partner-analytics/*
+/friendbuy.min.js
+/pixel/?block_id=*&hash=*&host=
+/VisitorIdentification.js
+.demandbase.*.js
+/zaius.gif?
+/common/tracking/webtrekk
+/uedata?
+/bbtstats/*
+/px.js?ch=
+/_CPiX/art
+/counter?id=
+/autotrack.js
+/trackad.$third-party
+/playertracking/*
+/pixel.*/track/*
+/mendelstats.
+/clarity-*.js
+/smartpixel.
+/smartpixel-1.js
+.cf/gif/impression?
+/CntRpt.aspx?hCase=
+/analytics/smarttag-
+/smarttag.js
+/smarttag-prod.js
+/smarttag_PROD.js
+.cloudfront.net/br?tid=
+/logger/p.gif?*d=/*
+/amplitude-*-min.gz.js
+/evercookie_
+/google-analytics.
+/log_interaction?
+/2010/JS/AnalTrack.js^
+/wp-content/plugins/pageviews/pageviews.js
+/adrum.js^
+-asset-tag.
+-ajax.php?action=ajax-hits-counter-
+.amazonaws.com/thbeacon
+.com/a.gif?
+.com/c.gif?
+.com/cct?
+.com/i.gif?
+.com/vanity/?
+.de/pt.gif?type=
+.gatracking.js
+.histats.*.js
+.hit.gemius.*.js
+.hit.gemius.*?
+.hit.stat24.
+.hit.ua/hit?
+.jp/c.gif?
+.jp/analyze/
+.jp/urchin.js
+.microsoft.*/broker.js$domain=~technet.microsoft.com
+.microsoft.com/trans_pixel.
+.microsoft.com/wupixel/
+.providesupport.com/cmd/*?ps_t=
+.tns-counter.ru/v13a
+/__ssobj/core.js
+/admantx-
+/admantx.
+/admantx/*
+/adrum_
+/ajax-hits-counter/*
+/analysis-logger/*
+/analysis/AccessLog?
+/aspenanalytics.
+/atrk.gif?
+/atrk.js
+/b/ss/*/JS-
+/b/ss/*&aqe=
+/b/ss/*&ce=utf-8&
+/b/ss/*&pagename=
+/b/ss/*/h.17--wap?c20=
+/b/ss/*=event36&
+/b/ss/*=referrers&
+/b/ss/*?aqb=1&pccr=
+/b/ss/*?gn=mobile:
+/b/ss/*?pagename=
+/b/ss/ueglobaldev/*
+/b/ss/wdgdolad
+/beacon.php3?
+/beacon.php?
+/brightcove/tracking/*
+/cb-pixel.gif?
+/cdn-cgi/pe/bag2?*bluekai.com
+/cdn-cgi/pe/bag2?*bounceexchange.com
+/cdn-cgi/pe/bag2?*cdn.onthe.io%2Fio.js
+/cdn-cgi/pe/bag2?*chartbeat.js
+/cdn-cgi/pe/bag2?*dnn506yrbagrg.cloudfront.net
+/cdn-cgi/pe/bag2?*geoiplookup
+/cdn-cgi/pe/bag2?*getblueshift.com
+/cdn-cgi/pe/bag2?*google-analytics.com
+/cdn-cgi/pe/bag2?*histats.com
+/cdn-cgi/pe/bag2?*hs-analytics.net
+/cdn-cgi/pe/bag2?*log.outbrain.com
+/cdn-cgi/pe/bag2?*mc.yandex.ru
+/cdn-cgi/pe/bag2?*newrelic.com
+/cdn-cgi/pe/bag2?*nr-data.net
+/cdn-cgi/pe/bag2?*optimizely.com
+/cdn-cgi/pe/bag2?*piwik.js
+/cdn-cgi/pe/bag2?*quantserve.com
+/cdn-cgi/pe/bag2?*radarurl.com
+/cdn-cgi/pe/bag2?*scorecardresearch.com
+/cdn-cgi/pe/bag2?*static.getclicky.com%2Fjs
+/cdn-cgi/pe/bag2?*viglink.com
+/cdn-cgi/pe/bag2?*yieldbot.intent.js
+/cdn-cgi/pe/bag2?r[]=*ps.eyeota.net
+/cdn-cgi/pe/bag2?r[]=*whos.amung.us
+/click_metrics-jquery.js
+/clicktrack/*
+/cnt.aspx?*rnd=
+/cp2.gif?
+/dynaTraceMonitor?
+/fingerprint2.js
+/fingerprint2.min.js^
+/gemius.js
+/get_cdns?$third-party,xmlhttprequest
+/get_geoip?
+/gscounters.
+/hit-increment/*
+/hitartirici/*
+/i.gif?pageEvent=
+/images/top100.gif
+/img/bcn.gif?
+/js/iMAWebCookie.js?
+/json/count?
+/LogAnalysisTracker/*
+/m.gif?
+/metrics/log-
+/mistats/*
+/mms/get_site_js?*abp=
+/openxtargeting.js
+/page_beacon.gif?
+/partner/transparent_pixel-$image
+/piwik-$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
+/piwik.$image,script,domain=~matomo.org|~piwik.org|~piwik.pro|~piwikpro.de
+/piwik/*$domain=~github.com|~matomo.org|~piwik.org|~piwik.pro
+/piwik1.
+/piwik2.js
+/piwik_
+/piwikapi.js
+/piwikC_
+/piwikTracker.
+/pix.fcg?
+/pix.gif?
+/pixel-manager.js?
+/pixel-page.html
+/pixel.cgi?
+/pixel.gif?
+/pixel.jsp?
+/pixel.php?
+/pixel.swf?
+/pixel.track?
+/pixel/impression^
+/pixel_iframe.
+/pixel_track.
+/pixel_tracking.
+/pixeltrack.php?
+/pixeltracker.
+/PixelTracking.
+/pixeltracking/*
+/pixLogVisit.
+/pixy.gif?
+/pladtrack.
+/planetstat.
+/player_counter.ashx?
+/plista.js
+/pvcountup.
+/RankingLogging.
+/sayac.html
+/shareCounts.
+/shinystat.
+/shinystat_
+/showcounter.
+/showhits.php?
+/si-tracking.
+/stat.gif?
+/stat/dspixel.js
+/stats.php?type=
+/stats/CounterPage.
+/synd.aspx
+/syndication/metrics/*
+/syndstats.*.gatracker.
+/tealeaf.config.js
+/TeaLeaf.js
+/TeaLeafCfg.js
+/TealeafSDK.js
+/TealeafSDKConfig.js
+/tealeafTarget2.html
+/thetracker.js
+/tncms/tracking.js
+/tns-counter.js
+/Track/Capture.aspx?
+/tracking-ad/*
+/tracking-hits.
+/tracking-info.gif?
+/tracking-init.
+/tracking-pixel.
+/tracking-pixel/*
+/tracking-widget.
+/tracking.ashx?
+/tracking.cgi?
+/tracking.fcgi?
+/tracking.gif?
+/tracking.jsp^
+/tracking.php?id
+/tracking.phtml?
+/tracking.vidt
+/tracking/csp?
+/tracking/pixel.
+/tracking/pixel/*
+/tracking/pixel_
+/tracking/pixels.
+/tracking/tag_commander.php?
+/tracking/track.jsp?
+/tracking/tracking_
+/tracking_pixel
+/trackIt.js
+/trk.gif?
+/vglnk.js
+/visilabs.min.js
+/webservices/remoteModulesTracker.php
+/wmxtracker.js
+/wp-content/plugins/asmb-tracking/*
+/wp-content/themes/vip/pmc-plugins/pmc-global-functions/js/geoPosition.js
+/wp-slimstat/*
+/xgemius.js
+/xtcore-*.js
+/xtcore.js
+/zanox.js
+/ztagtrackedevent/*
+/zz.gif?url=
+://b.*/vanity/?
+://top.*/count/cnt.php?
+://tracker.*/events-tracker/
+_pagespeed_beacon?
+_social_tracking.js^
+_tracking.php?b=
+/aegis-sdk/*$script
+
+!
+! This section contains the list of blocking rules that fall under "advanced" category.
+! By advanced we mean the following rule types: CSS, scriptlets, HTML filtering (`$$` marker), JS.
+!
+! Good: example.org#$##rek { display: none !important; }; example.org#%#//scriptlet('set-cookie', 'ad', '0'); example.org$$script[tag-content="ad"][max-length="3000"].
+! Bad: example.org###rek (should be in specific.txt)
+!
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/232549
+bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.pushState', '2', 'replace:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
+bilibili.com#%#//scriptlet('trusted-replace-argument', 'history.replaceState', '2', 'replace:/(?<=[?&])(?:vd_source|trackid|spm_id_from)=[^&#]*&?//g')
+!
+! Youtube
+!+ NOT_PLATFORM(ext_chromium_mv3)
+www.youtube.com#%#//scriptlet('prevent-xhr', '/\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST')
+! Ad-Shield
+! Prevent Ad-Shield tracking script - Only tracking ad block traffic. NOT Ad-Shield advertisement or protection.
+slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com#%#//scriptlet('abort-current-inline-script', 'atob', 'eval(decodeURIComponent(escape(window.atob("KCgpPT5')
+slobodnadalmacija.hr,meconomynews.com,brandbrief.co.kr,motorgraph.com#%#//scriptlet('prevent-eval-if', '/07c225f3\.online|content-loader\.com|css-load\.com|html-load\.com/')
+convertcase.net,issuya.com,topstarnews.net,islamicfinder.org,secure-signup.net#%#//scriptlet('remove-node-text', 'script', 'error-report.com')
+lamire.jp,gadgets360.com,aikatu.jp$$script[onload="error-report.com"]
+interfootball.heraldcorp.com#%#//scriptlet('abort-on-stack-trace', 'console', '_0x')
+! Ad-Shield tracking UUID and parameters
+traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', 'adshield-analytics-uuid', '$remove$')
+traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', '/_fa_dXVpZA==$/', '$remove$')
+traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWNjZXB0YWJsZV9hZHM=$/', '$remove$')
+traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfaXNfYmxvY2tpbmdfYWRz$/', '$remove$')
+traicy.com,hoyme.jp,collinsdictionary.com,pashplus.jp,freemcserver.net,oxfordlearnersdictionaries.com,nosv.org,niketalk.com,motor-talk.de,aucfree.com,muragon.com,373news.com,fxstreet.*,fxstreet-id.com,fxstreet.es,easyhindityping.com,relevantmagazine.com,dictionnaire.lerobert.com,footballtransfer.ru,thatgossip.com,donbalon.com,dropgame.jp,ufret.jp,gardeningsoul.com,si.com,niice-woker.com,blogmura.com,minkou.jp,lifehacker.jp,kinmaweb.jp,reptilesmagazine.com,buzzfeednews.com,lakeshowlife.com,thefreebieguy.com,autofrage.net,computerfrage.net,cocokara-next.com,cinetrafic.fr,malaymail.com,kyoteibiyori.com,chanto.jp.net,nana-press.com,kurashiru.com,samsungmagazine.eu,jablickar.cz,dailydot.com,watchdocumentaries.com,mariowiki.com,kompasiana.com,watchdocumentaries.com,j-cast.com,bg-mania.jp,j-town.net,ap7am.com,giornalone.it,convertcase.net,gloria.hr,slobodnadalmacija.hr,loawa.com,ygosu.com,sportalkorea.com,edaily.co.kr,economist.co.kr,etoday.co.kr,isplus.com,hometownstation.com,honkailab.com,genshinlab.com,thestockmarketwatch.com,thephoblographer.com,issuya.com,worldhistory.org,etnews.com,iusm.co.kr,dogdrip.net,etoland.co.kr,picrew.me,text-compare.com,fntimes.com,lamire.jp,bamgosu.site,etnewskorea.com,gadgets360.com,automobile-catalog.com,maketecheasier.com,thesaurus.net,wfmz.com,thestar.co.uk,yorkshirepost.co.uk,mydaily.co.kr,raenonx.cc,ndtvprofit.com,badmouth1.com,logicieleducatif.fr,taxguru.in,islamicfinder.org,aikatu.jp,secure-signup.net,globalrph.com,sportsrec.com,reportera.co.kr,carscoops.com,slobodnadalmacija.hr,flatpanelshd.com,videogamemods.com#%#//scriptlet('set-local-storage-item', '/_fa_Y2FjaGVfYWRibG9ja19jaXJjdW12ZW50X3Njb3Jl$/', '$remove$')
+!
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/237333
+! Fixes issue with website loading and some features not working properly
+! "cdn.amplitude.com" is blocked by DNS filter, so we need to fix it by using JS rule
+parkedin.com#%#(()=>{const e=Promise.resolve({code:200}),t=()=>{},s=()=>({promise:e}),n=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"],r=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],o=()=>{const e={};return n.forEach(t=>{e[t]=s}),r.forEach(s=>{e[s]=t}),e},i=function(){},c=function(){return this};["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"].forEach(e=>{i.prototype[e]=c}),i.prototype.getUserProperties=()=>({}),i.prototype.getEventProperties=()=>({});const d=(t,s=[])=>{s.forEach(t=>{t.resolve?.(e)})},p=window.amplitude||{};Object.assign(p,o(),{createInstance:e=>{const t=o();return e&&p._iq&&(p._iq[e]=t),t},runQueuedFunctions:d,Identify:i,Revenue:i}),window.amplitude=p,p.invoked&&(d(0,p._q),p._q=[],Object.keys(p._iq||{}).forEach(e=>{const t=Object.assign(p._iq[e],o());d(0,t._q),t._q=[]}))})();
+!+ PLATFORM(ext_ff)
+parkedin.com#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{const e=Promise.resolve({code:200}),t=()=>{},s=()=>({promise:e}),n=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"],r=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],o=()=>{const e={};return n.forEach(t=>{e[t]=s}),r.forEach(s=>{e[s]=t}),e},i=function(){},c=function(){return this};["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"].forEach(e=>{i.prototype[e]=c}),i.prototype.getUserProperties=()=>({}),i.prototype.getEventProperties=()=>({});const d=(t,s=[])=>{s.forEach(t=>{t.resolve?.(e)})},p=window.amplitude||{};Object.assign(p,o(),{createInstance:e=>{const t=o();return e&&p._iq&&(p._iq[e]=t),t},runQueuedFunctions:d,Identify:i,Revenue:i}),window.amplitude=p,p.invoked&&(d(0,p._q),p._q=[],Object.keys(p._iq||{}).forEach(e=>{const t=Object.assign(p._iq[e],o());d(0,t._q),t._q=[]}))})();')
+! https://github.com/AdguardTeam/AdguardFilters/issues/234964
+cdnperf.com#%#//scriptlet('prevent-element-src-loading', 'script', 'cdn.perfops.net/rom3/rom3.min.js')
+! https://github.com/AdguardTeam/AdguardFilters/issues/231486
+sbs.co.kr#%#//scriptlet('set-cookie', '__suuid', '1', '/', '.sbs.co.kr')
+! https://github.com/AdguardTeam/AdguardFilters/issues/204065
+collinsdictionary.com#%#(()=>{const t={detect:()=>({bot:!1})},e={apply:(e,o,n)=>{try{const r=n[0];return"function"==typeof r&&r.toString().includes("Botd.load")?Promise.resolve(t):Reflect.apply(e,o,n)}catch(t){return Reflect.apply(e,o,n)}}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,e)})();
+!+ PLATFORM(ext_ff)
+collinsdictionary.com#%#//scriptlet('trusted-create-element', 'head', 'script', '', '(()=>{const t={detect:()=>({bot:!1})},e={apply:(e,o,n)=>{try{const r=n[0];return"function"==typeof r&&r.toString().includes("Botd.load")?Promise.resolve(t):Reflect.apply(e,o,n)}catch(t){return Reflect.apply(e,o,n)}}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,e)})();')
+! https://github.com/AdguardTeam/AdguardFilters/issues/227878
+krakenfiles.com#%#//scriptlet('fingerprintjs3')
+! https://github.com/AdguardTeam/AdguardFilters/issues/222154
+muylinux.com$$script:contains(isAmpDevMode)
+muylinux.com#%#//scriptlet('abort-current-inline-script', 'sessionStorage', 'isAmpDevMode')
+! https://github.com/AdguardTeam/AdguardFilters/issues/218234
+southpark.*,southparkstudios.*#%#//scriptlet('set-constant', 'vtg', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/216735
+coupang.com#%#//scriptlet('json-prune-xhr-response', 'tracking', 'feeds', 'n-api/recommend/feeds')
+! https://github.com/AdguardTeam/AdguardFilters/issues/214045
+! https://github.com/AdguardTeam/FiltersCompiler/issues/260
+! For some reason filters compiler converts it to '""'
+! https://github.com/AdguardTeam/FiltersRegistry/commit/8324eca5002de69940c919e52f2c8b275f206f77#diff-320cdcaedbead8abe58ffbad0a822baa2b4d5942481e5456da88f5dfaf98cb4cR35-R36
+aceee.org#%#//scriptlet('prevent-canvas', '2d')
+! https://github.com/AdguardTeam/AdguardFilters/issues/207145
+hoy.tv#%#(()=>{const i=function(){};window.__uid2=window.__uid2||{},window.__uid2.init=i,window.__uid2.setIdentityFromEmail=i,window.__uid2.callbacks=window.__uid2.callbacks||[],window.__uid2.callbacks.push=function(i){"function"==typeof i&&i("InitCompleted",{identity:null})}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/205925
+ncbi.nlm.nih.gov#%#//scriptlet('set-constant', 'ncbi.sg', 'emptyObj')
+ncbi.nlm.nih.gov#%#//scriptlet('set-constant', 'ncbi.sg.ping', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/205194
+! Website requires "_gid" cookie, otherwise images are not loaded
+moegirl.org.cn#%#//scriptlet('set-cookie', '_gid', '1', '/', '.moegirl.org.cn')
+! https://github.com/AdguardTeam/AdguardFilters/issues/204583
+gio.com.au#%#//scriptlet('set-constant', 'webAnalytics', 'emptyObj')
+gio.com.au#%#//scriptlet('set-constant', 'webAnalytics.publish', 'noopFunc')
+! seorinexpress.com
+seorinexpress.com#%#//scriptlet('set-constant', 'AM_PRODUCT', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/197996
+tangiblewp.com#%#//scriptlet('set-constant', 'fathom', 'emptyObj')
+tangiblewp.com#%#//scriptlet('set-constant', 'fathom.trackEvent', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/197312
+newegg.com#%#//scriptlet('set-constant', 'GA4LPHandler', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/197259
+quizlet.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'Snowplow')
+! archives.go.kr - requesting online copy (logging in is required)
+archives.go.kr#%#//scriptlet('googletagservices-gpt')
+! https://github.com/AdguardTeam/AdguardFilters/issues/196139
+nbclosangeles.com#%#//scriptlet('trusted-set-constant', 'ns_', '{"StreamingAnalytics":{}}')
+nbclosangeles.com#%#//scriptlet('set-constant', 'ns_.StreamingAnalytics.JWPlayer', 'noopFunc')
+nbclosangeles.com#%#//scriptlet('prevent-element-src-loading', 'script', '/sb\.scorecardresearch\.com|cdn-gl\.imrworldwide\.com\/conf\//')
+! https://github.com/AdguardTeam/AdguardFilters/issues/194454
+ohmynews.com#%#//scriptlet('set-constant', 'GA_Event', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/193023
+hgtv.com#%#//scriptlet('remove-class', 'block-user', '#root.block-user')
+hgtv.com#$#.block-user * { opacity: 1 !important; pointer-events: auto !important; touch-action: auto !important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/191559
+nhk-ondemand.jp#%#//scriptlet('prevent-element-src-loading', 'img', 'mtcs.nhk-ondemand.jp/b/ss/nhkodmain/')
+! https://github.com/AdguardTeam/AdguardFilters/issues/189259
+webviewer.interstuhlnet.de#%#//scriptlet('set-constant', 'WURFL', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/188967
+qpp.caq.org.cn#%#//scriptlet('prevent-element-src-loading', 'script', 'hm.baidu.com/hm.js')
+! https://github.com/AdguardTeam/AdguardFilters/issues/185857
+nbcbayarea.com#%#//scriptlet('set-constant', 'ns_', 'emptyObj')
+nbcbayarea.com#%#//scriptlet('set-constant', 'ns_.StreamingAnalytics', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/185736
+! Content loads with delay if some requests are blocked, so rule below fixes this issue
+discover.hubpages.com#%#//scriptlet('adjust-setTimeout', 'beacon failed', '*', '0.001')
+! https://github.com/AdguardTeam/AdguardFilters/issues/184892
+zillow.com#%#//scriptlet('set-constant', 'DD_RUM.addError', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/183797
+sahibinden.com#%#//scriptlet('set-constant', 'gaTrackData', 'trueFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/183745
+focus.de#%#//scriptlet('set-constant', 'trackIVWFOL', 'noopFunc')
+! faz.net Adobe
+faz.net#%#//scriptlet('set-local-storage-item', 'com.adobe.reactor.core.visitorTracking.pagesViewed', '$remove$')
+faz.net#%#//scriptlet('set-local-storage-item', 'com.adobe.reactor.core.visitorTracking.sessionCount', '$remove$')
+faz.net#%#//scriptlet('set-session-storage-item', 'com.adobe.reactor.core.visitorTracking.pagesViewed', '$remove$')
+faz.net#%#//scriptlet('set-session-storage-item', 'com.adobe.reactor.core.visitorTracking.landingTime', '$remove$')
+faz.net#%#//scriptlet('set-session-storage-item', 'com.adobe.reactor.core.visitorTracking.trafficSource', '$remove$')
+faz.net#%#//scriptlet('set-session-storage-item', 'com.adobe.reactor.core.visitorTracking.landingPage', '$remove$')
+! https://github.com/AdguardTeam/AdguardFilters/issues/182065
+channelnewsasia.com#%#//scriptlet('set-attr', 'img.lazy-load[data-src]:not([src^="http"])', 'src', '[data-src]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/181813
+variety.com#%#//scriptlet('set-attr', 'iframe[data-lazy-src]:not([src^="http"])', 'src', '[data-lazy-src]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/180029
+m-1.fm#%#//scriptlet('set-constant', 'ga', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/177971
+bgr.com#%#//scriptlet("set-constant", "pmc_do_analytics_pagecount", "false")
+! https://github.com/AdguardTeam/AdguardFilters/issues/177870
+mwed.jp#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'keen-tracking')
+! https://github.com/AdguardTeam/AdguardFilters/issues/150584
+nicovideo.jp#%#//scriptlet('prevent-fetch', 'stella.nicovideo.jp')
+nicovideo.jp#%#//scriptlet('prevent-xhr', 'stella.nicovideo.jp')
+! https://github.com/AdguardTeam/AdguardFilters/issues/175476
+pullandbear.com#%#//scriptlet('prevent-element-src-loading', 'script', 'widget.fitanalytics.com/widget.js')
+! https://github.com/AdguardTeam/AdguardFilters/issues/174672
+ofiii.com#%#//scriptlet('set-constant', 'COMSCORE', 'emptyObj')
+ofiii.com#%#//scriptlet('set-constant', 'COMSCORE.beacon', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/175210
+! https://github.com/AdguardTeam/AdguardFilters/issues/173847
+archive.org#%#//scriptlet('set-constant', 'archive_analytics', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_ping', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_event', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.get_data_packets', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.process_url_events', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.create_tracking_image', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.set_up_event_tracking', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_pageview_on_load', 'noopFunc')
+archive.org#%#//scriptlet('set-constant', 'archive_analytics.send_event_no_sampling', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/172693
+holtrenfrew.com#%#//scriptlet('set-constant', 'ometria', 'emptyObj')
+holtrenfrew.com#%#//scriptlet('set-constant', 'ometria.init', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/170358
+foxnews.com#%#//scriptlet('set-local-storage-item', 'anon_fpid', '$remove$')
+! https://github.com/AdguardTeam/AdguardFilters/issues/169949
+! Fixes video player
+nbcsports.com#%#//scriptlet('prevent-element-src-loading', 'script', 'sb.scorecardresearch.com')
+! https://github.com/AdguardTeam/AdguardFilters/issues/169625
+muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer', 'noopFunc')
+muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer.prototype.newProgram', 'noopFunc')
+muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer.prototype.programEvent', 'noopFunc')
+muratorplus.pl#%#//scriptlet('set-constant', 'GemiusPlayer.prototype.setVideoObject', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/169415
+jrhokkaido.co.jp#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'pt_enable')
+! https://github.com/AdguardTeam/AdguardFilters/issues/169400
+firmwaredrive.com#%#setTimeout(function() { var el = document.querySelector('input[name="dfp"]'); if(el){el.value = '1234567890123456';} }, 300);
+! https://github.com/AdguardTeam/AdguardFilters/issues/167963
+wirkaufens.de#%#//scriptlet('trusted-replace-fetch-response', '/"ip":".*?"/', '"ip":""', 'api.ipify.org')
+!
+! Sensors Analytics
+! https://github.com/AdguardTeam/AdguardFilters/issues/167885
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505', 'emptyObj')
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505.use', 'noopFunc')
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505.init', 'noopFunc')
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505.track', 'noopFunc')
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505.quick', 'noopFunc')
+fenbi.com,cib.com.cn,pconline.pcvideo.com.cn#%#//scriptlet('set-constant', 'sensorsDataAnalytic201505.registerPage', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/173678
+! https://github.com/AdguardTeam/AdguardFilters/issues/167552
+! https://github.com/AdguardTeam/AdguardFilters/issues/152478
+! https://github.com/AdguardTeam/AdguardFilters/issues/139949
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors', 'emptyObj')
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.init', 'noopFunc')
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.track', 'noopFunc')
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.quick', 'noopFunc')
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.login', 'noopFunc')
+xingyue.geely.com,tineco.com,galaxy.geely.com,guancha.cn#%#//scriptlet('set-constant', 'sensors.registerPage', 'noopFunc')
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/166258
+yourstory.com#%#(()=>{const n=function(){};window.pa={avInsights:{Media:function(){return{set:n}}},setConfigurations:n,sendEvent:n,refresh:n,getVisitorId:n}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/165757
+! Fixes video player
+biologianet.com#%#//scriptlet('set-constant', 'UOLPD', 'emptyObj')
+biologianet.com#%#//scriptlet('set-constant', 'UOLPD.dataLayer', 'emptyObj')
+biologianet.com#%#//scriptlet('set-constant', '__configuredDFPTags', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/164104
+!+ NOT_PLATFORM(ios, ext_safari)
+reuters.com#%#(()=>{window.analytics=[],analytics.user=function(){return this},analytics.track=function(){},analytics.anonymousId=function(){},analytics.push=function(){[...arguments].forEach((n=>{if("function"==typeof n)try{n()}catch(n){console.debug(n)}Array.isArray(n)&&[...n].forEach((n=>{if("function"==typeof n)try{n()}catch(n){console.debug(n)}}))}))};})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/163978
+[$path=/edmredir.php]mobile01.com#%#//scriptlet('trusted-replace-node-text', 'script', '/sendOfflineEvent[\s\S]*?window\.location\.href/', '/(window\.dataLayer[\s\S]*?sendOfflineEvent[\s\S]*?(window.location.href = [\s\S]*?;))/', '$2$1')
+! https://github.com/AdguardTeam/AdguardFilters/issues/161237
+newsdig.tbs.co.jp#%#//scriptlet('set-constant', 'ISMLIB', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/160751
+yappli.plus#%#(()=>{window.ga=function(){const a=arguments.length;if(0===a)return;const b=arguments[a-1];let c;b instanceof Object&&null!==b&&"function"==typeof b.hitCallback?c=b.hitCallback:"function"==typeof b&&(c=()=>{b(ga.create())});try{setTimeout(c,1)}catch(a){}}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/159792
+starblast.io#%#//scriptlet('set-constant', 'ga', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/159573
+uol.com.br#%#//scriptlet('set-constant', 'YT.ImaManager', 'noopFunc')
+uol.com.br#%#//scriptlet('set-constant', 'UOLPD', 'emptyObj')
+uol.com.br#%#//scriptlet('set-constant', 'UOLPD.dataLayer', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/157342
+futura-sciences.com#%#//scriptlet('set-constant', 'pa', 'emptyObj')
+futura-sciences.com#%#//scriptlet('set-constant', 'pa.privacy', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/157140
+perlego.com#%#(()=>{const t={getExperimentStates:function(){return[]}};window.optimizely={get:function(){return t}}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/147282
+clickhole.com,lifehacker.com,splinternews.com,avclub.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,qz.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#%#//scriptlet('set-constant', 'ga', 'noopFunc')
+! https://github.com/uBlockOrigin/uAssets/issues/16512#issuecomment-1639236636
+! Fixes video player, it's part of the analytics script
+lun.com#%#//scriptlet('set-constant', 'CallAjax', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/156723
+security.oneplus.com#%#//scriptlet('set-constant', '_dx', 'emptyObj')
+! https://github.com/AdguardTeam/AdguardFilters/issues/156401
+platform.autods.com#%#//scriptlet('set-constant', '_conv_q', 'emptyObj')
+platform.autods.com#%#//scriptlet('set-constant', '_conv_q.push', 'noopFunc')
+! https://github.com/uBlockOrigin/uAssets/issues/18715
+fandom.com#%#//scriptlet('set-constant', 'optimizely', 'emptyObj')
+fandom.com#%#//scriptlet('set-constant', 'optimizely.initialized', 'true')
+! reddit.com - analytics
+reddit.com#%#//scriptlet('set-constant', 'navigator.sendBeacon', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/152414
+!#if (!ext_ublock)
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs', 'noopFunc')
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.Collect', 'noopFunc')
+paribucineverse.com#%#//scriptlet('set-constant', 'Visilabs.prototype.AddParameter', 'noopFunc')
+!#endif
+! https://github.com/AdguardTeam/AdguardFilters/issues/151805
+! Fixes search bar
+kbjfree.com#%#//scriptlet('set-constant', 'plausible', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/151657
+tieba.baidu.com#%#//scriptlet('set-constant', 'passFingerPrint', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/148618
+cerbahealthcare.it#%#//scriptlet('set-constant', 'pa', 'emptyObj')
+cerbahealthcare.it#%#//scriptlet('set-constant', 'pa.setConfigurations', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/147936
+lightrun.com#%#//scriptlet('set-constant', 'gtag', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/147672
+biedronka.pl#%#//scriptlet('remove-class', 'async-hide', 'html')
+! https://github.com/AdguardTeam/AdguardFilters/issues/146571
+auto.ru#%#//scriptlet('set-local-storage-item', '__rtbhouse.lid', '0')
+auto.ru#%#//scriptlet('set-local-storage-item', 'ludca', '0')
+! https://github.com/AdguardTeam/AdguardFilters/issues/145948
+sportschau.de#%#//scriptlet('set-constant', 'mediaTrackingOff', 'true')
+! https://github.com/AdguardTeam/AdguardFilters/issues/144897
+capital.fr,voici.fr,gala.fr#%#//scriptlet('set-constant', 'DD_RUM.addTiming', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/143586
+reverso.net#%#//scriptlet('set-constant', 'rumjs.business.setManualConsent', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/142640
+! Fixes comment section loading
+itmedia.co.jp#%#//scriptlet('set-cookie', 'cX_G', '1')
+itmedia.co.jp#$##ulCommentWidget[style*="display"] { display: block !important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/142311
+! Fixes comment section loading
+apkpure.*#%#//scriptlet('set-constant', '$$.analytics', 'emptyObj')
+apkpure.*#%#//scriptlet('set-constant', '$$.analytics.send', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/141714
+member.neofinancial.com#%#//scriptlet('set-constant', '__fpjs_p_l_b', 'emptyObj')
+member.neofinancial.com#%#//scriptlet('set-constant', '__fpjs_p_l_b.load', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/140178
+itsu.com#%#//scriptlet('set-constant', 'AtreemoTrackingLbr', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/140059
+pracuj.pl#%#//scriptlet('set-cookie-reload', 'gptrackCookie', '1')
+! https://github.com/AdguardTeam/AdguardFilters/issues/139139
+embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream', 'emptyObj')
+embed.rtl.hu#%#//scriptlet('set-constant', 'gemiusStream.event', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/134778
+! segment.com analytics
+! https://segment.com/docs/connections/sources/catalog/libraries/website/javascript/identity/
+! TODO: replace by key removing scriptlet when it will be implemented
+reuters.com#%#//scriptlet('set-local-storage-item', 'ajs_anonymous_id', 'null')
+! https://github.com/AdguardTeam/AdguardFilters/issues/81513
+! https://listauthorschat.slack.com/archives/C010N14G4TF/p1686743998780969
+! https://www.reddit.com/r/uBlockOrigin/comments/1495nei/please_provide_advice_on_this_filter/
+!+ NOT_OPTIMIZED
+m.dcinside.com,upload.dcinside.com#%#//scriptlet('set-cookie-reload', '_ga', 'OK')
+! https://github.com/AdguardTeam/AdguardFilters/issues/131034
+imdb.com#%#//scriptlet("set-constant", "doWithAds", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/pull/133054
+fmkorea.com#%#//scriptlet("set-constant", "link_url", "")
+! https://github.com/AdguardTeam/AdguardFilters/issues/132024
+revv.co.in#%#(()=>{window.google_optimize={get(){}}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/131243
+app.tirelocator.ca#%#//scriptlet("set-constant", "googleAnalyticsEnhancedTrackEvent", "noopFunc")
+app.tirelocator.ca#%#//scriptlet("set-constant", "googleAnalyticsEnhancedTrackPageview", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/130197
+mirrormedia.mg#%#//scriptlet("set-constant", "dataLayer", "emptyArr")
+! https://github.com/AdguardTeam/AdguardFilters/issues/146026
+! https://github.com/AdguardTeam/AdguardFilters/issues/127628
+! TODO: remove prevent-addEventListener rule when new version with fix for prevent-element-src-loading will be released
+! https://github.com/AdguardTeam/Scriptlets/issues/270
+edeka.de#%#//scriptlet('prevent-addEventListener', 'bugfix', 'fix')
+edeka.de#%#(()=>{window.tC={event:{track(){}}}})();
+edeka.de#%#//scriptlet('prevent-element-src-loading', 'script','tc_DigitalesMarketing')
+! https://github.com/AdguardTeam/AdguardFilters/issues/127461
+bulletin.sntba.com#%#//scriptlet("set-constant", "returnCitySN", "emptyObj")
+! https://github.com/AdguardTeam/AdguardFilters/issues/126745
+ta.alamo.com#%#(()=>{window.CQ_Analytics={SegmentMgr:{loadSegments(){}},ClientContextUtils:{init(){}}}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/122614
+!#if (adguard_app_windows || adguard_app_mac || adguard_app_android || adguard_app_cli || adguard_ext_chromium)
+nine.com.au#%#(()=>{window.tracking={setConfig(){},trackPage(){},trackVideoAutoFail(){}}})();
+nine.com.au#%#//scriptlet('prevent-element-src-loading', 'script', 'share.9cdn.net/share/long_cache/js/tracking/tracking')
+!#endif
+! https://github.com/AdguardTeam/AdguardFilters/issues/121698
+configurator.ducati.com#%#//scriptlet("set-constant", "WURFL", "emptyObj")
+! https://github.com/AdguardTeam/AdguardFilters/issues/121510
+kartell.com#%#//scriptlet('prevent-element-src-loading', 'script', 'vivocha.js')
+! https://github.com/AdguardTeam/AdguardFilters/issues/121558
+forfun.ist#%#//scriptlet('prevent-fetch', 'ssl.geoplugin.net/javascript.gp')
+! https://github.com/AdguardTeam/AdguardFilters/issues/118441
+! Related to removeparam rules
+qiita.com#%#//scriptlet("prevent-addEventListener", "load", "navigator")
+! https://github.com/AdguardTeam/AdguardFilters/issues/120883
+nettiauto.com#%#//scriptlet("set-constant", "listingGoogleEETracking", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/120143
+lcwaikiki.com#%#//scriptlet("set-constant", "dataLayer", "emptyArr")
+! https://github.com/AdguardTeam/AdguardFilters/pull/119949
+m.card-gorilla.com,pindirectshop.com,dongbanmall.com#%#//scriptlet("set-constant", "kakaoPixel", "undefined")
+! https://github.com/AdguardTeam/AdguardFilters/issues/119873
+athabascau.ca#%#//scriptlet("set-constant", "WURFL", "emptyObj")
+! https://github.com/AdguardTeam/AdguardForWindows/issues/4138
+careermap.co.uk#%#//scriptlet("set-constant", "trackEvent", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/114901
+popin.cc#%#//scriptlet('set-local-storage-item', '_ss_pp_id', '')
+! https://github.com/AdguardTeam/AdguardFilters/issues/114227
+valleybreeze.com#%#//scriptlet('remove-attr', 'hidden', '#asset-content[hidden]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/150590
+! https://github.com/AdguardTeam/AdguardFilters/issues/118108
+! https://github.com/AdguardTeam/AdguardFilters/issues/112998
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', 'gemiusStream', 'noopFunc')
+!#if (!adguard_ext_safari && !adguard_app_ios)
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2', 'emptyObj')
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2.event', 'noopFunc')
+tvnturbo.pl,ttv.pl,tvn24.pl#%#//scriptlet('set-constant', '__pix2.track', 'noopFunc')
+!#endif
+! https://github.com/AdguardTeam/AdguardFilters/issues/109426
+nytimes.com#%#//scriptlet("set-constant", "Navigator.prototype.joinParakeetInterestGroup", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/110697
+freecodecamp.org#%#//scriptlet("abort-current-inline-script", "Function", "b9kEBAW")
+! https://github.com/AdguardTeam/AdguardFilters/issues/108678
+radiotimes.com#%#(function(){window.DD_LOGS={onReady:function(){},logger:{log:function(){}}}})();
+! cw.com.tw - incorrect blocking - fixing video player (at the bottom)
+! Example link - https://www.cw.com.tw/article/5119022
+cw.com.tw#%#//scriptlet("set-constant", "qg", "noopFunc")
+! https://github.com/AdguardTeam/Scriptlets/issues/160
+! https://github.com/AdguardTeam/AdguardFilters/issues/97512
+alternative.me,justjaredjr.com,r-graph-gallery.com#%#//scriptlet('remove-attr', 'onclick', 'a[href][onclick*="getOutboundLink"]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/95512
+eduscho.at#%#//scriptlet("set-constant", "exactagTrack", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/91255
+! TODO: can be replaced by redirect resources (Fingerprint2) when it will be added - https://github.com/AdguardTeam/Scriptlets/issues/141
+the-japan-news.com#%#//scriptlet('set-cookie-reload', 'fp', '1')
+! https://github.com/AdguardTeam/AdguardFilters/issues/91087
+shockwave.com#%#(function(){window.swua={swEvent:function(){}}})();
+! https://github.com/AdguardTeam/AdguardFilters/issues/93708
+! https://github.com/AdguardTeam/AdguardFilters/issues/90258
+laprovence.com#%#//scriptlet("set-constant", "refresh_xiti", "noopFunc")
+laprovence.com#%#//scriptlet("set-constant", "xt_click", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/89237
+aena.es#%#//scriptlet("set-constant", "window.digitalChange", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/89198
+home-learn.co.kr#%#//scriptlet("set-constant", "eglc", "noopFunc")
+home-learn.co.kr#%#//scriptlet("set-constant", "eglc.op", "noopFunc")
+! unito.life infinite call to keentracking
+unito.life#%#//scriptlet('abort-current-inline-script', 'KeenTracking')
+unito.life$$script[tag-content="KeenTracking"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/86115
+notonthehighstreet.com#%#//scriptlet('set-constant', 'window.DD_RUM.init', 'noopFunc')
+! https://github.com/AdguardTeam/AdguardFilters/issues/82132
+connect.de#%#//scriptlet("abort-on-property-read", "trConfig")
+! https://github.com/AdguardTeam/AdguardFilters/issues/80625
+tweakers.net#%#//scriptlet('abort-on-property-write', 'webtrekkConfig')
+tweakers.net#%#//scriptlet('set-constant', 'tweakersConfig.wtConfig.scriptUrl', '')
+tweakers.net#%#//scriptlet('abort-current-inline-script', 'AbStats', 'trackId')
+tweakers.net#%#//scriptlet('abort-on-property-read', 'GlobalSnowplowNamespace')
+tweakers.net#%#//scriptlet('set-constant', 'WebTrekkClickMap', 'noopFunc')
+tweakers.net#%#//scriptlet('abort-on-property-read', 'snowplow')
+! https://github.com/AdguardTeam/AdguardFilters/issues/24789
+timesnownews.com#%#//scriptlet("set-constant", "ga", "noopFunc")
+! https://github.com/AdguardTeam/AdguardFilters/issues/69078#issuecomment-762889762
+hindustantimes.com#%#!function(){window.pSUPERFLY={virtualPage:function(){}};}();
+! https://github.com/AdguardTeam/AdguardFilters/issues/71368
+store.line.me#%#//scriptlet('remove-class', 'async-hide', 'html')
+! https://github.com/AdguardTeam/AdguardFilters/issues/70941
+pioneer.eu#%#//scriptlet('remove-attr', 'onclick', 'a[href][onclick^="trackOutboundLink"]')
+! https://github.com/AdguardTeam/AdguardFilters/issues/64616
+!+ PLATFORM(android)
+www.google.*#%#//scriptlet('remove-attr', 'onmousedown|data-mousedown|ping|data-click', 'a[href][onmousedown], a[href][ping]')
+! Remove tracking attributes from the search results
+www.google.*#%#//scriptlet('remove-attr', 'ping', 'div[id="search"] a[data-ved][ping]')
+!
+!! facebook.com - removing tracking parameter
+!! external links
+! facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++)if(e.href.includes(t[i])){if(!(r=e.href.split("#!")[1]))var r=e.href.split("%23%21")[1];if(!r)var r="";if(e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),!(r=e.href.split("&feature=share&")[1]))r=e.href.split("%26feature%3Dshare%26")[1];if(!r)r="";e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),e.setAttribute("href",e.href.split(t[i])[0]+r)}})}).observe(document,{childList:!0,subtree:!0});
+facebook.com#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
+facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["?fbclid","%3Ffbclid","&fbclid","%26fbclid","&__tn__","%__26tn__","%3Futm","?utm","&fbc=","%26fbc%3D","?share=","%3Fshare%3D","%3F__twitter_impression%3D","?__twitter_impression=","?wtmc=","%3Fwtmc%3D","?originalReferrer=","%3ForiginalReferrer%3D","?wtrid=","%3Fwtrid%3D","?trbo=","%3Ftrbo%3D","?GEPC=","%3FGEPC%3D","?whatsapp=","%3Fwhatsapp%3D","?fbc=","%3Ffbc%3D","?dmcid=","%3Fdmcid%3D"];document.querySelectorAll('a[target="_blank"]').forEach(function(e){for(i=0;i<t.length;i++){var r;e.href.includes(t[i])&&(r=(r=(r=e.href.split("#!")[1])||e.href.split("%23%21")[1])||"",e.href.includes("#!")&&(r="#!"+r),e.href.includes("%23%21")&&(r="%23%21"+r),r=(r=(r=e.href.split("&feature=share&")[1])||e.href.split("%26feature%3Dshare%26")[1])||"",e.href.includes("&feature=share&")&&(r="?"+r),e.href.includes("%26feature%3Dshare%26")&&(r="%3F"+r),r=(r=(r=e.href.split("&h=")[1])||e.href.split("%26h%3D")[1])||"",e.href.includes("&h=")&&(r="&h="+r),e.href.includes("%26h%3D")&&(r="%26h%3D"+r),e.setAttribute("href",e.href.split(t[i])[0]+r))}})}).observe(document,{childList:!0,subtree:!0});
+!! internal links
+facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion#%#new MutationObserver(function(){var t=["&eid=","%26eid%3D","?eid=","%3Feid%3D","?__tn__=","%3F%5F%5Ftn%5F%5F%3D","&__tn__=","%26%5F%5Ftn%5F%5F%3D","?source=","%3Fsource%3D","?__xts__","%3F%5F%5Fxts%5F%5F","&__xts__","%26%5F%5Fxts%5F%5F","&amp;__xts__%5B","?ref=","%3Fref%3D","?fref=","%3Ffref%3D","?epa=","%3Fepa%3D","&ifg=","%26ifg%3D","?comment_tracking=","%3Fcomment_tracking%3D","?av=","%3Fav%3D","&av=","%26av%3D","?acontext=","%3Facontext%3D","&session_id=","%26session_id%3D","&amp;session_id=","?hc_location=","%3Fhc_location%3D","&fref=","%26fref%3D","?__cft","%3f__cft"];document.querySelectorAll('a:not([target="_blank"]):not([href*="2fac/"])').forEach(function(e){for(i=0;i<t.length;i++)e.href.includes(t[i])&&e.setAttribute("href",e.href.split(t[i])[0])})}).observe(document,{childList:!0,subtree:!0});
+! Google Contributor tracking domains
+elpais.com,chip.de,moviepilot.com,madison.com,promiflash.de,trendblog.net,qctimes.com,missoulian.com,chip.eu,promiflash.tv,bix7.com,7riversmarketplace.com,azstarnet.com,huskerextra.com,hawkmania.com,casperstartribune.com,xonio.com,autosocut.de,thebettendorfnews.com,autocout24.de,lmagazinelincoln.com,lincolnrestaurantweek.com,napavalleywheels.com,thisistucson.com,download.de,billingsgazette.net,autoscount24.de,chipxonio.biz,teilescout24.eu,autoscunt.de,mopedscout.com,auto-sout24.de,autocsout24.de,promiflasch.de,autoteilescout.ch,aotoscout.de,motoscout.in,autoscoter24.de,autoskaud.de,ersatzteile-scout24.de,chipxonio.info,kfzscout24.de,reifenscout24.eu,harpers.de,aptshowcase.com,tyrescout24.com,houstonconews.com,mastercar.de,autoteilescout.net,bikescout24.eu,autoscout25.de,aut0scout.de,zubehoerscout24.de,autosout-24.de,rivervalleybusinessreport.com,teilescout24.net,motor-scout24.eu,unfall-scout.de,tuning-scout24.eu,motoscount24.de,autoascout24.de,reifen-scout24.de,autoteilescout24.org,autoteilescout24.info,motoscout.us,moviecritter.de,autoscouet24.de,utoscout24.de,motor-scout.ch,autoscout23.de,motorrad-scout.net,moto-scout24.pl,motorradscaut24.de,macfrage.net,bikerscout.info,motorscout24.eu,chipxonio.net,automobilscaut.de,capitalnewspapers.com,fahrzeugscout.de,autoscout22.de,motoradscout.eu,motoscout24.mx,motoscout.ro,motoskout.de,ersatzteilscout.de,autoteilescout.de,neighborhoodextra.com,autiscout24.de,motoscout.mx,danceshoppenebraska.com,autoscouting24.de,workbakken.com,auto-scout-2.de,livewellwyoming.com,autoskaud24.de,auto-scount.de,carscout24.de,moto-scout24.mobi,ersatzteilscout24.de,autoscott-24.de,dailystarcalendar.com,montanamessenger.com,tuningscout24.de,notoscout24.de,automobilscout24.de,auto-skout-24.de,it-whitepaper.net,spearfishcommunity.com,atoscout-24.de,autosgout24.de,auto-scouts.de,reifenscout24.com,wyoworks.com,motoscout24.mobi,wheelsforyoukansas.com,motorrad-scout24.info,teilescout24.at,autscout24.de,auto-scaut24.de,teile-scout.com,autoscod24.de,teile-scout.ch,autocout-24.de,moto-scout.com.cn,lincoln-living.com,motorradscout24.net,ms24.biz,moto-scout24.ro,auotoscout24.de,www-auto-scout24.de,motorradscout24.org,rollerscout.de,kfz-teilescout.de,auto-skout.de,autohausscout24.eu,xonio.at,autohausscout24.de,autoscuot.de,downloadchip.de,autoteile-scout24.info,motorrad-scout24.ch,motoscot.de,as24autocredit.de,auto-scott-24.de,auto-scot-24.de,autoskout-24.de,autosgaud24.de,it-whitepaper.at,elektroautoscout.de,autoscput24.de,motorradscout.eu,autosout.de,foto-video.eu,chip-fotovideo.de,unfallscout24.de,quadscout24.de,motorradscout.org,autos-scout.de,motoscout24.ro,motoscout24.co,teile-scout.net,autodcout24.de,autosccout24.de,autoscout4.de,autoscout-online.de,autoteile-scout.com,aotoscout24.de,audosgaut.de,auto-shout.de,autosckut24.de,game-critter.com,autoscoutvierundzwanzig.de,motorscout24.de,insidenapavalley.com,southernillinoisan.com,audosgaud.de,motorrad-scout24.net,outdoorwheels.com,autoteile-scout.info,autoscaund24.de,autosgaud.de,teilescout.org,autoteilescout24.ch,otoscout.de,auto-skaut24.de,ersatzteil-scout-24.de,teilescout.com,auto-cout-24.de,wyovarsity.com,aotoscaut.de,autoteile-scout.org,promiflash.net,gebrauchtwagen-scout.de,motoscout-24.com,motosout24.com,ms24.mobi,autoscout2.de,outoscout24.de,auto-scout24.de,foodcritter.com,promiflash.org,walkacrosswyoming.com,autoteile-scout24.ch,mtfires.com,musicritter.com,motoscout.info,autoteilescout24.net,autohausscout.de,autoacout24.de,moto-scout.info,wi-elections.com,auto-skout24.de,autoshot24.de,motosocut24.de,autoscout27.de,chipdigital.de,autoscout24-online.de,teilescout.info,autoscout-xl.de,teilescout24.org,ersatzteilescout-24.at,it-whitepaper.org,krombach24.de,automobilscout.de,finderads.com,ellsworthcommunity.com,motor-scout.de,moto-scout.ch,uatoscout24.de,autoscouts.de,moto-scout24.net,autoscaut24.de,ersatzteilescout-24.de,quadcityvarsity.com,motorradscout.ch,unfallautoscout24.com,ersatzteilescout.de,promi-flash.de,estrelladetucson.com,salukigameday.com,autosco24.de,autoteilescout.eu,ersatzteilescout-24.com,download-chip.de,autoscuot-24.de,motorrad-scout24.biz,wwwautoscout.de,motoradscout24.com,wheelsforyounebraska.com,motoscout-24.de,teile-scout24.biz,autoteile-scout.biz,reifenscout.net,auto-skut24.de,auto-scout.de,atoscout.de,chip-fotovideo.eu,chipxonio.org,qcvarsity.com,reifenscout.at,auto-scout-24.de,mooscout24.de,teile-scout.org,promi-flash.ch,elektroauto-scout.de,woodfordcountyjournal.com,teile-scout24.org,autoscaut-24.de,wheelsforyoumissouri.com,movie-critter.com,tarif.de,auto-scuot-24.de,tuningscout24.net,kfzscout.eu,autoscout24de.de,oldiescout24.de,autoscount-24.de,autoscaunt.de,car-scout24.de,autosscout24.de,billinggazette.com,autohaus-adermann.de,missoulianentertainer.com,wiprepzone.com,missoulian.net,oldtimer-scout24.de,xn--motorrderscout24-0nb.de,motoscout24.cn,moto-scout24.de,starcityhealth.com,audoscout24.de,motorradscout24.ch,pc-frage.net,motorradscout.net,xonio.mobi,ms24.cn,motorrad-scout.org,ihrautoscout.com,auto-scout4.de,auttoscout24.de,autocscout24.de,autuscaut.de,autoteile-scout24.biz,autoscoud.de,autosc0ut24.de,moto-scout24.eu,lincolnjournalstar.com,motorrad-scout.mobi,promiflash.ch,unfallscout.de,teilescout24.ch,auto-scou.de,motoscout2.de,xonio.eu,teilescout.eu,www-autoscout24.de,motorad-scout.eu,ahtoscout.de,utoscout.de,it-whitepaper.info,autoscout20.de,kfzteilescout24.de,mastercar.com,ms24.com.cn,officefrage.net,unfallautoscout24.de,autos-scout24.de,moto-scout.mobi,farmercityjournal.com,teilescout.net,chip-germany.de,kchaiyo.com,moto-scout24.us,moto-scout.in,tuningmarkt.eu,seelakegeorge.com,ascout24.de,motoscuot.de,motorad-scout.de,autoscout-2.de,autosckot.de,motoscout24.net,autoschaut24.de,tyrescout24.eu,poststar.org,bikerscout24.com,audosgaut24.de,motorradscout24.eu,wyomingwheelsforyou.com,autoscouts24.de,tucsonestrella.com,digitalcritter.com,77square.com,autoshout24.de,moto-scout24.biz,reifenscout.ch,autoskaut-24.de,reifen-scout24.com,wwwautoscout-24.de,reifenscout24.de,mietwagenscout.com,auto-scot.de,moto-scout24.cn,autoscott24.de,teile-scout.de,autoteilescout24.eu,auoscout24.de,motorbikescout.com,motorradscout.biz,c.de,jahreswagenscout24.de,moto-scout.com,chip-foto-video.eu,autoscuout24.de,motoradscout.net,motorradscout.info,auto-skaut-24.de,auto-scott.de,teile-scout24.at,as24.de,www-auto-scout.de,autoteile-scout24.com,autoscott.de,motorradscout-24.de,wwwauto-scout.de,mtoscout24.de,autoscoutt.de,ms24.info,www-autoscout.de,carscout.de,gebrauchtwagen-sout.de,missoulien.com,myautoscout24.de,oldiescout.de,autoteile-scout.ch,motorad-scout24.de,ersatzteilescout.eu,auto-scut24.de,motoscout.biz,auto-scaut-24.de,auto-scount-24.de,chip.at,motoscuot24.de,musiccritter.com,motscout24.de,motor-scout.com,crashscout24.de,werkstattscout24.com,ahl-freiberg.de,autoscond24.de,chip-linux.com,reifenscout24.info,autooscout24.de,motoscut24.de,motorscout.ch,oldtimerscout24.de,promiflash-images.de,a-scout.de,badgerbeat.com,youngtimerscout24.ch,testlabor.de,motorradscout24.com,chiplog.de,blackhillsjournal.net,car-scout-24.de,motoscout.org,autoscoutde.de,autosscout.de,autosout24.de,gebrauchtwagenscout.de,lifeandstylesi.net,motoscout.com,saddlebagnotes.com,autoscuont24.de,motorad-scout.ch,uatoscout.de,autoscuot24.de,motoradscout.de,winecountrysi.com,motorrad-scout-24.net,auto-shout24.de,bike-scout24.de,as24shop.de,moto-scout.cn,wyovarsity.net,motoscout24.eu,autoscout28.de,moto-scout.de,kfz-teilescout24.de,bike-scout24.eu,qcpreps.com,sellitnebraska.com,motorbikescout24.eu,autoreifenscout.de,promi-flash.com,evo7.de,missoulian.us,auto-scou24.de,autosocut24.de,auto-scoud.de#%#//scriptlet("abort-current-inline-script", "navigator", "/propertyIsEnumerable.*window\.stop.*\/[A-Za-z0-9\-_]{100}/")
+! Disable Battery Status API
+#%#//scriptlet('set-constant', 'navigator.getBattery', 'noopPromiseResolve')
+!
+! Yandex.Search
+[$path=/search]ya.ru,yandex.*#%#//scriptlet('remove-attr', 'data-counter', '.serp-list a[href]')
+!
+! Start: Rules for Google "Privacy" Sandbox
+!
+! Suppressing Google's Topics API:
+! https://developers.google.com/privacy-sandbox/relevance/topics
+#%#//scriptlet('no-topics')
+!
+! Suppressing Privacy-Preserving Attribution Measurement API
+! https://github.com/mozilla/explainers/tree/main/ppa-experiment
+#%#//scriptlet('set-constant', 'navigator.privateAttribution', 'undefined')
+!
+! Suppressing Google's "Protected" Audience API:
+! https://wicg.github.io/turtledove/
+! https://github.com/AdguardTeam/Scriptlets/issues/395
+#%#//scriptlet('no-protected-audience')
+!
+!#if (!ext_ublock)
+! Suppressing both Google's Topics API and Topics API using Permissions policy
+! AGLint temporarily disabled for this rule due to https://github.com/AdguardTeam/AGLint/issues/191
+! TODO: 01.04.2026 check if Google removed these APIs from Permissions policy
+!       https://github.com/AdguardTeam/AdguardFilters/issues/221135
+! TODO: Enable it back when AGLint is fixed.
+! TODO: remove document modifier when this issue is fixed - https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2954
+/.*/$permissions=join-ad-interest-group=(),document
+/.*/$permissions=run-ad-auction=(),document
+/.*/$permissions=browsing-topics=(),document
+!
+! Suppressing Private State Token API
+! aglint-disable-next-line
+/.*/$permissions=private-state-token-issuance=(),document
+! aglint-disable-next-line
+/.*/$permissions=private-state-token-redemption=(),document
+!#endif
+!
+! End: Rules for Google "Privacy" Sandbox
+!
+!-------------------
+!-------CSS---------
+!
+!
+! paid subscription popup
+elcomercio.es#$##engagement-top { display: none !important; }
+elcomercio.es#$#body { overflow: auto !important; }
+! https://github.com/AdguardTeam/AdguardFilters/issues/149568
+ads.spotify.com#$#body.anti-flicker { opacity: 1 !important; }
+!
+infoseek.co.jp#$#.co-Widget[style="min-height: 6000px;"] { min-height: auto !important; }
+adseek.site#$##primary { display: block !important; }
+biteki.com#$?#.slick-slide > div[id] + script:upward(1)  { remove: true; }
+!-------------------
+!
+!-------------------
+!-------HTML--------
+!-------------------
+!
+
+!
+! This section contains generic element hiding rules that block counters leftovers.
+!
+! Good: ##.adv
+! Bad: example.org##.adv (should be in specific.txt)
+!
+!
+##div[data-testid="prism-taboola"]
+##.ninja-recommend-block
+##img[src^="//counter.ukr.net/"]
+##amp-embed[type="taboola"]
+###qoo-counter
+###ramblerCounter
+###top100counter
+##.plugin-daily_count
+##a[href^="http://click.hotlog.ru/"]
+##a[href^="http://hitcounter.ru/top/stat.php"]
+~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="http://metrika.yandex.ru/stat/"]
+##a[href^="http://top.mail.ru/jump"]
+##a[href^="http://top100.rambler.ru/"]
+~diary.ru##a[href^="http://www.liveinternet.ru/stat/"]
+~yandex.by,~yandex.com,~yandex.kz,~yandex.ru##a[href^="https://metrika.yandex.ru/stat/"]
+##a[href^="https://top.mail.ru/jump"]
+##img[src*="counter.yadro.ru"]
+##img[src^="http://c.bigmir.net/"]
+
+!
+!
+! This section contains the list of the rules that block tracking cookies. Rules should be specific and have only only one modifier `$cookie`.
+!
+! Good: ||lemurov.net^$cookie=flat_r_mb
+! Bad:  ||monerominer.rocks^$third-party (should be in adservers.txt)
+!
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/237741
+||premierzal.ru^$cookie=/^__ddg/
+! itmedia.co.jp
+||itmedia.co.jp^$cookie=s_vid
+||itmedia.co.jp^$cookie=s_ubid
+! gamsgo.com
+||gamsgo.com^$cookie=_gv_visit_tracking
+! https://github.com/AdguardTeam/AdguardFilters/issues/235441
+mcp.directory#%#//scriptlet('remove-cookie', 'dotcom_user')
+! greatandhra.com
+||greatandhra.com^$cookie=uid-s
+||greatandhra.com^$cookie=vsid
+! https://github.com/AdguardTeam/AdguardFilters/issues/234433
+||ridibooks.com^$cookie=fingerprint
+||ridibooks.com^$cookie=attribution_tool_params
+||ridibooks.com^$cookie=pvid
+! dugun.com
+||dugun.com^$cookie=uniqueId
+! matchtv.ru
+||matchtv.ru^$cookie=spbc_uuid
+! telefonnyjdovidnyk.com.ua
+||telefonnyjdovidnyk.com.ua^$cookie=goog_ads
+! rtl.hr
+||rtl.hr^$cookie=device-id
+! ahaber.com.tr
+||ahaber.com.tr^$cookie=VideoSessionId
+! detector404.ru
+||detector404.$cookie=tag
+! mexc.com
+||mexc.com^$cookie=sensorsdata2015jssdkcross
+||mexc.com^$cookie=sajssdk_2015_cross_new_user
+||mexc.com^$cookie=mxc_home_advertising_redhot_isclick
+! abc.net.au
+||abc.net.au^$cookie=/^ABC_Snowplow_id/
+! https://github.com/AdguardTeam/AdguardFilters/issues/229676
+! https://github.com/AdguardTeam/AdguardFilters/issues/229485
+||money.ca^$cookie=suid
+||moneywise.com^$cookie=suid
+! gobankingrates.com
+||gobankingrates.com^$cookie=visitor_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/229275
+||invb.ru^$cookie=/^pa_/
+! https://ridibooks.com/webtoon/recommendation
+||ridibooks.com$cookie=ruid
+||ridibooks.com$cookie=/^AMP/
+! spb.docdoc.ru
+||spb.docdoc.ru^$cookie=deviceId
+! coinstats.app
+||coinstats.app^$cookie=temp_uid
+! apkpure.com
+||apkpure.com^$cookie=_qimei
+! expero.ru
+||expero.ru^$cookie=deviceId
+! my.club
+||my.club^$cookie=my_club_guestId
+||my.club^$cookie=my_club_guestUuid
+! https://github.com/AdguardTeam/AdguardFilters/issues/225274
+||gmarket.co.kr^$cookie=sca
+||gmarket.co.kr^$cookie=cna
+! https://github.com/AdguardTeam/AdguardFilters/issues/225275
+||11st.co.kr^$cookie=PCID
+! theculturetrip.com
+||theculturetrip.com^$cookie=tct-real-user
+! webmd.com
+||webmd.com^$cookie=VisitorId
+! zvuk.com
+||zvuk.com^$cookie=device_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/224419
+||exodus.com^$cookie=cfz_zaraz-analytics
+! tracktollywood.com
+||tracktollywood.com^$cookie=uid-s
+! moz.de
+||moz.de^$cookie=/^spid/
+! newspicks.com
+||newspicks.com^$cookie=np_uuid
+! kupibilet.ru
+||kupibilet.ru^$cookie=kb_client_id
+! nicegram.app
+||nicegram.app^$cookie=X-identify
+! usnews.com
+||usnews.com^$cookie=usn_visitor_id
+! momondo.com
+||momondo.com^$cookie=kmkid
+! https://github.com/AdguardTeam/AdguardFilters/issues/220298
+||agoda.com^$cookie=agoda.analytics
+||agoda.com^$cookie=agoda.firstclicks
+||agoda.com^$cookie=agoda.lastclicks
+||agoda.com^$cookie=t_rc
+||agoda.com^$cookie=t_pp
+! aws.amazon.com
+||amazon.com^$cookie=aws-target-data
+||amazon.com^$cookie=aws-target-session-id
+||amazon.com^$cookie=aws-target-visitor-id
+||amazon.com^$cookie=aws-vid
+! yellowpages.com
+||yellowpages.com^$cookie=vrid
+! spooncast.net
+||spooncast.net^$cookie=/^_hackle_/
+! emart.ssg.com
+||emart.ssg.com^$cookie=PCID
+||emart.ssg.com^$cookie=/^RC_/
+! https://github.com/AdguardTeam/AdguardFilters/issues/217766
+! ||epicgames.com^$cookie=EPIC_DEVICE - breaks login = https://github.com/AdguardTeam/AdguardFilters/issues/217793
+||epicgames.com^$cookie=visitor-uuid
+! thekrazycouponlady.com
+||thekrazycouponlady.com^$cookie=/^ab\.storage\./
+! lovense.com
+||lovense.com^$cookie=_utm_os
+||lovense.com^$cookie=_utm_ref
+||lovense.com^$cookie=_utm_track_id
+||lovense.com^$cookie=Hytto-Referer-Detail
+||lovense.com^$cookie=USER-TRACK-ID
+! https://github.com/AdguardTeam/AdguardFilters/issues/217065
+$cookie=/^UBT_/,domain=trip.com
+$cookie=/^ubtc_/,domain=trip.com
+! https://docs-en.hackle.io/docs/javascript
+$cookie=/^_hackle_/,domain=app.catchtable.co.kr
+! coloradoan.com
+||coloradoan.com^$cookie=gup_anonid
+||coloradoan.com^$cookie=gup_clientid
+! https://github.com/AdguardTeam/AdguardFilters/issues/216326
+||bybit.$cookie=deviceId
+||bybit.$cookie=/^sensorsdata/
+! https://github.com/AdguardTeam/AdguardFilters/issues/216005
+||flaticon.com^$cookie=g_state
+! indianexpress.com
+||indianexpress.com^$cookie=ev_did
+||indianexpress.com^$cookie=ev_sid
+! https://github.com/AdguardTeam/AdguardFilters/issues/215614
+||heumm.com^$cookie=FB_EXTERNAL_ID
+! vbr.ru
+||vbr.ru^$cookie=puid
+! x.com
+! https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/rules-and-policies/cookie-description-lists/cookie-description-list-en.pdf
+||x.com^$cookie=guest_id_ads
+||x.com^$cookie=guest_id_marketing
+! novakidschool.com
+||novakid.$cookie=ftr
+||novakidschool.com^$cookie=ftr
+||novakidschool.com^$cookie=wpcf7_guest_user_id
+! purevpn.de
+||purevpn.$cookie=/^intercom-/
+! fashionnova.com
+||fashionnova.com^$cookie=2c.cld
+||fashionnova.com^$cookie=OptimizelyUserId
+! https://github.com/AdguardTeam/AdguardFilters/issues/237762
+! Breaks "Recommended for you" section
+! eneba.com
+! ||eneba.com^$cookie=userId
+! dmm.com
+||dmm.com^$cookie=top_dummy
+||dmm.com^$cookie=top_pv_uid
+! agatameble.pl
+||agatameble.pl^$cookie=private_content_version
+! dcinside.com
+||dcinside.com^$cookie=csid
+! superhuman.com
+||superhuman.com^$cookie=web-device
+! spankbang.com
+||spankbang.com^$cookie=ana_sid
+||spankbang.com^$cookie=ana_vid
+! whitepages.com
+||whitepages.com^$cookie=wp_pid
+! jdpower.com
+||jdpower.com^$cookie=userid
+! slideshare.net
+||slideshare.net^$cookie=browser_id
+! pelikan.sk
+$cookie=PAPVisitorId,domain=pelikan.cz|pelikan.hu|pelikan.sk
+! https://github.com/AdguardTeam/AdguardFilters/issues/213694
+||bouyguestelecom.fr^$cookie=trackerId
+! hostadvice.com
+||hostadvice.com^$cookie=msvt_uid
+! azrhymes.com
+||azrhymes.com^$cookie=visitor
+! pzfans.com
+||pzfans.com^$cookie=ezosuibasgeneris-1
+! https://github.com/AdguardTeam/AdguardFilters/issues/213391
+||flo.com.tr^$cookie=bunsar_visitor_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/212878
+||soundcloud.com^$cookie=sc_anonymous_id
+||soundcloud.com^$cookie=sc_tracking_anonymous_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/212676
+||blog.naver.com^$cookie=BA_DEVICE
+! obi.ru
+||obi.ru^$cookie=_userGUID
+! hoyoverse.com
+||hoyoverse.com^$cookie=_HYVUUID
+! miyoushe.com tracking
+$cookie=DEVICEFP,domain=mihoyo.com|hoyoverse.com
+$cookie=DEVICEFP_SEED_ID,domain=mihoyo.com|hoyoverse.com
+$cookie=DEVICEFP_SEED_TIME,domain=mihoyo.com|hoyoverse.com
+! 4game.com / .ru
+||4game.ru^$cookie=trk
+||4game.com^$cookie=trk
+! https://github.com/AdguardTeam/AdguardFilters/issues/211186
+||unipegaso.it^$cookie=crm_multi_tracking
+! ko44.ru
+||ko44.ru^$cookie=uniqueid
+! https://github.com/AdguardTeam/AdguardFilters/issues/210570
+||newneek.co^$cookie=/AMP_/
+||newneek.co^$cookie=deviceId
+! kari.com
+||kari.com^$cookie=rees46_device_id
+||kari.com^$cookie=did
+||kari.com^$cookie=/^sid_/
+! https://github.com/AdguardTeam/AdguardFilters/issues/210626
+||news.kbs.co.kr^$cookie=STAT_WEBLOG_TOKEN
+! hpplus.jp
+||hpplus.jp^$cookie=fw_se
+||hpplus.jp^$cookie=fw_uid
+! idnes.cz
+||idnes.cz^$cookie=adtrack-lib-criteo
+||idnes.cz^$cookie=_mmid
+||idnes.cz^$cookie=_webid
+||idnes.cz^$cookie=_webid2
+||idnes.cz^$cookie=ADS_VISITOR_ID
+||idnes.cz^$cookie=lastAdSyncDate
+||idnes.cz^$cookie=lastPianoSyncDate
+! opera.com
+||opera.com^$cookie=opref
+! https://github.com/AdguardTeam/AdguardFilters/issues/209516
+||animegoods.co.kr^$cookie=/fb_/
+||animegoods.co.kr^$cookie=ec_ipad_device
+! https://github.com/AdguardTeam/AdguardFilters/issues/209281
+||expressvpn.com^$cookie=/gtm/
+||expressvpn.com^$cookie=xvid
+! https://github.com/AdguardTeam/AdguardFilters/issues/209458
+||danawa.com^$cookie=wcs_bt
+! https://github.com/AdguardTeam/AdguardFilters/issues/172125
+||prothomalo.com^$cookie=uuid_v2
+! https://github.com/AdguardTeam/AdguardFilters/issues/152313
+||applesfera.com^$cookie=NID
+! https://github.com/AdguardTeam/AdguardFilters/issues/136734
+||investing.com^$cookie=smd
+||investing.com^$cookie=udid
+! https://github.com/AdguardTeam/AdguardFilters/issues/123160
+||whistleout.com.au^$cookie=ARRAffinity
+||whistleout.com.au^$cookie=ARRAffinitySameSite
+! https://github.com/AdguardTeam/AdguardFilters/issues/209255
+||jobkorea.co.kr^$cookie=/GTM/
+||jobkorea.co.kr^$cookie=JK_USER_UUID
+! https://github.com/AdguardTeam/AdguardFilters/issues/209326
+||kma.go.kr^$cookie=TRK_EX
+||kma.go.kr^$cookie=_TRK_SID
+||kma.go.kr^$cookie=_TRK_UID
+! https://github.com/AdguardTeam/AdguardFilters/issues/209283
+||danawa.com^$cookie=/_INSIGHT_CK_/
+! 4gamers.com.tw
+||4gamers.com.tw^$cookie=_pkc
+! sravni.ru
+||sravni.ru^$cookie=_FP_
+! youdo.com
+||youdo.com^$cookie=/^_utm_/
+||youdo.com^$cookie=/id/
+! allrecipes.com
+||allrecipes.com^$cookie=/^_sharedid/
+! 33-news.ru
+||33-news.ru^$cookie=uniqueid
+! buildtheearth.net
+||buildtheearth.net^$cookie=/^_pk_id./
+! pap.pl
+||pap.pl^$cookie=/incap_/
+! wolverine.com
+||wolverine.com^$cookie=_cs_mk_ga
+||wolverine.com^$cookie=sid
+! okko.tv
+||okko.tv^$cookie=_sa
+||okko.tv^$cookie=odid
+||okko.tv^$cookie=SherlockChatInfo
+! sports.ru
+||cyber.sports.ru^$cookie=suida
+! oilprice.com
+||oilprice.com^$cookie=ga_store_user_id
+! hk01.com
+||hk01.com^$cookie=/^_pk_id./
+||hk01.com^$cookie=hk01_annonymous_id
+||hk01.com^$cookie=hk01_segment_id
+! azcentral.com
+||azcentral.com^$cookie=/^gnt_/
+||azcentral.com^$cookie=gup_anonid
+||azcentral.com^$cookie=gup_clientid
+! wallapop.com
+||wallapop.com^$cookie=device_id
+||wallapop.com^$cookie=rl_anonymous_id
+! nytimes.com
+||nytimes.com^$cookie=nyt-jkidd
+||nytimes.com^$cookie=jkidd-s
+! https://github.com/AdguardTeam/AdguardFilters/issues/206984
+||medicalnewstoday.com^$cookie=traveler_tglr_tenant_id
+||medicalnewstoday.com^$cookie=traveler_tglr_anon_id
+||medicalnewstoday.com^$cookie=tglr_tenant_id
+||medicalnewstoday.com^$cookie=tglr_transit_id
+||medicalnewstoday.com^$cookie=tglr_ref
+||medicalnewstoday.com^$cookie=tglr_req
+||medicalnewstoday.com^$cookie=tglr_anon_id
+||medicalnewstoday.com^$cookie=pmpdid
+||medicalnewstoday.com^$cookie=blab
+! spbvedomosti.ru
+||spbvedomosti.ru^$cookie=/^BITRIX_/
+! diag.pl
+||diag.pl^$cookie=/incap_/
+||diag.pl^$cookie=___utmvc
+! wpde.com
+||wpde.com^$cookie=sbgtvNonce
+||wpde.com^$cookie=SUID
+! shoebacca.com
+||shoebacca.com^$cookie=/^smbimpr/
+||shoebacca.com^$cookie=/^swym-/
+||shoebacca.com^$cookie=tfc-l
+! independent.co.uk
+||independent.co.uk^$cookie=/^esi-/
+! sport-express.ru
+||sport-express.ru^$cookie=_se_site_counter
+! plus.nl
+||plus.nl^$cookie=/^nr[12]Users\$/
+||plus.nl^$cookie=/^osVisit/
+! kimbino.ro/.bg
+||kimbino.$cookie=/^kim-tracker/
+! gb.ru
+||gb.ru^$cookie=/^utm_/
+! makemytrip.com
+||makemytrip.com^$cookie=dvid
+! 101.ru
+||101.ru^$cookie=statDaySession
+||101.ru^$cookie=uniqClientId
+||101.ru^$cookie=incomeUrl
+||101.ru^$cookie=sid_101_ru
+! coca-cola.com.br
+||andina.nasuacasa.coca-cola.com.br^$cookie=/^_snrs_/
+||andina.nasuacasa.coca-cola.com.br^$cookie=/^vtex-search-/
+! vnexpress.net
+||vnexpress.net^$cookie=/^fosp_/
+||vnexpress.net^$cookie=orig_aid
+! terra.com.br
+||terra.com.br^$cookie=X-XAct-ID
+! healf.com
+||healf.com^$cookie=/^ig-/
+||healf.com^$cookie=/^ph_phc_/
+! usetrmnl.com
+||usetrmnl.com^$cookie=/^intercom-/
+! galaxus.de
+||galaxus.de^$cookie=/^\.(b|s|xp|ub\.)id/
+! redis.io
+||redis.io^$cookie=rdsTracking
+! raycast.com
+||raycast.com^$cookie=/^ph_phc_/
+! pixabay.com
+||pixabay.com^$cookie=anonymous_user_id
+! sahibinden.com
+||sahibinden.com^$cookie=kno
+||sahibinden.com^$cookie=shuid
+! aamulehti.fi
+||aamulehti.fi^$cookie=sa1pid
+! swissotel.com
+||swissotel.com^$cookie=/incap_/
+||swissotel.com^$cookie=/^nlbi_/
+! darntough.com
+||darntough.com^$cookie=/^ph_phc_/
+! oxylabs.io
+||developers.oxylabs.io^$cookie=/^intercom-/
+! https://github.com/AdguardTeam/AdguardFilters/issues/203766
+$cookie=_HFID,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
+$cookie=_perhip,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
+$cookie=mosb,domain=womenshealthmag.com|bicycling.com|bestproducts.com|caranddriver.com|cosmopolitan.com|countryliving.com|delish.com|elledecor.com|elle.com|esquire.com|goodhousekeeping.com|harpersbazaar.com|housebeautiful.com|oprahdaily.com|prevention.com|redbookmag.com|roadandtrack.com|runnersworld.com|seventeen.com|townandcountrymag.com|veranda.com|womansday.com|autoweek.com|thepioneerwoman.com|popularmechanics.com
+! businessinsider.com
+||businessinsider.com^$cookie=universal_id
+||businessinsider.com^$cookie=anonymous_id
+||businessinsider.com^$cookie=fenrir_anonymous_id
+! businessinsider.jp
+||businessinsider.jp^$cookie=mgppid
+||businessinsider.jp^$cookie=ppid
+! roblox.com
+||roblox.com^$cookie=RBXSessionTracker
+! iltalehti.fi
+||iltalehti.fi^$cookie=/^il_ga_/
+! hwbusters.com
+||hwbusters.com^$cookie=advanced_ads_page_impressions
+||hwbusters.com^$cookie=advanced_ads_visitor
+! katu.com
+||katu.com^$cookie=SUID
+! popin.cc
+||popin.cc^$cookie=__mguid_
+! xraws.com
+||xraws.com^$cookie=client_id
+! vtcnews.vn
+||vtcnews.vn^$cookie=vtcCookie
+! newsbreak.com
+||newsbreak.com^$cookie=nb_wuid
+||newsbreak.com^$cookie=userId
+! softwarekeep.com
+||softwarekeep.com^$cookie=_orig_referrer
+! hindustantimes.com
+||hindustantimes.com^$cookie=ppid
+||hindustantimes.com^$cookie=_ht_fp
+! lifehacker.com
+||lifehacker.com^$cookie=gtagSessionId
+! realtor.com
+||realtor.com^$cookie=__vst
+! wish.com
+||wish.com^$cookie=visitor_id
+||wish.com^$cookie=logged_out_tracker
+! Disqus
+||disqus.com^$cookie=zeta-ssp-user-id
+! Internal statistics, used for anonymous visitors (Sigma)
+||disqus.com^$cookie=disqus_unique
+!
+! temu.com
+||temu.com^$cookie=_bee
+||temu.com^$cookie=_nano_fp
+||temu.com^$cookie=_ttc
+! boundless.com
+||boundless.com^$cookie=_boundless_tracking_id
+! deezer.com
+! ||deezer.com^$cookie=dzr_uniq_id
+! vulture.com
+||vulture.com^$cookie=first-nymcid
+||vulture.com^$cookie=nymcid
+||vulture.com^$cookie=nyma
+! infox.sg - tracking
+||infox.sg^$cookie
+! https://github.com/AdguardTeam/AdguardFilters/issues/194916
+||fanatical.com^$cookie=affiliate_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/194647
+||titulky.com^$cookie=adbwshown
+||titulky.com^$cookie=udid
+||titulky.com^$cookie=sid
+! dropbox.com
+||dropbox.com^$cookie=dbx_js_analytics_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/194354
+||my-best.com^$cookie=mybest_uuid
+! hulu.com
+||hulu.com^$cookie=metrics_tracker_session_manager
+! clarity.ms
+||clarity.ms^$cookie=MUID
+||clarity.ms^$cookie=CLID
+||clarity.ms^$cookie=ANON
+! https://github.com/AdguardTeam/AdguardFilters/issues/186196
+||homerun.co.uk^$cookie=_fingerPrint
+! https://github.com/AdguardTeam/AdguardFilters/issues/185426
+||cyberghostvpn.com^$cookie=cg_campaign
+||cyberghostvpn.com^$cookie=cg_clickid
+||cyberghostvpn.com^$cookie=visitor_date
+||cyberghostvpn.com^$cookie=visitor_type
+! https://github.com/AdguardTeam/AdguardFilters/issues/184012
+||joinrs.com^$cookie=TRACKING_CLIENT_TOKEN
+||joinrs.com^$cookie=TRACKING_SESSION_TOKEN
+! https://github.com/AdguardTeam/AdguardFilters/issues/183505
+||goldapple.ru^$cookie=advcake_track_id
+||goldapple.ru^$cookie=digi-analytics-sessionId
+! manchestereveningnews.co.uk
+||manchestereveningnews.co.uk^$cookie=TM_ga_clientId
+! faz.net - adobe counter
+||faz.net^$cookie=adobe_pageViewCount
+! vgwort.de counting cookie
+||vgwort.de^$cookie=srp
+! https://github.com/AdguardTeam/AdguardFilters/issues/180074
+||investing.com^$cookie=adBlockerNewUserDomains
+! rarejob.com
+||rarejob.com^$cookie=guest_id_ads
+||rarejob.com^$cookie=guest_id_marketing
+! revico.io
+$cookie=revico-visitor-id
+! staff-start.com
+$cookie=ss_tracking_session_id
+! similarweb.com
+||similarweb.com^$cookie=.DEVICETOKEN.SIMILARWEB.COM
+||similarweb.com^$cookie=cb_anonymous_id
+||similarweb.com^$cookie=sgID
+! https://github.com/AdguardTeam/AdguardFilters/issues/175335
+||tractorsupply.com^$cookie=/WC_USERACTIVITY_/
+||tractorsupply.com^$cookie=WC_GENERIC_ACTIVITYDATA
+||tractorsupply.com^$cookie=WC_ACTIVEPOINTER
+! https://github.com/AdguardTeam/AdguardFilters/issues/175282
+||hwupgrade.it^$cookie=bblastvisit
+! https://github.com/AdguardTeam/AdguardFilters/issues/174637
+||pinkvilla.com^$cookie=1P_JAR
+! https://github.com/uBlockOrigin/uAssets/issues/22750#event-12008887116
+||shiksha.com^$cookie=visitorSessionId
+||shiksha.com^$cookie=visitorId
+! uber.com
+||uber.com^$cookie=marketing_vistor_id
+! remarkable.com
+||remarkable.com^$cookie=rmMetaV2-user_id
+||remarkable.com^$cookie=rmMetaV2-myrm_utm_parameters
+||remarkable.com^$cookie=rmMetaV2-utm_parameters
+||remarkable.com^$cookie=rmMetaV2-session_id
+||remarkable.com^$cookie=rmMetaV2-gclid
+||remarkable.com^$cookie=rmMetaV2-device_id
+||remarkable.com^$cookie=rmMetaV2-fbc
+||remarkable.com^$cookie=rmMetaV2-rm_country
+||remarkable.com^$cookie=rmMetaV2-affiliate_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/172581
+||wisernotify.com^$cookie=track_ref
+||wisernotify.com^$cookie=track_entry
+||wisernotify.com^$cookie=track_exit
+! mgmanager.gr
+||mgmanager.gr^$cookie=VisitorGUID
+||mgmanager.gr^$cookie=VisitorState
+! pixiv.net
+! https://github.com/AdguardTeam/AdguardFilters/issues/180178
+!+ NOT_PLATFORM(ext_ff)
+||pixiv.net^$cookie=first_visit_datetime_pc
+||pixiv.net^$cookie=first_visit_datetime
+! https://github.com/AdguardTeam/AdguardFilters/issues/171140
+xfree.com$cookie=anonymous
+! https://github.com/AdguardTeam/AdguardFilters/issues/171231
+||exame.com^$cookie=NID
+! https://github.com/AdguardTeam/AdguardFilters/issues/170358
+||foxnews.com^$cookie=xid
+! https://github.com/AdguardTeam/AdguardFilters/issues/169629
+||tvnoviny.sk^$cookie=MS_PPID
+! rnd.de - analytics
+||rnd.de^$cookie=__vads
+! https://github.com/AdguardTeam/AdguardFilters/issues/169286
+||engineerscodex.com^$cookie=visit_id
+! bild.de
+||bild.de^$cookie=kameleoonVisitorCode
+||bild.de^$cookie=s_ips
+||bild.de^$cookie=ioam2018
+||bild.de^$cookie=_sp_su
+! toyokeizai.net - analytics
+||toyokeizai.net^$cookie=ismuc
+! justjoin.it - marketing
+||justjoin.it^$cookie=userUid
+! kcby.com - analytics
+||kcby.com^$cookie=SUID
+! https://github.com/AdguardTeam/AdguardFilters/issues/167766
+||substack.com^$cookie=visit_idr
+! giveawayoftheday.com
+||giveawayoftheday.com^$cookie=gaotd_uid
+||giveawayoftheday.com^$cookie=gaotd_user_id
+||giveawayoftheday.com^$cookie=/^gaotd_visited_/
+! https://github.com/AdguardTeam/AdguardFilters/issues/161497
+||trafficcardinal.com^$cookie=1P_JAR
+! https://github.com/AdguardTeam/AdguardFilters/issues/161471
+||meetup.com^$cookie=MEETUP_TRACK
+! forbes.com
+||forbes.com^$cookie=client_id
+||forbes.com^$cookie=fadvuke2etid
+! https://github.com/AdguardTeam/AdguardFilters/issues/160129
+$cookie=ahoy_visit,domain=instacart.ca|instacart.com
+$cookie=ahoy_visitor,domain=instacart.ca|instacart.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/158999
+||ft.com^$cookie=spoor-id
+! https://github.com/AdguardTeam/AdguardFilters/issues/158141
+||galottery.com^$cookie=NID
+||galottery.com^$cookie=1P_JAR
+! https://github.com/AdguardTeam/AdguardFilters/issues/156457
+||nv.ua^$cookie=browser_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/156892
+||educationconnection.com^$cookie=_CampaignTrackID
+! https://github.com/AdguardTeam/AdguardFilters/issues/156019
+||themanual.com^$cookie=dtLastActive
+||themanual.com^$cookie=dtPageViewId
+! https://github.com/AdguardTeam/AdguardFilters/issues/156263
+||tjrwrestling.net^$cookie=_pbjs_userid_consent_data
+! https://github.com/AdguardTeam/AdguardFilters/issues/155578
+||moreknig.org^$cookie=NID
+||moreknig.org^$cookie=1P_JAR
+! https://github.com/AdguardTeam/AdguardFilters/issues/152840
+||oilprice.com^$cookie=_omappvp
+||oilprice.com^$cookie=_omappvs
+! https://github.com/AdguardTeam/AdguardFilters/issues/151964
+||izi.ua$cookie=statz_unique_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/151687
+||breakdownexpress.com^$cookie=NID
+||breakdownexpress.com^$cookie=DV
+! https://github.com/AdguardTeam/AdguardFilters/issues/151782
+||adweek.com^$cookie=aw-article-visits
+! https://github.com/AdguardTeam/AdguardFilters/issues/151045
+||infoniac.ru^$cookie=NID
+! https://github.com/AdguardTeam/AdguardFilters/issues/151279
+||3dnews.ru^$cookie=3d-viewer-id
+||3dnews.ru^$cookie=lastvisit
+! https://github.com/AdguardTeam/AdguardFilters/issues/151180
+||ping.contactpigeon.com^$cookie=bi
+! Quantserv
+||quantserve.com^$cookie=mc
+! https://github.com/AdguardTeam/AdguardFilters/issues/150799
+||blablacar.co.uk$cookie=vstr_id
+! Vimeo
+! Used to collect analytics tracking information
+! ||vimeo.com^$cookie=vuid - breaks login - https://github.com/AdguardTeam/AdguardFilters/issues/152108
+||vimeo.com^$cookie=_scid_r
+||vimeo.com^$cookie=_scid
+! https://github.com/AdguardTeam/AdguardFilters/issues/150077
+||newsweekjapan.jp^$cookie=_pbjs_userid_consent_data
+||newsweekjapan.jp^$cookie=_td
+||newsweekjapan.jp^$cookie=site_visited
+||newsweekjapan.jp^$cookie=is_visiter
+! https://github.com/AdguardTeam/AdguardFilters/issues/149980
+||niadd.com^$cookie=protocol_country_code
+! https://github.com/AdguardTeam/AdguardFilters/issues/150002
+||si.com^$cookie=BCSessionID
+||si.com^$cookie=last_visit_bc
+||si.com^$cookie=muid
+! https://github.com/AdguardTeam/AdguardFilters/issues/145516
+||wionews.com^$cookie=myPPID
+||wionews.com^$cookie=traffic_medium
+||wionews.com^$cookie=traffic_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/144327
+||dickssportinggoods.com^$cookie=RES_TRACKINGID
+||dickssportinggoods.com^$cookie=BVBRANDID
+! https://github.com/AdguardTeam/AdguardFilters/issues/143883
+||kkuriren.se^$cookie=adksid
+||kkuriren.se^$cookie=adkvid
+! Tradedoubler
+! https://dev.tradedoubler.com/tracking/advertiser/
+||tradedoubler.com^$cookie=GUID
+! https://github.com/AdguardTeam/AdguardFilters/issues/142645
+||sina.cn^$cookie=recent_visited
+! https://github.com/AdguardTeam/AdguardFilters/issues/142007
+||latestly.com^$cookie=personalization_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/141628
+||xiaohongshu.com^$cookie=xhsTrackerId
+||xiaohongshu.com^$cookie=xhsTrackerId.sig
+! https://github.com/AdguardTeam/AdguardFilters/issues/140992
+||fwmrm.net^$cookie=_fwex_doubleclick.net_IDE
+! https://github.com/AdguardTeam/AdguardFilters/issues/141256
+||navdmp.com^$cookie=nid
+! https://github.com/AdguardTeam/AdguardFilters/issues/141668
+||patched.to^$cookie=sid
+||patched.to^$cookie=mybb[threadread]
+||patched.to^$cookie=mybb[lastvisit]
+||patched.to^$cookie=mybb[lastactive]
+! https://github.com/AdguardTeam/AdguardFilters/issues/141198
+||otakufr.co^$cookie=_uc_referrer
+||otakufr.co^$cookie=session_id
+! richrelevance.com
+! Tracks a visitor across sessions
+||richrelevance.com^$cookie=uc
+! https://github.com/AdguardTeam/AdguardFilters/issues/141578
+! UTM, referer
+||timeweb.cloud^$cookie=aors_fc
+! https://github.com/AdguardTeam/AdguardFilters/issues/141385
+||uphold.com^$cookie=sdk_trends_user_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/141398
+||apa.org^$cookie=/incap_|nlbi_/
+||apa.org^$cookie=SessionId
+||apa.org^$cookie=TAFSessionId
+||apa.org^$cookie=ASP.NET_SessionId
+||apa.org^$cookie=___utmvc
+! https://github.com/AdguardTeam/AdguardFilters/issues/141467
+||dailymail.co.uk^$cookie=RT
+! https://github.com/AdguardTeam/AdguardFilters/issues/141449
+||modnakiecka.pl^$cookie=smvr
+||modnakiecka.pl^$cookie=smcfds
+||modnakiecka.pl^$cookie=smuuid
+! https://github.com/AdguardTeam/AdguardFilters/issues/141154
+||istories.media^$cookie=latest_viewed_material
+! https://github.com/AdguardTeam/AdguardFilters/issues/141055
+||mindbox.ru^$cookie=deviceUUID
+! t-j.ru
+||t-j.ru^$cookie=dsp_click_id
+||t-j.ru^$cookie=mindboxDeviceUUID
+! https://github.com/AdguardTeam/AdguardFilters/issues/140889
+||dealabs.com^$cookie=f_v
+! https://github.com/AdguardTeam/AdguardFilters/issues/140940
+||bgr.in^$cookie=traffic_medium
+||bgr.in^$cookie=traffic_source
+! https://github.com/AdguardTeam/AdguardFilters/issues/140733
+||cnn.$cookie=nexus-web-application-identifier
+||cnn.$cookie=__idcontext
+! Used to provide advertising based on user data
+||mailchimp.com^$cookie=_mcid
+! https://github.com/AdguardTeam/AdguardFilters/issues/140645
+||sexu.com^$cookie=_ttrack
+! https://github.com/AdguardTeam/AdguardFilters/issues/140694
+||airportinfo.live^$cookie=adsplit
+||airportinfo.live^$cookie=adblocker
+! https://github.com/AdguardTeam/AdguardFilters/issues/140506
+||migros.com.tr^$cookie=VSTR_ID
+! dailymail.co.uk - views counter, ad tracking
+||dailymail.co.uk^$cookie=latest-article-count
+||dailymail.co.uk^$cookie=mol.ads.visits
+||dailymail.co.uk^$cookie=mol.ads.visitsExpire
+||dailymail.co.uk^$cookie=_pbjs_userid_consent_data
+! https://github.com/AdguardTeam/AdguardFilters/issues/139907
+||meetup.com^$cookie=MEETUP_BROWSER_ID
+! https://github.com/AdguardTeam/AdguardFilters/issues/139501
+||videoseyred.in^$cookie=/^vstrack_ga/
+! Tripadvisor
+! Used for user tracking across websites
+!||tripadvisor.$cookie=TAUnique - breaks results https://github.com/AdguardTeam/AdguardFilters/issues/168373
+!||tripadvisor.$cookie=TADCID - breaks login
+! https://github.com/AdguardTeam/AdguardFilters/issues/139322
+||nordvpn.com^$cookie=nv_tri
+||nordvpn.com^$cookie=nv_trs
+||nordvpn.com^$cookie=CurrentSession
+||nordvpn.com^$cookie=FirstSession
+||nordvpn.com^$cookie=nextbid
+! https://github.com/AdguardTeam/AdguardFilters/issues/139263
+||ridestore.com^$cookie=/^google-analytics_v4__/
+! makeway.pl - unique user ID
+||makeway.pl^$cookie=uid
+||makeway.pl^$cookie=sid
+! money.hu
+||money.hu^$cookie=UserUuid
+! relaido.jp
+||relaido.jp^$cookie=relaido_uuid
+! at-s.com
+||at-s.com^$cookie=_rld_u
+! Branch.io / App.Link
+! Used to collect data on visitors behaviour and interaction
+||app.link^$cookie=_s
+||branch.io^$cookie=bnc_returning_visitor
+! openresty.org - unique user ID
+||openresty.org^$cookie=userid
+! webdock.io - ad tracking
+||webdock.io^$cookie=Webdock-Internal-Ad-Tracker
+||webdock.io^$cookie=Webdock-Internal-Ad-Two
+! dreamstime.com - user ID
+||dreamstime.com^$cookie=dtuid
+||dreamstime.com^$cookie=firstvisit
+||dreamstime.com^$cookie=lastvisit
+||dreamstime.com^$cookie=revisit
+! stocksy.com - unique user ID
+||stocksy.com^$cookie=stocksylytics_anon_id
+! https://github.com/AdguardTeam/AdguardFilters/issues/134089
+||nttcoms.com^$cookie=visitorid
+! depop.com
+||depop.com^$cookie=_px2
+||depop.com^$cookie=_pxvid
+||depop.com^$cookie=pxcts
+||depop.com^$cookie=ACTIVITY_TRACKER_PERSISTENT_SESSION_ID
+! https://github.com/AdguardTeam/AdguardFilters/issues/131068
+||nu.nl^$cookie=temptation-id
+! https://github.com/AdguardTeam/AdguardFilters/issues/130723
+||zoom.us^$cookie=_zm_fingerprint
+||zoom.us^$cookie=_zm_visitor_guid
+||zoom.us^$cookie=_zm_ctaid
+! https://github.com/AdguardTeam/AdguardFilters/issues/128820
+||stripchat.com^$cookie=stripchat_com_affiliateId
+! https://github.com/AdguardTeam/AdguardFilters/issues/128392
+||rtp.pt^$cookie=googlepersonalization
+||rtp.pt^$cookie=_gid
+||rtp.pt^$cookie=/_gat_gtag_/
+||rtp.pt^$cookie=_gat_playerTracker
+||rtp.pt^$cookie=___iat_vis
+||rtp.pt^$cookie=_ga
+||rtp.pt^$cookie=_recid
+||rtp.pt^$cookie=cid
+! https://github.com/AdguardTeam/AdguardFilters/issues/128259
+||pokernews.com^$cookie=anid_pnuser_uuid
+! https://github.com/AdguardTeam/AdguardFilters/issues/128243
+||baidu.com^$cookie=baikeVisitId
+||hao123.com^$cookie=traceid
+||hao123.com^$cookie=tnwhiteft
+! https://github.com/AdguardTeam/AdguardFilters/issues/128195
+||service.giosg.com^$cookie=gid
+||service.giosg.com^$cookie=sgid
+! https://github.com/AdguardTeam/AdguardFilters/issues/126960
+||e1.ru^$cookie=jtnews_adblock
+! https://github.com/AdguardTeam/AdguardFilters/issues/126303
+||sportskeeda.com^$cookie=unique_browser_id
+||sportskeeda.com^$cookie=KEEDA_SESSION_ID
+||sportskeeda.com^$cookie=unique_user_id
+||sportskeeda.com^$cookie=keeda-session-uuid
+! bigw.com.au - user identification
+||bigw.com.au^$cookie=ir-clickid
+! Rambler group
+||championat.com^$cookie=adtech_uid
+||championat.com^$cookie=top100_id
+||championat.com^$cookie=rchainid
+$cookie=ruid,domain=afisha.ru|eda.ru
+||afisha.ru^$cookie=adtech_uid
+||afisha.ru^$cookie=_afuid
+||afisha.ru^$cookie=_eggDeviceUUID
+||afisha.ru^$cookie=_egguid
+$cookie=uid,domain=motor.ru|quto.ru
+||lenta.ru^$cookie=lids
+||lenta.ru^$cookie=lid
+! AdFox
+||adfox.ru^$cookie=cryptouid_sign
+||adfox.ru^$cookie=cryptouid
+||adfox.ru^$cookie=luid1_ts
+||adfox.ru^$cookie=luid1
+! https://github.com/AdguardTeam/AdguardFilters/issues/125304
+||uid.mavencoalition.io^$cookie
+||thestreet.com^$cookie=BCSessionID
+||thestreet.com^$cookie=last_visit_bc
+||thestreet.com^$cookie=muid
+! https://github.com/AdguardTeam/AdguardFilters/issues/125119
+||e1.ru^$cookie=ngs_uid
+||e1.ru^$cookie=ngs_analytics_uid
+! adingo.jp
+.adingo.jp^$cookie
+! wp.pl
+$cookie=WPabs,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=WPdp,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=PWA_adbd,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=STvisit,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=sgVisitId,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=BDhs,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=BDh,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=sa31,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=STpage,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=ttlStatid,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=STabnoid,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=WPpds,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=sgv,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=c,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=camps,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=WPtcs2,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=WPci,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=_pbjs_userid_consent_data,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=ACac2,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+$cookie=STac,domain=wp.pl|money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+! https://github.com/AdguardTeam/AdguardFilters/issues/173708
+! Do not block "statid" cookie on the wp.pl domain because it breaks video player on pilot.wp.pl
+$cookie=statid,domain=money.pl|o2.pl|pudelek.pl|komorkomania.pl|gadzetomania.pl|fotoblogia.pl|autokult.pl|abczdrowie.pl|parenting.pl|videostar.pl|autocentrum.pl|benchmark.pl
+!
+$cookie=rubiconuid,domain=wp.pl
+$cookie=rtbhouseuid,domain=wp.pl
+$cookie=openxmiud,domain=wp.pl
+$cookie=onetaguid,domain=wp.pl
+$cookie=oftmediauid,domain=wp.pl
+$cookie=tpluid,domain=wp.pl
+$cookie=stroeercoreuid,domain=wp.pl
+$cookie=yoc_visxuid,domain=wp.pl
+$cookie=apnxuid,domain=wp.pl
+$cookie=adfmuid,domain=wp.pl
+$cookie=ixuid,domain=wp.pl
+$cookie=smartmiud,domain=wp.pl
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/123962
+||hankookilbo.com^$cookie=uv_user_id
+||hankookilbo.com^$cookie=hk_ltuid
+||hankookilbo.com^$cookie=hkvstcd
+||hankookilbo.com^$cookie=uv_session_id
+! gazeta.pl
+$cookie=cric_adid,domain=gazeta.pl|sport.pl|tokfm.pl
+$cookie=cric_pubid,domain=gazeta.pl|sport.pl|tokfm.pl
+! https://github.com/AdguardTeam/AdguardFilters/issues/118022
+||drop.com^$cookie=md.etag
+||drop.com^$cookie=md.visitId
+! PopIn
+||popin.cc^$cookie=_ss_pp_id
+||popin.cc^$cookie=_td
+||popin.cc^$cookie=uid
+||dashboard.popin.cc^$cookie=laravel_session
+! Taplytics
+||taplytics.com^$cookie=/^_tl_/
+! sharethrough.com ad analytics
+||sharethrough.com^$cookie=stx_user_id
+! OLX
+$cookie=fingerprint,domain=olx.ro|olx.kz|olx.pl|olx.pt|olx.ua|olx.uz|olx.in|olx.com
+$cookie=dfp_user_id,domain=olx.ro|olx.kz|olx.pl|olx.pt|olx.ua|olx.uz|olx.in|olx.com
+! 220-volt.ru tracking
+||220-volt.ru^$cookie=telemetryToken
+||220-volt.ru^$cookie=advref
+||220-volt.ru^$cookie=advref_first
+||220-volt.ru^$cookie=_userGUID
+! indiatimes.com - tracking, fingerprinting
+||indiatimes.com^$cookie=/pfuuid|fpid/
+! insider.com - tracking
+||insider.com^$cookie=/anonymous_id|fenrir_anonymous_id/
+! Duolingo
+$cookie=initial_referrer,domain=duolingo.com|duolingo.cn
+$cookie=wuuid,domain=duolingo.com|duolingo.cn
+! onthe.io cookies
+||vc.ru^$cookie=/^__io/
+||vc.ru^$cookie=/^io_/
+! ad networks
+||exoclick.com^$cookie
+||realsrv.com^$cookie
+! Do not add new rules to this section. Add above with a comment
+||kayak.co.kr^$cookie=kmkid
+||kayak.co.kr^$cookie=csid
+||kayak.com^$cookie=kmkid
+||kayak.com^$cookie=csid
+$cookie=/^_gd/,domain=leichtathletik.de
+$cookie=tint-anonymous-uid,domain=leichtathletik.de
+||thirdweb.com^$cookie=/^ph_phc_/
+||eduki.com^$cookie=track_sid
+||manomano.de^$cookie=mm_visitor_id
+||manomano.de^$cookie=mm_ab_test_version
+||manomano.de^$cookie=mm_ab_tests
+||kariyer.net^$cookie=jobviewcount
+||ok.ru^$cookie=mtrc
+||productreview.com.au^$cookie=pr_guest_id
+||productreview.com.au^$cookie=pr_visitor_id
+||11st.co.kr^$cookie=/RAKE_SID/
+||adform.net^$cookie=/uid|TPC/
+||delfi.lv^$cookie=dcid
+||airasia.com^$cookie=cosmos-arbiter-identifier
+||airasia.com^$cookie=clonedDeviceID
+||lemurov.net^$cookie=flat_r_mb
+||21buttons.com^$cookie=21b.user.generated.id
+$cookie=vocuser_uuid,domain=ideal.es|elcorreo.com
+$cookie=ev_sid,domain=ideal.es|elcorreo.com|diariovasco.com
+$cookie=ev_did,domain=diariovasco.com
+||joyn.de^$cookie=trackingSessionId
+||tf1.fr^$cookie=atidvisitor
+||tf1.fr^$cookie=ABTastySession
+||tf1.fr^$cookie=ABTasty
+||tf1.fr^$cookie=gguserid
+||getpublica.com^$cookie=p_uid
+||williams-sonoma.com^$cookie=svi_dec
+||williams-sonoma.com^$cookie=_abck
+||williams-sonoma.com^$cookie=WSPE_SID
+||mobile01.com^$cookie=HobbyCatuuid
+||mobile01.com^$cookie=/^MID-uuid/
+||foxtime.ru^$cookie=cherry_trend_views
+||foxtime.ru^$cookie=/^pvc_visits/
+||indiatimes.com^$cookie=deviceid
+||rshrt.com^$cookie=app_visitor
+||indiatimes.com^$cookie=/deviceid|lgc_deviceid|ak_bmsc/
+||producthunt.com^$cookie=/visitor_id|track_code|first_visit/
+||iltalehti.fi^$cookie=sammio-bsid
+||smartworld.it^$cookie=__mx_log
+||gulfnews.com^$cookie=/incap_|NEW_VISITOR|nlbi_|___utmv/
+||fusionmovies.to^$cookie=/^_tezer_|_on_page/
+||theatlantic.com^$cookie=/atl_uuid|kppid/
+||businessinsider.com^$cookie=/traffic_src|^_sp_/
+||vc.ru^$cookie=/osnova-aid|fingerprint|adblock-state/
 imggenius.com##.cookies-card.text-center
 
 ! ---------- German ----------
