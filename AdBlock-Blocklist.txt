@@ -13,9 +13,71 @@
 ! note: We are working on more blocking.
 ! abt
 ! update-notes: We added more blocking.
-
-
-
+||cm.everesttech.net/favicon.ico?adblocktester=1786392420229-s26n90c1bos$xhr,domain=adblocktester.pages.dev
+||adobedc.demdex.net/favicon.ico?adblocktester=1786392420271-u0lik7x24z$xhr,domain=adblocktester.pages.dev
+||sstats.adobe.com/favicon.ico?adblocktester=1786392420272-h87fl996gbp$xhr,domain=adblocktester.pages.dev
+||script.hotjar.com/favicon.ico?adblocktester=1786392420273-qt74o1trmfg$xhr,domain=adblocktester.pages.dev
+||static.hotjar.com/favicon.ico?adblocktester=1786392420274-q5lv8b8lgtd$xhr,domain=adblocktester.pages.dev
+||identify.hotjar.com/favicon.ico?adblocktester=1786392420275-08gp4iioa7kj$xhr,domain=adblocktester.pages.dev
+||events.hotjar.io/favicon.ico?adblocktester=1786392420276-00d23ltra6cb5$xhr,domain=adblocktester.pages.dev
+||insights.hotjar.com/favicon.ico?adblocktester=1786392420277-85hf4c630e$xhr,domain=adblocktester.pages.dev
+||adm.hotjar.com/favicon.ico?adblocktester=1786392420278-xycusog4pvs$xhr,domain=adblocktester.pages.dev
+||surveys.hotjar.com/favicon.ico?adblocktester=1786392420318-3m75krcagfu$xhr,domain=adblocktester.pages.dev
+||cdn.segment.com/favicon.ico?adblocktester=1786392420319-vbtrov2ww5$xhr,domain=adblocktester.pages.dev
+||api.segment.io/favicon.ico?adblocktester=1786392420320-yewup1fnldj$xhr,domain=adblocktester.pages.dev
+||events.segmentapis.com/favicon.ico?adblocktester=1786392420323-j71q3emk51r$xhr,domain=adblocktester.pages.dev
+||cdn.mxpnl.com/favicon.ico?adblocktester=1786392420324-ausjyluumzr$xhr,domain=adblocktester.pages.dev
+||api-js.mixpanel.com/favicon.ico?adblocktester=1786392420326-mwkc1ats7c$xhr,domain=adblocktester.pages.dev
+||api.mixpanel.com/favicon.ico?adblocktester=1786392420327-xxptndt2nl$xhr,domain=adblocktester.pages.dev
+||decide.mixpanel.com/favicon.ico?adblocktester=1786392420395-l1ufqwcjh3$xhr,domain=adblocktester.pages.dev
+||cdn.amplitude.com/favicon.ico?adblocktester=1786392420396-mg9enz8kon$xhr,domain=adblocktester.pages.dev
+||api2.amplitude.com/favicon.ico?adblocktester=1786392420397-7ckcz2u6k7u$xhr,domain=adblocktester.pages.dev
+||regionconfig.amplitude.com/favicon.ico?adblocktester=1786392420398-p88v6zza2pk$xhr,domain=adblocktester.pages.dev
+||api.eu.amplitude.com/favicon.ico?adblocktester=1786392420399-rp5it294kum$xhr,domain=adblocktester.pages.dev
+||sr-client-cfg.amplitude.com/favicon.ico?adblocktester=1786392420400-4b723u0ii45$xhr,domain=adblocktester.pages.dev
+||sr-client-cfg.eu.amplitude.com/favicon.ico?adblocktester=1786392420401-55n25z3seix$xhr,domain=adblocktester.pages.dev
+||fullstory.com/favicon.ico?adblocktester=1786392420449-s1yvcrxj78$xhr,domain=adblocktester.pages.dev
+||edge.fullstory.com/favicon.ico?adblocktester=1786392420450-ni91in8pgek$xhr,domain=adblocktester.pages.dev
+||rs.fullstory.com/favicon.ico?adblocktester=1786392420451-57wq5y0pg8a$xhr,domain=adblocktester.pages.dev
+||o-collector.fullstory.com/favicon.ico?adblocktester=1786392420452-4q9p3ma0b3u$xhr,domain=adblocktester.pages.dev
+||cdn.mouseflow.com/favicon.ico?adblocktester=1786392420454-8s7pa6cs98l$xhr,domain=adblocktester.pages.dev
+||o2.mouseflow.com/favicon.ico?adblocktester=1786392420458-a1iysuy48vk$xhr,domain=adblocktester.pages.dev
+||gtm.mouseflow.com/favicon.ico?adblocktester=1786392420462-34ybjq0vgty$xhr,domain=adblocktester.pages.dev
+||api.mouseflow.com/favicon.ico?adblocktester=1786392420464-ilf8bm0df9l$xhr,domain=adblocktester.pages.dev
+||tools.mouseflow.com/favicon.ico?adblocktester=1786392420466-mr6eev3n4aa$xhr,domain=adblocktester.pages.dev
+||luckyorange.com/favicon.ico?adblocktester=1786392420468-2r513334m1n$xhr,domain=adblocktester.pages.dev
+||api.luckyorange.com/favicon.ico?adblocktester=1786392420512-fltxsgovvde$xhr,domain=adblocktester.pages.dev
+||realtime.luckyorange.com/favicon.ico?adblocktester=1786392420514-8mhryr7npe5$xhr,domain=adblocktester.pages.dev
+||cdn.luckyorange.com/favicon.ico?adblocktester=1786392420515-kbewj3sc9x9$xhr,domain=adblocktester.pages.dev
+||w1.luckyorange.com/favicon.ico?adblocktester=1786392420516-v32ofkr6od8$xhr,domain=adblocktester.pages.dev
+||upload.luckyorange.net/favicon.ico?adblocktester=1786392420517-9t9or3me3y7$xhr,domain=adblocktester.pages.dev
+||cs.luckyorange.net/favicon.ico?adblocktester=1786392420627-na4vk0ldrsh$xhr,domain=adblocktester.pages.dev
+||settings.luckyorange.net/favicon.ico?adblocktester=1786392420630-7v51kcrpjei$xhr,domain=adblocktester.pages.dev
+||script.crazyegg.com/favicon.ico?adblocktester=1786392420632-v039uxw8z3$xhr,domain=adblocktester.pages.dev
+||tracking.crazyegg.com/favicon.ico?adblocktester=1786392420633-35i8e3c926l$xhr,domain=adblocktester.pages.dev
+||cdn.heapanalytics.com/favicon.ico?adblocktester=1786392420634-auqhei6be6c$xhr,domain=adblocktester.pages.dev
+||heapanalytics.com/favicon.ico?adblocktester=1786392420635-kscvuxk92hd$xhr,domain=adblocktester.pages.dev
+||c.heapanalytics.com/favicon.ico?adblocktester=1786392420636-jfbphlsmza$xhr,domain=adblocktester.pages.dev
+||plausible.io/favicon.ico?adblocktester=1786392420637-s1ccyvim3y$xhr,domain=adblocktester.pages.dev
+||cdn.matomo.cloud/favicon.ico?adblocktester=1786392420638-jaafdgun75f$xhr,domain=adblocktester.pages.dev
+||matomo.cloud/favicon.ico?adblocktester=1786392420690-ngo538mwp7d$xhr,domain=adblocktester.pages.dev
+||stats.wp.com/favicon.ico?adblocktester=1786392420690-f24eb00uqp$xhr,domain=adblocktester.pages.dev
+||connect.facebook.net/favicon.ico?adblocktester=1786392420691-l4zzkyhau8c$xhr,domain=adblocktester.pages.dev
+||pixel.facebook.com/favicon.ico?adblocktester=1786392420695-i5pqkaqc5oj$xhr,domain=adblocktester.pages.dev
+||an.facebook.com/favicon.ico?adblocktester=1786392420696-utm61zipc6d$xhr,domain=adblocktester.pages.dev
+||www.facebook.com/favicon.ico?adblocktester=1786392420697-ak1dcu40xfh$xhr,domain=adblocktester.pages.dev
+||graph.facebook.com/favicon.ico?adblocktester=1786392420698-y22ob59shcp$xhr,domain=adblocktester.pages.dev
+||analytics.facebook.com/favicon.ico?adblocktester=1786392420699-fjk92ur2ekq$xhr,domain=adblocktester.pages.dev
+||analytics.tiktok.com/favicon.ico?adblocktester=1786392420700-3eizwaoha9d$xhr,domain=adblocktester.pages.dev
+||adblocktester.pages.dev/pagead.js$script,1p
+||adblocktester.pages.dev/advertisement.js$script,1p
+||adblocktester.pages.dev/analytics.js$script,1p
+||adblocktester.pages.dev/ads.js$script,1p
+##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(irm|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(irm|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c.+?\bcurl|^bash -c.+?\$\(curl|^python3? -c.+?\b(exec|urllib|subprocess)|^echo.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ ${text})
+###ad_div
+##.google-ad:not(.testAd)
+#@#.ad-unit
+#@#.google-ad
 !
 ! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
 ! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
