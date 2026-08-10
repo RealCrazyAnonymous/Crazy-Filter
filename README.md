@@ -1,11 +1,11 @@
-The Crazy Filter.txt has an issue, we will fix this as soon as we can.
+The Crazy Filter.txt is no longer with us.
 
 
 You can test this Blocker on the website below.
 
-<a href="https://adblock.turtlecute.org">AdBlock Test</a>
+<a href="https://adblocktester.pages.dev/">AdBlock Test</a>
 
-If you have any issues, please email me.
+If you encounter any issues, please email us.
 
 <a href="mailto:crazyanonymousofficial@proton.me">E-Mail</a>
 
@@ -13,6 +13,6 @@ If you have any issues, please email me.
 This filter is only for VPNs and browsers.
 
 
-My NextDNS filter (Crazy Filter) is coming soon!
+Our NextDNS filters (AdBlock-Blocklist, Cookie-List-Blocker, and Tracker-Blocker) are coming soon!
 
 <a href="https://nextdns.io">NextDNS</a>
