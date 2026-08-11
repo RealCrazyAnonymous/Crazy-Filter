@@ -38,6 +38,26 @@
 ! Version: 1.0
 ! Copyright (C) 2026 Crazy Anonymous
 
+127.0.0.1 1.bp.blogspot.com
+127.0.0.1 2.bp.blogspot.com
+127.0.0.1 3.bp.blogspot.com
+127.0.0.1 4.bp.blogspot.com
+127.0.0.1 detoxifylagoonsnugness.com
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 groleegni.net
+127.0.0.1 nap5k.com
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 www.google-analytics.com
+1.bp.blogspot.com
+2.bp.blogspot.com
+3.bp.blogspot.com
+4.bp.blogspot.com
+detoxifylagoonsnugness.com
+googleads.g.doubleclick.net
+groleegni.net
+nap5k.com
+pagead2.googlesyndication.com
+www.google-analytics.com
 ads.js
 pagead.js
 advertisement.js
