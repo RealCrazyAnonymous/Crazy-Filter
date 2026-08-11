@@ -18,6 +18,27 @@
 ! Version: 2.9
 ! Copyright (C) 2026 Crazy Anonymous
 
+##div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
+##[id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
+##.header-ads
+gamesmain.xyz###outer-wrapper:style(clip-path: circle(0) !important;)
+###ad-wrapper
+*##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|%LOCALAPPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|%APPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|\[Convert\]::FromBase64String|\[Text\.Encoding\]::UTF8\.GetString|\btry\b\s*\{\s*\birm\b.+?\}\s*\bcatch\b.+?\{\s*\biex\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo\b.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|openssl base64 -d|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ ${text})
+gamesmain.xyz##+js(remove-node-text, script, /adScriptURL|eval/)
+gamesmain.xyz##+js(trusted-replace-node-text, script, typeof window.adsbygoogle === "undefined", false)
+gamesmain.xyz##+js(abort-current-script, document.createElement, adsBlocked)
+gamesmain.xyz##+js(remove-node-text, script, .onerror)
+gamesmain.xyz##+js(trusted-replace-node-text, script, /window\.location\.href.*/)
+gamesmain.xyz##+js(trusted-replace-node-text, script, _blank, _self)
+gamesmain.xyz##+js(trusted-replace-node-text, script, /30000/gm, 10)
+gamesmain.xyz##+js(adjust-setTimeout, /.?/, *, 0.001)
+gamesmain.xyz##+js(adjust-setInterval, /.?/, *, 0.001)
+gamesmain.xyz##+js(trusted-replace-node-text, script, /\d{5}\);/gms, 10);)
+gamesmain.xyz##+js(trusted-replace-node-text, script, spinner.classList, readylink.classList)
+gamesmain.xyz##+js(trusted-replace-node-text, script, *Opens in new tab)
+||gamesmain.xyz^$document,1p
+#@#[id^="div-gpt-ad"]
+#@#div[id^="div-gpt-"]
 ||partnerads.ysm.yahoo.com^
 ||googlesyndication.com^
 *##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|%LOCALAPPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|%APPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|\[Convert\]::FromBase64String|\[Text\.Encoding\]::UTF8\.GetString|\btry\b\s*\{\s*\birm\b.+?\}\s*\bcatch\b.+?\{\s*\biex\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo\b.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|openssl base64 -d|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ ${text})
