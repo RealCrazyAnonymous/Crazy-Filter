@@ -18,6 +18,16 @@
 ! Version: 2.9
 ! Copyright (C) 2026 Crazy Anonymous
 
+||1.bp.blogspot.com^
+||2.bp.blogspot.com^
+||3.bp.blogspot.com^
+||4.bp.blogspot.com^
+||detoxifylagoonsnugness.com^
+||googleads.g.doubleclick.net^
+||groleegni.net^
+||nap5k.com^
+||pagead2.googlesyndication.com^
+||www.google-analytics.com^
 ##div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
 ##[id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"])
 ##.header-ads
