@@ -16,7 +16,7 @@
 ! update-notes: We added more blocking.
 ! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
 ! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
-! Version: 3.0
+! Version: 3.1
 ! Copyright (C) 2026 Crazy Anonymous
 !
 ||0022a601.pphost.net^$all
