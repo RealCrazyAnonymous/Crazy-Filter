@@ -15,9 +15,18 @@
 ! update-notes: We added more blocking.
 ! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
 ! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
-! Version: 3.8
+! Version: 3.9
 ! Copyright (C) 2026 Crazy Anonymous
 !
+||ib.adnxs.com^$script,third-party
+||secure.adnxs.com^$script,third-party
+||acdn.adnxs.com^$script,third-party
+||sin3-ib.adnxs.com^$script,third-party
+||nym1-ib.adnxs.com^$script,third-party
+||adnxs.com^$script,third-party
+||wcs.naver.net^$script,third-party
+||vk-ads.com^$script,third-party
+*advertisement.js$script,third-party
 ||ib.adnxs.com^$script,third-party
 ||secure.adnxs.com^$script,third-party
 ||acdn.adnxs.com^$script,third-party
