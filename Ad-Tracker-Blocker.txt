@@ -16,9 +16,17 @@
 ! update-notes: We added more blocking.
 ! License: https://github.com/RealCrazyAnonymous/Filter-Lists/blob/main/LICENSE
 ! Homepage: https://github.com/RealCrazyAnonymous/Filter-Lists
-! Version: 1.3
+! Version: 1.4
 ! Copyright (C) 2026 Crazy Anonymous
 !
+*advertisement.js
+*/advertisement.js$script
+||ads.example.com/advertisement.js$script
+||advertisement.js^$script
+||udc.yahoo.com^
+##.skyscraper.ad
+||adnxs.com^
+||uid:1051^
 ||edge-mqtt-fallback.facebook.com^
 ||graph.facebook.com^
 ||chat-e2ee-mini.facebook.com^
